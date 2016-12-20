@@ -20,8 +20,9 @@
 		A47135691E08CEF900D1E83D /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135681E08CEF900D1E83D /* GCDVC.m */; };
 		A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471356C1E08D10900D1E83D /* PhotoMainVC.m */; };
 		A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135701E08D21E00D1E83D /* OCMethodVC.m */; };
+		A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135741E08D34F00D1E83D /* AppDelegate.m */; };
+		A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135771E08D37F00D1E83D /* AppDelegate+APNS.m */; };
 		A488A6C01E07C2780087D92A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6BF1E07C2780087D92A /* main.m */; };
-		A488A6C31E07C2780087D92A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6C21E07C2780087D92A /* AppDelegate.m */; };
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
 		A488A6D91E07C2780087D92A /* OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6D81E07C2780087D92A /* OCTests.m */; };
 		A488A6E41E07C2780087D92A /* OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6E31E07C2780087D92A /* OCUITests.m */; };
@@ -90,10 +91,12 @@
 		A471356C1E08D10900D1E83D /* PhotoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMainVC.m; sourceTree = "<group>"; };
 		A471356F1E08D21E00D1E83D /* OCMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodVC.h; sourceTree = "<group>"; };
 		A47135701E08D21E00D1E83D /* OCMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodVC.m; sourceTree = "<group>"; };
+		A47135731E08D34F00D1E83D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A47135741E08D34F00D1E83D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A47135761E08D37F00D1E83D /* AppDelegate+APNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+APNS.h"; sourceTree = "<group>"; };
+		A47135771E08D37F00D1E83D /* AppDelegate+APNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+APNS.m"; sourceTree = "<group>"; };
 		A488A6BB1E07C2780087D92A /* OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6BF1E07C2780087D92A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A488A6C11E07C2780087D92A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A488A6C21E07C2780087D92A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A488A6CA1E07C2780087D92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A488A6CF1E07C2780087D92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A488A6D41E07C2780087D92A /* OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +241,17 @@
 			path = OCFuntionVC;
 			sourceTree = "<group>";
 		};
+		A47135721E08D33F00D1E83D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A47135731E08D34F00D1E83D /* AppDelegate.h */,
+				A47135741E08D34F00D1E83D /* AppDelegate.m */,
+				A47135761E08D37F00D1E83D /* AppDelegate+APNS.h */,
+				A47135771E08D37F00D1E83D /* AppDelegate+APNS.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		A488A6B21E07C2780087D92A = {
 			isa = PBXGroup;
 			children = (
@@ -263,8 +277,7 @@
 		A488A6BD1E07C2780087D92A /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				A488A6C11E07C2780087D92A /* AppDelegate.h */,
-				A488A6C21E07C2780087D92A /* AppDelegate.m */,
+				A47135721E08D33F00D1E83D /* AppDelegate */,
 				A488A6F11E07F2E50087D92A /* BaseClass */,
 				A47135531E08C7BC00D1E83D /* Expand */,
 				A488A6FB1E07F3A40087D92A /* OCNavigation */,
@@ -572,6 +585,7 @@
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
+				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
 				A488A6FE1E07F3D20087D92A /* MainTabBarViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
 				A488A72A1E07F8350087D92A /* SettingVC.m in Sources */,
@@ -591,8 +605,8 @@
 				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
-				A488A6C31E07C2780087D92A /* AppDelegate.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
+				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,

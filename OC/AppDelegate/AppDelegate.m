@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainTabBarViewController.h"
+#import "AppDelegate+APNS.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [self initAPNSServse:application withOptions:launchOptions]; //apns
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     [self.window setRootViewController:[MainTabBarViewController shareMainTabBarInstance]];
