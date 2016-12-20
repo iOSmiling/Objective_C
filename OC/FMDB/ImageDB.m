@@ -57,8 +57,6 @@
         {
             NSLog(@"数据保存失败");
         }
-        
-        
         [_db close];
         
     }else
@@ -90,6 +88,8 @@
 
 - (void) mergeWithUser:(ImageModel *) image
 {
+    
+    
     
 }
 
