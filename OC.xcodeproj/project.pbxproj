@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
+		A471354F1E08C61600D1E83D /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471354E1E08C61600D1E83D /* OperationVC.m */; };
+		A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135511E08C63600D1E83D /* ThreadMainVC.m */; };
+		A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135551E08C7DA00D1E83D /* UIImage+Extend.m */; };
+		A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135591E08CA4800D1E83D /* OCBaseModel.m */; };
+		A471355D1E08CA5F00D1E83D /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A471355C1E08CA5F00D1E83D /* ImageModel.m */; };
+		A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A471355F1E08CB3600D1E83D /* XMDBManager.m */; };
+		A47135631E08CCE600D1E83D /* ImageDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135621E08CCE600D1E83D /* ImageDB.m */; };
+		A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135651E08CE5C00D1E83D /* FMDBVC.m */; };
+		A47135691E08CEF900D1E83D /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135681E08CEF900D1E83D /* GCDVC.m */; };
+		A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471356C1E08D10900D1E83D /* PhotoMainVC.m */; };
+		A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135701E08D21E00D1E83D /* OCMethodVC.m */; };
 		A488A6C01E07C2780087D92A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6BF1E07C2780087D92A /* main.m */; };
 		A488A6C31E07C2780087D92A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6C21E07C2780087D92A /* AppDelegate.m */; };
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
@@ -57,6 +68,28 @@
 		81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
+		A471354D1E08C61600D1E83D /* OperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
+		A471354E1E08C61600D1E83D /* OperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationVC.m; sourceTree = "<group>"; };
+		A47135501E08C63600D1E83D /* ThreadMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadMainVC.h; sourceTree = "<group>"; };
+		A47135511E08C63600D1E83D /* ThreadMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadMainVC.m; sourceTree = "<group>"; };
+		A47135541E08C7DA00D1E83D /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		A47135551E08C7DA00D1E83D /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		A47135581E08CA4800D1E83D /* OCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseModel.h; sourceTree = "<group>"; };
+		A47135591E08CA4800D1E83D /* OCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseModel.m; sourceTree = "<group>"; };
+		A471355B1E08CA5F00D1E83D /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		A471355C1E08CA5F00D1E83D /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		A471355E1E08CB3600D1E83D /* XMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDBManager.h; sourceTree = "<group>"; };
+		A471355F1E08CB3600D1E83D /* XMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMDBManager.m; sourceTree = "<group>"; };
+		A47135611E08CCE600D1E83D /* ImageDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDB.h; sourceTree = "<group>"; };
+		A47135621E08CCE600D1E83D /* ImageDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDB.m; sourceTree = "<group>"; };
+		A47135641E08CE5C00D1E83D /* FMDBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBVC.h; sourceTree = "<group>"; };
+		A47135651E08CE5C00D1E83D /* FMDBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBVC.m; sourceTree = "<group>"; };
+		A47135671E08CEF900D1E83D /* GCDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
+		A47135681E08CEF900D1E83D /* GCDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
+		A471356B1E08D10900D1E83D /* PhotoMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoMainVC.h; sourceTree = "<group>"; };
+		A471356C1E08D10900D1E83D /* PhotoMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoMainVC.m; sourceTree = "<group>"; };
+		A471356F1E08D21E00D1E83D /* OCMethodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodVC.h; sourceTree = "<group>"; };
+		A47135701E08D21E00D1E83D /* OCMethodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodVC.m; sourceTree = "<group>"; };
 		A488A6BB1E07C2780087D92A /* OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6BF1E07C2780087D92A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A488A6C11E07C2780087D92A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +183,61 @@
 			path = GestureVC;
 			sourceTree = "<group>";
 		};
+		A471354C1E08C5F200D1E83D /* ThreadVC */ = {
+			isa = PBXGroup;
+			children = (
+				A47135501E08C63600D1E83D /* ThreadMainVC.h */,
+				A47135511E08C63600D1E83D /* ThreadMainVC.m */,
+				A471354D1E08C61600D1E83D /* OperationVC.h */,
+				A471354E1E08C61600D1E83D /* OperationVC.m */,
+				A47135671E08CEF900D1E83D /* GCDVC.h */,
+				A47135681E08CEF900D1E83D /* GCDVC.m */,
+			);
+			path = ThreadVC;
+			sourceTree = "<group>";
+		};
+		A47135531E08C7BC00D1E83D /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				A47135541E08C7DA00D1E83D /* UIImage+Extend.h */,
+				A47135551E08C7DA00D1E83D /* UIImage+Extend.m */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		A47135571E08CA2600D1E83D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				A47135641E08CE5C00D1E83D /* FMDBVC.h */,
+				A47135651E08CE5C00D1E83D /* FMDBVC.m */,
+				A471355B1E08CA5F00D1E83D /* ImageModel.h */,
+				A471355C1E08CA5F00D1E83D /* ImageModel.m */,
+				A471355E1E08CB3600D1E83D /* XMDBManager.h */,
+				A471355F1E08CB3600D1E83D /* XMDBManager.m */,
+				A47135611E08CCE600D1E83D /* ImageDB.h */,
+				A47135621E08CCE600D1E83D /* ImageDB.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		A471356A1E08D0DA00D1E83D /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A471356B1E08D10900D1E83D /* PhotoMainVC.h */,
+				A471356C1E08D10900D1E83D /* PhotoMainVC.m */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		A471356E1E08D1F100D1E83D /* OCFuntionVC */ = {
+			isa = PBXGroup;
+			children = (
+				A471356F1E08D21E00D1E83D /* OCMethodVC.h */,
+				A47135701E08D21E00D1E83D /* OCMethodVC.m */,
+			);
+			path = OCFuntionVC;
+			sourceTree = "<group>";
+		};
 		A488A6B21E07C2780087D92A = {
 			isa = PBXGroup;
 			children = (
@@ -178,10 +266,15 @@
 				A488A6C11E07C2780087D92A /* AppDelegate.h */,
 				A488A6C21E07C2780087D92A /* AppDelegate.m */,
 				A488A6F11E07F2E50087D92A /* BaseClass */,
+				A47135531E08C7BC00D1E83D /* Expand */,
 				A488A6FB1E07F3A40087D92A /* OCNavigation */,
 				A488A6FF1E07F4740087D92A /* HomePage */,
+				A471356E1E08D1F100D1E83D /* OCFuntionVC */,
 				A488A7031E07F6BB0087D92A /* Animation */,
 				A430C7161E08BDB100681AFD /* GestureVC */,
+				A471354C1E08C5F200D1E83D /* ThreadVC */,
+				A471356A1E08D0DA00D1E83D /* Photo */,
+				A47135571E08CA2600D1E83D /* FMDB */,
 				A488A6BE1E07C2780087D92A /* Supporting Files */,
 			);
 			path = OC;
@@ -218,6 +311,8 @@
 		A488A6F11E07F2E50087D92A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				A47135581E08CA4800D1E83D /* OCBaseModel.h */,
+				A47135591E08CA4800D1E83D /* OCBaseModel.m */,
 				A488A6F21E07F2FC0087D92A /* OCBaseViewController.h */,
 				A488A6F31E07F2FC0087D92A /* OCBaseViewController.m */,
 				A488A6F51E07F3400087D92A /* OCBaseNavigationController.h */,
@@ -476,24 +571,35 @@
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
+				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
 				A488A6FE1E07F3D20087D92A /* MainTabBarViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
 				A488A72A1E07F8350087D92A /* SettingVC.m in Sources */,
+				A471355D1E08CA5F00D1E83D /* ImageModel.m in Sources */,
 				A488A7061E07F6E10087D92A /* AnimationViewController.m in Sources */,
 				A488A7091E07F70D0087D92A /* AnimationFrameVC.m in Sources */,
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
+				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
+				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
+				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
+				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
+				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
 				A488A6C31E07C2780087D92A /* AppDelegate.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
+				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
+				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
+				A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */,
+				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

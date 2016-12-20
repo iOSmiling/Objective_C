@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "AnimationViewController.h"
 #import "GestureVC.h"
+#import "ThreadMainVC.h"
+#import "FMDBVC.h"
+#import "PhotoMainVC.h"
+#import "OCMethodVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -29,7 +33,10 @@
     
     [_array addObject:@"Animation"];
     [_array addObject:@"GestureVC"];
-    
+    [_array addObject:@"Thread"];
+    [_array addObject:@"FMDB"];
+    [_array addObject:@"图片操作"];
+    [_array addObject:@"OC常用方法"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -75,6 +82,34 @@
             GestureVC *vc2 = [[GestureVC alloc] init];
             vc2.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc2 animated:YES];
+            break;
+        }
+        case 2:
+        {
+            ThreadMainVC *vc3 = [[ThreadMainVC alloc] init];
+            vc3.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc3 animated:YES];
+            break;
+        }
+        case 3:
+        {
+            FMDBVC *vc4 = [[FMDBVC alloc] init];
+            vc4.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc4 animated:YES];
+            break;
+        }
+        case 4:
+        {
+            PhotoMainVC *vc5 = [[PhotoMainVC alloc] init];
+            vc5.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc5 animated:YES];
+            break;
+        }
+        case 5:
+        {
+            OCMethodVC *vc6 = [[OCMethodVC alloc] init];
+            vc6.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc6 animated:YES];
             break;
         }
         default:

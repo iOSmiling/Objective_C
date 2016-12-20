@@ -10,16 +10,74 @@
 
 @interface AnimationSpringVC ()
 
+@property (nonatomic,strong) UIImageView *anImageView;
+@property (nonatomic,strong) UIButton *anButton;
+
 @end
 
 @implementation AnimationSpringVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"Animation_spring";
+    
+    [self.view addSubview:self.anImageView];
+    self.anImageView.frame = CGRectMake(self.view.frame.size.width/2-100, 200, 200, 100);
+    
+    [self.view addSubview:self.anButton];
+    self.anButton.frame = CGRectMake(self.view.frame.size.width/2-50, self.view.frame.size.height-146, 100, 46);
+    
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)springAnimation
+{
+    CGRect originalRect = self.anImageView.frame;
+    CGRect rect = CGRectMake(self.anImageView.frame.origin.x-80, self.anImageView.frame.origin.y, 120, 120);
+    
+    [UIView animateWithDuration:0.4 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.anImageView.frame = rect;
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:1 delay:1 usingSpringWithDamping:0.5 initialSpringVelocity:4 options:UIViewAnimationOptionCurveLinear animations:^{
+            self.anImageView.frame = originalRect;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
+    
+}
+
+-(UIImageView *)anImageView
+{
+    if (!_anImageView)
+    {
+        _anImageView = [[UIImageView alloc] init];
+        _anImageView.image = [UIImage imageNamed:@"1.jpg"];
+        _anImageView.layer.borderWidth = 1;
+        _anImageView.layer.borderColor = [UIColor blackColor].CGColor;
+        _anImageView.layer.cornerRadius = 5;
+    }
+    return _anImageView;
+}
+
+-(UIButton *)anButton
+{
+    if (!_anButton)
+    {
+        _anButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _anButton.layer.borderWidth = 1;
+        _anButton.layer.borderColor = [UIColor blackColor].CGColor;
+        [_anButton setTitle:@"动画" forState:UIControlStateNormal];
+        [_anButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_anButton addTarget:self action:@selector(springAnimation) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _anButton;
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

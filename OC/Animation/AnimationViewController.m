@@ -85,70 +85,71 @@
         {
             AnimationFrameVC *vc1 = [[AnimationFrameVC alloc] init];
             [self.navigationController pushViewController:vc1 animated:YES];
-            
+              break;
         }
-            break;
         case 1:
         {
             AnimationBoundsVC *vc2 = [[AnimationBoundsVC alloc] init];
             [self.navigationController pushViewController:vc2 animated:YES];
+             break;
         }
-            break;
         case 2:
         {
             AnimationCenterVC *vc3 = [[AnimationCenterVC alloc] init];
             [self.navigationController pushViewController:vc3 animated:YES];
+             break;
         }
-            break;
-            
         case 3:
         {
             AnimationTransformVC *vc4 = [[AnimationTransformVC alloc] init];
             [self.navigationController pushViewController:vc4 animated:YES];
-        }
             break;
+        }
         case 4:
         {
             AnimationAlphaVC *vc5 = [[AnimationAlphaVC alloc] init];
             [self.navigationController pushViewController:vc5 animated:YES];
-        }
             break;
+        }
         case 5:
         {
             AnimationKeyFramesVC *vc6 = [[AnimationKeyFramesVC alloc] init];
             [self.navigationController pushViewController:vc6 animated:YES];
-            
+              break;
         }
-            break;
+          
         case 6:
         {
             AnimationSpringVC *vc6 = [[AnimationSpringVC alloc] init];
             [self.navigationController pushViewController:vc6 animated:YES];
-            
+             break;
         }
-            break;
+           
         case 7:
         {
             AnimationTransitionVC *vc6 = [[AnimationTransitionVC alloc] init];
             [self.navigationController pushViewController:vc6 animated:YES];
-            
+              break;
         }
-            break;
+          
         case 8:
         {
             CAAnimationDescriptionVC *vc7 = [[CAAnimationDescriptionVC alloc] init];
             [self.navigationController pushViewController:vc7 animated:YES];
+            break;
         }
         case 9:
         {
             CAPropertyAnimationVC *vc8 = [[CAPropertyAnimationVC alloc] init];
             [self.navigationController pushViewController:vc8 animated:YES];
+             break;
         }
-            break;
+           
         case 10:
         {
             CATransitionVC *vc9 = [[CATransitionVC alloc] init];
             [self.navigationController pushViewController:vc9 animated:YES];
+            break;
         }
         default:
             break;
