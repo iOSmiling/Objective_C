@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "AnimationViewController.h"
-
+#import "GestureVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,6 +28,7 @@
     self.array = [[NSMutableArray alloc] init];
     
     [_array addObject:@"Animation"];
+    [_array addObject:@"GestureVC"];
     
     
     [self.view addSubview:self.tableView];
@@ -67,6 +68,13 @@
             AnimationViewController *vc1 = [[AnimationViewController alloc] init];
             vc1.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc1 animated:YES];
+            break;
+        }
+        case 1:
+        {
+            GestureVC *vc2 = [[GestureVC alloc] init];
+            vc2.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc2 animated:YES];
             break;
         }
         default:
