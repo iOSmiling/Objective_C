@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JKAssets.h"
 
 @protocol PhotoCellDelegate <NSObject>
 
@@ -18,6 +19,6 @@
 
 @property (nonatomic,weak) id<PhotoCellDelegate>delegate;
 
--(void)loadData:(NSData *)imageData;
+-(void)loadData:(JKAssets *)asset;
 
 @end

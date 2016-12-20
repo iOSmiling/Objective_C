@@ -7,6 +7,7 @@
 //
 
 #import "PhotoCell.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface PhotoCell ()
 
@@ -33,11 +34,16 @@
     return self;
 }
 
--(void)loadData:(NSData *)imageData
-{
-    _chooseImageView.image = [UIImage imageWithData:imageData];
-    
-    
+-(void)loadData:(JKAssets *)asset
+{    
+    ALAssetsLibrary   *lib = [[ALAssetsLibrary alloc] init];
+    [lib assetForURL:asset.assetPropertyURL resultBlock:^(ALAsset *asset) {
+        if (asset) {
+            _chooseImageView.image = [UIImage imageWithCGImage:[[asset defaultRepresentation] fullScreenImage]];
+        }
+    } failureBlock:^(NSError *error) {
+        
+    }];
 }
 
 -(void)deleteButtonEvent:(UIButton *)sender

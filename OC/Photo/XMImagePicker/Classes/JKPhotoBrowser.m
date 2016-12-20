@@ -239,7 +239,7 @@ static NSString *kJKPhotoBrowserCellIdentifier = @"kJKPhotoBrowserCellIdentifier
         _checkButton.exclusiveTouch = YES;
         _checkButton.right = self.width-10;
         _checkButton.centerY = button.centerY;
-//        [_topView addSubview:_checkButton];  //取消选择，选择按钮
+        [_topView addSubview:_checkButton];  //取消选择，选择按钮
         
         [self addSubview:_topView];
     }

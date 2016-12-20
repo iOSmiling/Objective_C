@@ -40,6 +40,7 @@
 		A47135AD1E08DCCA00D1E83D /* PhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A471359D1E08DCCA00D1E83D /* PhotoAlbumManager.m */; };
 		A47135AE1E08DCCA00D1E83D /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A471359F1E08DCCA00D1E83D /* UIView+JKPicker.m */; };
 		A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */; };
+		A47135B31E08E3B500D1E83D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47135B21E08E3B500D1E83D /* AVFoundation.framework */; };
 		A488A6C01E07C2780087D92A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6BF1E07C2780087D92A /* main.m */; };
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
 		A488A6D91E07C2780087D92A /* OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6D81E07C2780087D92A /* OCTests.m */; };
@@ -148,6 +149,7 @@
 		A471359F1E08DCCA00D1E83D /* UIView+JKPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKPicker.m"; sourceTree = "<group>"; };
 		A47135AF1E08DDE300D1E83D /* SavePhotoToAlbumVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavePhotoToAlbumVC.h; sourceTree = "<group>"; };
 		A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavePhotoToAlbumVC.m; sourceTree = "<group>"; };
+		A47135B21E08E3B500D1E83D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A488A6BB1E07C2780087D92A /* OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6BF1E07C2780087D92A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A488A6CA1E07C2780087D92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47135B31E08E3B500D1E83D /* AVFoundation.framework in Frameworks */,
 				6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +228,7 @@
 		0E465C6D2E23888B6BAC9A16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A47135B21E08E3B500D1E83D /* AVFoundation.framework */,
 				81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */,
 			);
 			name = Frameworks;
