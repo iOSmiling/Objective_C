@@ -27,13 +27,16 @@
 @implementation LYScrollView
 
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame
+{
     self = [super initWithFrame:frame];
-    if (self) {
+    if (self)
+    {
         [self setUp];
     }
     return self;
 }
+
 - (void)setUp
 {
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScrollViewWidth, kViewHeight)];

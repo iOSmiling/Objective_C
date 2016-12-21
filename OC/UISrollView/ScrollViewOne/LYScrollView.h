@@ -20,6 +20,6 @@
 
 @property (nonatomic, strong) NSMutableArray * itmeArray;
 
-@property (nonatomic, assign) BOOL isOpenDelete;//开启⬆️滑删除
+@property (nonatomic, assign) BOOL isOpenDelete;//开启上滑删除
 
 @end

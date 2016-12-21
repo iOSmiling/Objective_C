@@ -10,10 +10,10 @@
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
 		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
-		A4062CC11E0A4EBC0083810B /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */; };
 		A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */; };
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
-		A4062CCA1E0A4FE70083810B /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC91E0A4FE70083810B /* LYScrollView.m */; };
+		A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCD1E0A52DB0083810B /* LYScrollView.m */; };
+		A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A471354F1E08C61600D1E83D /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471354E1E08C61600D1E83D /* OperationVC.m */; };
 		A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135511E08C63600D1E83D /* ThreadMainVC.m */; };
@@ -68,6 +68,7 @@
 		A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7231E07F7960087D92A /* CAPropertyAnimationVC.m */; };
 		A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7261E07F7A50087D92A /* CATransitionVC.m */; };
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
+		A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,14 +96,14 @@
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
 		A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoAndEditVC.m; sourceTree = "<group>"; };
-		A4062CBF1E0A4EBC0083810B /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
-		A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
 		A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowMainVC.h; sourceTree = "<group>"; };
 		A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowMainVC.m; sourceTree = "<group>"; };
 		A4062CC51E0A4F920083810B /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		A4062CC61E0A4F920083810B /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
-		A4062CC81E0A4FE70083810B /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
-		A4062CC91E0A4FE70083810B /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
+		A4062CCC1E0A52DB0083810B /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
+		A4062CCD1E0A52DB0083810B /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
+		A4062CCE1E0A52DB0083810B /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
+		A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
 		A471354D1E08C61600D1E83D /* OperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
@@ -211,6 +212,8 @@
 		A488A7261E07F7A50087D92A /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
 		A488A7281E07F8350087D92A /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		A488A7291E07F8350087D92A /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
+		A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,12 +266,30 @@
 			children = (
 				A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */,
 				A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */,
-				A4062CBF1E0A4EBC0083810B /* ScrollShowTestOneVC.h */,
-				A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */,
-				A4062CC81E0A4FE70083810B /* LYScrollView.h */,
-				A4062CC91E0A4FE70083810B /* LYScrollView.m */,
+				A4062CD21E0A53050083810B /* ScrollViewTwo */,
+				A4062CCB1E0A52DB0083810B /* ScrollViewOne */,
 			);
 			path = UISrollView;
+			sourceTree = "<group>";
+		};
+		A4062CCB1E0A52DB0083810B /* ScrollViewOne */ = {
+			isa = PBXGroup;
+			children = (
+				A4062CCC1E0A52DB0083810B /* LYScrollView.h */,
+				A4062CCD1E0A52DB0083810B /* LYScrollView.m */,
+				A4062CCE1E0A52DB0083810B /* ScrollShowTestOneVC.h */,
+				A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */,
+			);
+			path = ScrollViewOne;
+			sourceTree = "<group>";
+		};
+		A4062CD21E0A53050083810B /* ScrollViewTwo */ = {
+			isa = PBXGroup;
+			children = (
+				A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */,
+				A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */,
+			);
+			path = ScrollViewTwo;
 			sourceTree = "<group>";
 		};
 		A430C7161E08BDB100681AFD /* GestureVC */ = {
@@ -740,7 +761,6 @@
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
-				A4062CCA1E0A4FE70083810B /* LYScrollView.m in Sources */,
 				A47135A81E08DCCA00D1E83D /* JKImagePickerController.m in Sources */,
 				A47135A51E08DCCA00D1E83D /* JKAssetsGroupsView.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
@@ -754,8 +774,8 @@
 				A47135AB1E08DCCA00D1E83D /* JKPromptView.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
 				A47135A61E08DCCA00D1E83D /* JKAssetsThumbnailView.m in Sources */,
+				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
-				A4062CC11E0A4EBC0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
@@ -763,6 +783,7 @@
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A47135AD1E08DCCA00D1E83D /* PhotoAlbumManager.m in Sources */,
+				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
 				A47135AA1E08DCCA00D1E83D /* JKPhotoBrowserCell.m in Sources */,
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
@@ -777,6 +798,7 @@
 				A47135A91E08DCCA00D1E83D /* JKPhotoBrowser.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
+				A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */,
 				A47135A71E08DCCA00D1E83D /* JKAssetsViewCell.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A47135AC1E08DCCA00D1E83D /* JKUtil.m in Sources */,

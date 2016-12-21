@@ -8,6 +8,7 @@
 
 #import "ScrollShowMainVC.h"
 #import "ScrollShowTestOneVC.h"
+#import "ScrollShowTwoVC.h"
 
 @interface ScrollShowMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,7 +26,8 @@
     
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"ShowOne"];    
+    [_array addObject:@"ShowOne"];
+    [_array addObject:@"ShowTwo"];
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
    
@@ -68,7 +70,9 @@
         }
         case 1:
         {
-           
+            ScrollShowTwoVC *vc2 = [[ScrollShowTwoVC alloc] init];
+            [self.navigationController pushViewController:vc2 animated:YES];
+            
             break;
         }
         case 2:
