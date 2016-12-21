@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
+		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
+		A4062CC11E0A4EBC0083810B /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */; };
+		A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */; };
+		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
+		A4062CCA1E0A4FE70083810B /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC91E0A4FE70083810B /* LYScrollView.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A471354F1E08C61600D1E83D /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471354E1E08C61600D1E83D /* OperationVC.m */; };
 		A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135511E08C63600D1E83D /* ThreadMainVC.m */; };
@@ -88,6 +93,16 @@
 		81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A402DFA81E09105D0058E6B7 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
+		A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoAndEditVC.m; sourceTree = "<group>"; };
+		A4062CBF1E0A4EBC0083810B /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
+		A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
+		A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowMainVC.h; sourceTree = "<group>"; };
+		A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowMainVC.m; sourceTree = "<group>"; };
+		A4062CC51E0A4F920083810B /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		A4062CC61E0A4F920083810B /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		A4062CC81E0A4FE70083810B /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
+		A4062CC91E0A4FE70083810B /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
 		A471354D1E08C61600D1E83D /* OperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
@@ -243,6 +258,19 @@
 			path = MainNavigation;
 			sourceTree = "<group>";
 		};
+		A4062CBE1E0A4D520083810B /* UISrollView */ = {
+			isa = PBXGroup;
+			children = (
+				A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */,
+				A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */,
+				A4062CBF1E0A4EBC0083810B /* ScrollShowTestOneVC.h */,
+				A4062CC01E0A4EBC0083810B /* ScrollShowTestOneVC.m */,
+				A4062CC81E0A4FE70083810B /* LYScrollView.h */,
+				A4062CC91E0A4FE70083810B /* LYScrollView.m */,
+			);
+			path = UISrollView;
+			sourceTree = "<group>";
+		};
 		A430C7161E08BDB100681AFD /* GestureVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +296,8 @@
 		A47135531E08C7BC00D1E83D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				A4062CC51E0A4F920083810B /* UIImageEffects.m */,
+				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
 				A47135541E08C7DA00D1E83D /* UIImage+Extend.h */,
 				A47135551E08C7DA00D1E83D /* UIImage+Extend.m */,
 			);
@@ -297,6 +327,8 @@
 				A471356C1E08D10900D1E83D /* PhotoMainVC.m */,
 				A47135791E08DAC600D1E83D /* SelectMorePhotoVC.h */,
 				A471357A1E08DAC600D1E83D /* SelectMorePhotoVC.m */,
+				A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */,
+				A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */,
 				A47135AF1E08DDE300D1E83D /* SavePhotoToAlbumVC.h */,
 				A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */,
 				A471357C1E08DC1300D1E83D /* PhotoCell.h */,
@@ -410,6 +442,7 @@
 				A488A7031E07F6BB0087D92A /* Animation */,
 				A430C7161E08BDB100681AFD /* GestureVC */,
 				A471354C1E08C5F200D1E83D /* ThreadVC */,
+				A4062CBE1E0A4D520083810B /* UISrollView */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
 				A47135571E08CA2600D1E83D /* FMDB */,
 				A488A6BE1E07C2780087D92A /* Supporting Files */,
@@ -576,7 +609,7 @@
 		A488A6B31E07C2780087D92A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = sigboat;
 				TargetAttributes = {
 					A488A6BA1E07C2780087D92A = {
@@ -707,6 +740,7 @@
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
+				A4062CCA1E0A4FE70083810B /* LYScrollView.m in Sources */,
 				A47135A81E08DCCA00D1E83D /* JKImagePickerController.m in Sources */,
 				A47135A51E08DCCA00D1E83D /* JKAssetsGroupsView.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
@@ -721,6 +755,7 @@
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
 				A47135A61E08DCCA00D1E83D /* JKAssetsThumbnailView.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
+				A4062CC11E0A4EBC0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
@@ -729,10 +764,12 @@
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A47135AD1E08DCCA00D1E83D /* PhotoAlbumManager.m in Sources */,
 				A47135AA1E08DCCA00D1E83D /* JKPhotoBrowserCell.m in Sources */,
+				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
 				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
+				A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
@@ -744,6 +781,7 @@
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A47135AC1E08DCCA00D1E83D /* JKUtil.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
+				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
 				A47135A21E08DCCA00D1E83D /* JKAssets.m in Sources */,
 				A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */,
@@ -799,6 +837,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -813,6 +852,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -846,6 +886,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -860,6 +901,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

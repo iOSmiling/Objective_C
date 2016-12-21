@@ -1,41 +1,37 @@
 //
-//  PhotoMainVC.m
+//  ScrollShowMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2016/12/20.
+//  Created by 薛坤龙 on 2016/12/21.
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "PhotoMainVC.h"
-#import "SelectMorePhotoVC.h"
-#import "SavePhotoToAlbumVC.h"
-#import "SelectPhotoAndEditVC.h"
+#import "ScrollShowMainVC.h"
+#import "ScrollShowTestOneVC.h"
 
-@interface PhotoMainVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface ScrollShowMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong,nonnull) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *array;
 
 @end
 
-@implementation PhotoMainVC
+@implementation ScrollShowMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"图片操作";
+    self.navigationItem.title = @"ScrollView";
+    
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"图片多选"];
-    [_array addObject:@"保存图片到系统相册"];
-    [_array addObject:@"选取编辑"];
-   
+    [_array addObject:@"ShowOne"];    
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
-    
-    
    
 }
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -66,27 +62,23 @@
     {
         case 0:
         {
-            SelectMorePhotoVC *vc1 = [[SelectMorePhotoVC alloc] init];
+            ScrollShowTestOneVC *vc1 = [[ScrollShowTestOneVC alloc] init];
             [self.navigationController pushViewController:vc1 animated:YES];
             break;
         }
         case 1:
         {
-            SavePhotoToAlbumVC *vc2 = [[SavePhotoToAlbumVC alloc] init];
-            [self.navigationController pushViewController:vc2 animated:YES];
-        
+           
             break;
         }
         case 2:
         {
-            SelectPhotoAndEditVC *vc3 = [[SelectPhotoAndEditVC alloc] init];
-            [self.navigationController pushViewController:vc3 animated:YES];
-         
+      
             break;
         }
         case 3:
         {
-           
+        
             break;
         }
         case 4:
@@ -105,6 +97,7 @@
     
 }
 
+#pragma mark - Getters and Setters
 
 -(UITableView *)tableView
 {
@@ -124,6 +117,14 @@
     
 }
 
+/*
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

@@ -13,6 +13,7 @@
 #import "FMDBVC.h"
 #import "PhotoMainVC.h"
 #import "OCMethodVC.h"
+#import "ScrollShowMainVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -39,6 +40,7 @@
     [_array addObject:@"FMDB"];
     [_array addObject:@"图片操作"];
     [_array addObject:@"OC常用方法"];
+    [_array addObject:@"ScrollView"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -114,6 +116,13 @@
             OCMethodVC *vc6 = [[OCMethodVC alloc] init];
             vc6.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc6 animated:YES];
+            break;
+        }
+        case 6:
+        {
+            ScrollShowMainVC *vc7 = [[ScrollShowMainVC alloc] init];
+            vc7.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc7 animated:YES];
             break;
         }
         default:
