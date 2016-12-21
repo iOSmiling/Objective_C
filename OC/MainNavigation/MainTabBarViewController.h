@@ -10,6 +10,6 @@
 
 @interface MainTabBarViewController : OCBaseTabBarController<UITabBarControllerDelegate>
 
-+(id)shareMainTabBarInstance;
++(id) shareMainTabBarInstance;
 
 @end

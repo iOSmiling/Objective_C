@@ -23,6 +23,8 @@
 
 @implementation ViewController
 
+#pragma mark - Life cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,6 +44,8 @@
     _tableView.frame = self.view.frame;
     
 }
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -119,6 +123,7 @@
 
 }
 
+#pragma mark - Getters and Setters
 
 -(UITableView *)tableView
 {

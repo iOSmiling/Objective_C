@@ -100,9 +100,6 @@
         
         //        NSURL *url = [NSURL URLWithString:@"http://qiniu.xiangmei123.com/Uploads/pic/discuss/2016/20161104/581c47d9aa764.jpg?imageView2/1/format/webp"];
         UIImage *image = [UIImage getImageFromURLString:@"http://qiniu.xiangmei123.com/Uploads/pic/discuss/2016/20161104/581c47d9aa764.jpg?imageView2/1/format/webp"];
-        
-        
-        
         //        UIImage *image = [UIImage imageWithData:data];
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             self.imageView.image = image;

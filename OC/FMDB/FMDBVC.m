@@ -10,14 +10,12 @@
 #import "ImageDB.h"
 #import "ImageModel.h"
 #import "UIImage+Extend.h"
+#import <UIImageView+WebCache.h>
 
 @interface FMDBVC ()
 
 @property (nonatomic,strong) UIImageView *imageView;
-
 @property (nonatomic,strong) ImageDB *imageDB;
-
-
 @property (nonatomic,strong) ImageModel *model1;
 @property (nonatomic,strong) ImageModel *model2;
 
@@ -35,6 +33,7 @@
     
     //创建表
     self.imageDB = [[ImageDB alloc] init];
+    
     [_imageDB createDataBase];
     
     //增加数据
@@ -54,12 +53,16 @@
     _model1.imageID = @"image_1";
     _model1.imageUrl = @"http://qiniu.xiangmei123.com/Uploads/pic/discuss/2016/20161104/581c47d9aa764.jpg?imageView2/1/format/webp";
     
-    UIImage *image = [UIImage getImageFromURLString:_model1.imageUrl];
     
-    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        self.imageView.image = image;
+    [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+    
+//        UIImage *image = [UIImage getImageFromURLString:_model2.imageUrl];
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//            self.imageView.image = image;
+            
+            [self.imageView sd_setImageWithURL:[NSURL URLWithString:_model1.imageUrl] placeholderImage:nil options:SDWebImageRetryFailed];
+        }];
     }];
-   
     
     [_imageDB saveUser:_model1];
     [_imageDB saveUser:_model2];
@@ -87,7 +90,5 @@
     [super didReceiveMemoryWarning];
    
 }
-
-
 
 @end
