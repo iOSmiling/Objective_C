@@ -8,18 +8,17 @@
 
 #import "SelectPhotoAndEditVC.h"
 
+
 @interface SelectPhotoAndEditVC ()
 
 @end
 
 @implementation SelectPhotoAndEditVC
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"编辑图片";
-   
-    
     
 }
 
