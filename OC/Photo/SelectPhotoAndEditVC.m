@@ -26,8 +26,6 @@
 {
     [super didReceiveMemoryWarning];
 
-    
 }
-
 
 @end

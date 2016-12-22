@@ -20,9 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-      [self loadTabBarViewController];
+  
+    [self loadTabBarViewController];
 }
 
 
@@ -38,13 +37,10 @@
 
 -(void)loadTabBarViewController
 {
-    //发现
     ViewController *homePageViewController = [[ViewController alloc] init];
     OCBaseNavigationController *homePageNavigation = [[OCBaseNavigationController alloc] initWithRootViewController:homePageViewController];
     homePageNavigation.tabBarItem.title=@"学习";
 
-    
-    //关注
     SettingVC *liveViewController = [[SettingVC alloc] init];
     OCBaseNavigationController *livePageNavigation = [[OCBaseNavigationController alloc] initWithRootViewController:liveViewController];
     livePageNavigation.tabBarItem.title=@"设置";
@@ -58,9 +54,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-
 
 @end

@@ -53,6 +53,8 @@
 		A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7231E07F7960087D92A /* CAPropertyAnimationVC.m */; };
 		A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7261E07F7A50087D92A /* CATransitionVC.m */; };
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
+		A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */; };
+		A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */; };
 		A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */; };
 		A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A311E0A5B2B0057C297 /* JKImagePickerController.strings */; };
 		A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A331E0A5B2B0057C297 /* ImagesPicker.xcassets */; };
@@ -183,6 +185,10 @@
 		A488A7261E07F7A50087D92A /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
 		A488A7281E07F8350087D92A /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		A488A7291E07F8350087D92A /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		A4C059881E0B7F9900EF5D1B /* MethodMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodMainVC.h; sourceTree = "<group>"; };
+		A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodMainVC.m; sourceTree = "<group>"; };
+		A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryVC.h; sourceTree = "<group>"; };
+		A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryVC.m; sourceTree = "<group>"; };
 		A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
 		A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
 		A4D57A321E0A5B2B0057C297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
@@ -361,8 +367,12 @@
 		A471356E1E08D1F100D1E83D /* OCFuntionVC */ = {
 			isa = PBXGroup;
 			children = (
+				A4C059881E0B7F9900EF5D1B /* MethodMainVC.h */,
+				A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */,
 				A471356F1E08D21E00D1E83D /* OCMethodVC.h */,
 				A47135701E08D21E00D1E83D /* OCMethodVC.m */,
+				A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */,
+				A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */,
 			);
 			path = OCFuntionVC;
 			sourceTree = "<group>";
@@ -785,6 +795,7 @@
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
+				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
@@ -807,6 +818,7 @@
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
 				A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
+				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A4D57A581E0A5B2B0057C297 /* JKImagePickerController.m in Sources */,

@@ -1,53 +1,42 @@
 //
-//  ViewController.m
+//  MethodMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2016/12/19.
+//  Created by 薛坤龙 on 2016/12/22.
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "AnimationViewController.h"
-#import "GestureVC.h"
-#import "ThreadMainVC.h"
-#import "FMDBVC.h"
-#import "PhotoMainVC.h"
 #import "MethodMainVC.h"
-#import "ScrollShowMainVC.h"
+#import "OCMethodVC.h"
+#import "DictionaryVC.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong,nonnull) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *array;
 
 @end
 
-@implementation ViewController
-
-#pragma mark - Life cycle
+@implementation MethodMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.title = @"学习";
+    // Do any additional setup after loading the view.
+    
+    
+    self.navigationItem.title = @"OC方法";
     
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"Animation"];
-    [_array addObject:@"GestureVC"];
-    [_array addObject:@"Thread"];
-    [_array addObject:@"FMDB"];
-    [_array addObject:@"图片操作"];
-    [_array addObject:@"OC常用方法"];
-    [_array addObject:@"ScrollView"];
+    [_array addObject:@"Method"];
+    [_array addObject:@"字典"];
+  
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
     
 }
-
-#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -78,58 +67,47 @@
     {
         case 0:
         {
-            AnimationViewController *vc1 = [[AnimationViewController alloc] init];
-            vc1.hidesBottomBarWhenPushed = YES;
+            OCMethodVC *vc1 = [[OCMethodVC alloc] init];
             [self.navigationController pushViewController:vc1 animated:YES];
+         
             break;
         }
         case 1:
         {
-            GestureVC *vc2 = [[GestureVC alloc] init];
-            vc2.hidesBottomBarWhenPushed = YES;
+            DictionaryVC *vc2 = [[DictionaryVC alloc] init];
             [self.navigationController pushViewController:vc2 animated:YES];
             break;
         }
         case 2:
         {
-            ThreadMainVC *vc3 = [[ThreadMainVC alloc] init];
-            vc3.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc3 animated:YES];
+         
             break;
         }
         case 3:
         {
-            FMDBVC *vc4 = [[FMDBVC alloc] init];
-            vc4.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc4 animated:YES];
+         
             break;
         }
         case 4:
         {
-            PhotoMainVC *vc5 = [[PhotoMainVC alloc] init];
-            vc5.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc5 animated:YES];
+          
             break;
         }
         case 5:
         {
-            MethodMainVC *vc6 = [[MethodMainVC alloc] init];
-            vc6.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc6 animated:YES];
+        
             break;
         }
         case 6:
         {
-            ScrollShowMainVC *vc7 = [[ScrollShowMainVC alloc] init];
-            vc7.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc7 animated:YES];
+        
             break;
         }
         default:
             break;
             
     }
-
+    
 }
 
 #pragma mark - Getters and Setters
@@ -145,11 +123,13 @@
     return _tableView;
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

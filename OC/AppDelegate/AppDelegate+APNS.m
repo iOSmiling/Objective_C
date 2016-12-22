@@ -13,8 +13,6 @@
 -(void)initAPNSServse:(UIApplication *)application withOptions:(NSDictionary *)launchOptions
 {
 
-
-
 }
 
 @end
