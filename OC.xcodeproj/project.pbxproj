@@ -55,6 +55,17 @@
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
 		A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */; };
 		A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */; };
+		A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059941E0BBFA300EF5D1B /* JFAssetHelper.m */; };
+		A4C059A41E0BBFA300EF5D1B /* JFImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059961E0BBFA300EF5D1B /* JFImageCollectionViewController.m */; };
+		A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059981E0BBFA300EF5D1B /* JFImageGroupTableViewController.m */; };
+		A4C059A61E0BBFA300EF5D1B /* JFImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0599A1E0BBFA300EF5D1B /* JFImageManager.m */; };
+		A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0599C1E0BBFA300EF5D1B /* JFImagePickerController.m */; };
+		A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0599E1E0BBFA300EF5D1B /* JFImagePickerViewCell.m */; };
+		A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */; };
+		A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */; };
+		A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C059AB1E0BCA4E00EF5D1B /* movies.plist */; };
+		A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */; };
+		A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */; };
 		A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */; };
 		A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A311E0A5B2B0057C297 /* JKImagePickerController.strings */; };
 		A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A331E0A5B2B0057C297 /* ImagesPicker.xcassets */; };
@@ -189,6 +200,27 @@
 		A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodMainVC.m; sourceTree = "<group>"; };
 		A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryVC.h; sourceTree = "<group>"; };
 		A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryVC.m; sourceTree = "<group>"; };
+		A4C059931E0BBFA300EF5D1B /* JFAssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAssetHelper.h; sourceTree = "<group>"; };
+		A4C059941E0BBFA300EF5D1B /* JFAssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAssetHelper.m; sourceTree = "<group>"; };
+		A4C059951E0BBFA300EF5D1B /* JFImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageCollectionViewController.h; sourceTree = "<group>"; };
+		A4C059961E0BBFA300EF5D1B /* JFImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageCollectionViewController.m; sourceTree = "<group>"; };
+		A4C059971E0BBFA300EF5D1B /* JFImageGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageGroupTableViewController.h; sourceTree = "<group>"; };
+		A4C059981E0BBFA300EF5D1B /* JFImageGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageGroupTableViewController.m; sourceTree = "<group>"; };
+		A4C059991E0BBFA300EF5D1B /* JFImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageManager.h; sourceTree = "<group>"; };
+		A4C0599A1E0BBFA300EF5D1B /* JFImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageManager.m; sourceTree = "<group>"; };
+		A4C0599B1E0BBFA300EF5D1B /* JFImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerController.h; sourceTree = "<group>"; };
+		A4C0599C1E0BBFA300EF5D1B /* JFImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerController.m; sourceTree = "<group>"; };
+		A4C0599D1E0BBFA300EF5D1B /* JFImagePickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerViewCell.h; sourceTree = "<group>"; };
+		A4C0599E1E0BBFA300EF5D1B /* JFImagePickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerViewCell.m; sourceTree = "<group>"; };
+		A4C0599F1E0BBFA300EF5D1B /* JFPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		A4C059A11E0BBFA300EF5D1B /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
+		A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
+		A4C059AB1E0BCA4E00EF5D1B /* movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
+		A4C059AD1E0BCA5800EF5D1B /* ZXMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovieBrowser.h; sourceTree = "<group>"; };
+		A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
+		A4C059AF1E0BCA5800EF5D1B /* ZXMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovie.h; sourceTree = "<group>"; };
+		A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
 		A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
 		A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
 		A4D57A321E0A5B2B0057C297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
@@ -292,6 +324,11 @@
 		A4062CD21E0A53050083810B /* ScrollViewTwo */ = {
 			isa = PBXGroup;
 			children = (
+				A4C059AD1E0BCA5800EF5D1B /* ZXMovieBrowser.h */,
+				A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */,
+				A4C059AF1E0BCA5800EF5D1B /* ZXMovie.h */,
+				A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */,
+				A4C059AB1E0BCA4E00EF5D1B /* movies.plist */,
 				A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */,
 				A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */,
 			);
@@ -391,6 +428,7 @@
 		A471357F1E08DCCA00D1E83D /* XMImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				A4C059921E0BBF9700EF5D1B /* JF */,
 				A4D57A2F1E0A5B2B0057C297 /* JK */,
 			);
 			path = XMImagePicker;
@@ -521,6 +559,29 @@
 				A488A7261E07F7A50087D92A /* CATransitionVC.m */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		A4C059921E0BBF9700EF5D1B /* JF */ = {
+			isa = PBXGroup;
+			children = (
+				A4C059931E0BBFA300EF5D1B /* JFAssetHelper.h */,
+				A4C059941E0BBFA300EF5D1B /* JFAssetHelper.m */,
+				A4C059951E0BBFA300EF5D1B /* JFImageCollectionViewController.h */,
+				A4C059961E0BBFA300EF5D1B /* JFImageCollectionViewController.m */,
+				A4C059971E0BBFA300EF5D1B /* JFImageGroupTableViewController.h */,
+				A4C059981E0BBFA300EF5D1B /* JFImageGroupTableViewController.m */,
+				A4C059991E0BBFA300EF5D1B /* JFImageManager.h */,
+				A4C0599A1E0BBFA300EF5D1B /* JFImageManager.m */,
+				A4C0599B1E0BBFA300EF5D1B /* JFImagePickerController.h */,
+				A4C0599C1E0BBFA300EF5D1B /* JFImagePickerController.m */,
+				A4C0599D1E0BBFA300EF5D1B /* JFImagePickerViewCell.h */,
+				A4C0599E1E0BBFA300EF5D1B /* JFImagePickerViewCell.m */,
+				A4C0599F1E0BBFA300EF5D1B /* JFPhotoBrowserViewController.h */,
+				A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */,
+				A4C059A11E0BBFA300EF5D1B /* JFPhotoView.h */,
+				A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */,
+			);
+			path = JF;
 			sourceTree = "<group>";
 		};
 		A4D57A2F1E0A5B2B0057C297 /* JK */ = {
@@ -697,6 +758,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */,
+				A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */,
 				A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */,
 				A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */,
 			);
@@ -774,12 +836,14 @@
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
+				A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
+				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
 				A488A72A1E07F8350087D92A /* SettingVC.m in Sources */,
@@ -787,6 +851,7 @@
 				A471355D1E08CA5F00D1E83D /* ImageModel.m in Sources */,
 				A488A7061E07F6E10087D92A /* AnimationViewController.m in Sources */,
 				A488A7091E07F70D0087D92A /* AnimationFrameVC.m in Sources */,
+				A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */,
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
@@ -799,6 +864,7 @@
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
+				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
@@ -809,23 +875,29 @@
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
 				A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */,
+				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
+				A4C059A41E0BBFA300EF5D1B /* JFImageCollectionViewController.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A4D57A5A1E0A5B2B0057C297 /* JKPhotoBrowserCell.m in Sources */,
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
 				A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */,
+				A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
+				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
 				A4D57A581E0A5B2B0057C297 /* JKImagePickerController.m in Sources */,
 				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
 				A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */,
 				A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */,
 				A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */,
+				A4C059A61E0BBFA300EF5D1B /* JFImageManager.m in Sources */,
+				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
 				A4D57A571E0A5B2B0057C297 /* JKAssetsViewCell.m in Sources */,
 			);
