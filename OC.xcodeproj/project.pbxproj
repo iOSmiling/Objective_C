@@ -82,6 +82,8 @@
 		A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4B1E0A5B2B0057C297 /* JKUtil.m */; };
 		A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4D1E0A5B2B0057C297 /* PhotoAlbumManager.m */; };
 		A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */; };
+		A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */; };
+		A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BFF1E0CBD37003D9F23 /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +254,10 @@
 		A4D57A4D1E0A5B2B0057C297 /* PhotoAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumManager.m; sourceTree = "<group>"; };
 		A4D57A4E1E0A5B2B0057C297 /* UIView+JKPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKPicker.h"; sourceTree = "<group>"; };
 		A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKPicker.m"; sourceTree = "<group>"; };
+		A4D64BF71E0CBC5A003D9F23 /* KVOVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOVC.h; sourceTree = "<group>"; };
+		A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
+		A4D64BFE1E0CBD37003D9F23 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		A4D64BFF1E0CBD37003D9F23 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +416,9 @@
 				A47135701E08D21E00D1E83D /* OCMethodVC.m */,
 				A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */,
 				A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */,
+				A4D64BF71E0CBC5A003D9F23 /* KVOVC.h */,
+				A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */,
+				A4D64BFD1E0CBD37003D9F23 /* Model */,
 			);
 			path = OCFuntionVC;
 			sourceTree = "<group>";
@@ -633,6 +642,15 @@
 				A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		A4D64BFD1E0CBD37003D9F23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4D64BFE1E0CBD37003D9F23 /* UserModel.h */,
+				A4D64BFF1E0CBD37003D9F23 /* UserModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FE4820C2677D47CAD278DF89 /* Pods */ = {
@@ -860,6 +878,7 @@
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
+				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
@@ -888,6 +907,7 @@
 				A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
+				A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
