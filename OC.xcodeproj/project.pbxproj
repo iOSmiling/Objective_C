@@ -84,6 +84,13 @@
 		A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */; };
 		A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */; };
 		A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BFF1E0CBD37003D9F23 /* UserModel.m */; };
+		A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BA31E12073C00FA932B /* CollectionMainVC.m */; };
+		A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */; };
+		A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */; };
+		A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */; };
+		A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF91E12406D00FA932B /* ShopModel.m */; };
+		A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BFB1E12407D00FA932B /* Foundation+Log.m */; };
+		A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4F86BFD1E1249BE00FA932B /* 1.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +265,18 @@
 		A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
 		A4D64BFE1E0CBD37003D9F23 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		A4D64BFF1E0CBD37003D9F23 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		A4F86BA21E12073C00FA932B /* CollectionMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionMainVC.h; sourceTree = "<group>"; };
+		A4F86BA31E12073C00FA932B /* CollectionMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMainVC.m; sourceTree = "<group>"; };
+		A4F86BEF1E1218BE00FA932B /* CollectionWaterFallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionWaterFallVC.h; sourceTree = "<group>"; };
+		A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionWaterFallVC.m; sourceTree = "<group>"; };
+		A4F86BF11E1218BE00FA932B /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		A4F86BF51E1218ED00FA932B /* WaterFlowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCollectionViewCell.h; sourceTree = "<group>"; };
+		A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCollectionViewCell.m; sourceTree = "<group>"; };
+		A4F86BF81E12406D00FA932B /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
+		A4F86BF91E12406D00FA932B /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
+		A4F86BFB1E12407D00FA932B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		A4F86BFD1E1249BE00FA932B /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +389,7 @@
 				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
 				A47135541E08C7DA00D1E83D /* UIImage+Extend.h */,
 				A47135551E08C7DA00D1E83D /* UIImage+Extend.m */,
+				A4F86BFB1E12407D00FA932B /* Foundation+Log.m */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -478,6 +498,7 @@
 				A430C7161E08BDB100681AFD /* GestureVC */,
 				A471354C1E08C5F200D1E83D /* ThreadVC */,
 				A4062CBE1E0A4D520083810B /* UISrollView */,
+				A4F86BA11E12071800FA932B /* UICollectionView */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
 				A47135571E08CA2600D1E83D /* FMDB */,
 				A488A6BE1E07C2780087D92A /* Supporting Files */,
@@ -653,6 +674,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A4F86BA11E12071800FA932B /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A4F86BA21E12073C00FA932B /* CollectionMainVC.h */,
+				A4F86BA31E12073C00FA932B /* CollectionMainVC.m */,
+				A4F86BEE1E1218BE00FA932B /* 瀑布流 */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		A4F86BEE1E1218BE00FA932B /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				A4F86BEF1E1218BE00FA932B /* CollectionWaterFallVC.h */,
+				A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */,
+				A4F86BF51E1218ED00FA932B /* WaterFlowCollectionViewCell.h */,
+				A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */,
+				A4F86BF81E12406D00FA932B /* ShopModel.h */,
+				A4F86BF91E12406D00FA932B /* ShopModel.m */,
+				A4F86BF11E1218BE00FA932B /* WaterFlowLayout.h */,
+				A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */,
+				A4F86BFD1E1249BE00FA932B /* 1.plist */,
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
 		FE4820C2677D47CAD278DF89 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +822,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */,
 				A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */,
 				A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */,
 				A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */,
@@ -861,6 +909,7 @@
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
+				A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */,
 				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
@@ -876,16 +925,21 @@
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
 				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
+				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
+				A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */,
 				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
+				A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
+				A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
+				A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */,
 				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,

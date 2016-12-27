@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-OC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>28954567E8537CBF647C105DB0E1C9C8</key>
+		<key>5F2E3F20F2985A6A70FE852584F1997E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>956D9A83FEC4552DD72BD8C12F534456</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3393B322FFBE86A1BBFB4717EE25DE2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA70EC6A0A6016E3E09DF484F5DF0992</key>
+		<key>ECF532592F1DF743ABA9456958E9C0E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

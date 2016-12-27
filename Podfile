@@ -7,6 +7,8 @@ target 'OC' do
  pod  'AFNetworking'
  pod 'SDWebImage/WebP'
  pod 'SVProgressHUD'
+ pod 'MJRefresh'
+ pod 'MJExtension'
 end
 
 

@@ -14,6 +14,7 @@
 #import "PhotoMainVC.h"
 #import "MethodMainVC.h"
 #import "ScrollShowMainVC.h"
+#import "CollectionMainVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -41,6 +42,7 @@
     [_array addObject:@"图片操作"];
     [_array addObject:@"OC常用方法"];
     [_array addObject:@"ScrollView"];
+    [_array addObject:@"Collection"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -123,6 +125,14 @@
             ScrollShowMainVC *vc7 = [[ScrollShowMainVC alloc] init];
             vc7.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc7 animated:YES];
+            break;
+        }
+        case 7:
+        {
+            CollectionMainVC *vc = [[CollectionMainVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        
             break;
         }
         default:
