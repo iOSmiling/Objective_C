@@ -9,5 +9,14 @@
 #import "OCBaseViewController.h"
 
 @interface DictionaryVC : OCBaseViewController
+{
+    int radius;
+    int x;
+    int y;
+}
+
+- (int)getX;
+- (void)setX:(int)_x;
+
 
 @end

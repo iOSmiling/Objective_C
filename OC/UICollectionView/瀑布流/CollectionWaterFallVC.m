@@ -21,6 +21,10 @@ static NSString *Cell = @"UICollectionViewCell";
 @property (nonatomic,strong) WaterFlowLayout *layout;
 @property (nonatomic,strong) NSMutableArray *array;
 
+
+
+@property (nonatomic,assign) CGFloat  columnCount ; //列数
+
 @end
 
 @implementation CollectionWaterFallVC
@@ -29,6 +33,8 @@ static NSString *Cell = @"UICollectionViewCell";
 {
     [super viewDidLoad];
     self.navigationItem.title = @"瀑布流";
+
+    self.columnCount = 2;
     
     [self.view addSubview:self.collectionView];
 
@@ -93,20 +99,18 @@ static NSString *Cell = @"UICollectionViewCell";
 - (CGFloat)waterflowlayout:(WaterFlowLayout *)waterlayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
 {
     ShopModel *shop = self.array[index];
-    
     //30 是 价格显示的高度
-    
     return (itemWidth * shop.h / shop.w) +30;
 }
 
 - (CGFloat)rowMarginInWaterflowLayout:(WaterFlowLayout *)waterflowLayout
 {
-    return 20;
+    return 10;
 }
 
 - (CGFloat)columnCountInWaterflowLayout:(WaterFlowLayout *)waterflowLayout
 {
-    return 2;
+    return self.columnCount;
 }
 
 - (UIEdgeInsets)edgeInsetsInWaterflowLayout:(WaterFlowLayout *)waterflowLayout

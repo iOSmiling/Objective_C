@@ -10,11 +10,11 @@
 #import "AnimationViewController.h"
 #import "GestureVC.h"
 #import "ThreadMainVC.h"
-#import "FMDBVC.h"
 #import "PhotoMainVC.h"
 #import "MethodMainVC.h"
 #import "ScrollShowMainVC.h"
 #import "CollectionMainVC.h"
+#import "StorageMainVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +38,7 @@
     [_array addObject:@"Animation"];
     [_array addObject:@"GestureVC"];
     [_array addObject:@"Thread"];
-    [_array addObject:@"FMDB"];
+    [_array addObject:@"Storage"];
     [_array addObject:@"图片操作"];
     [_array addObject:@"OC常用方法"];
     [_array addObject:@"ScrollView"];
@@ -101,7 +101,7 @@
         }
         case 3:
         {
-            FMDBVC *vc4 = [[FMDBVC alloc] init];
+            StorageMainVC *vc4 = [[StorageMainVC alloc] init];
             vc4.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc4 animated:YES];
             break;

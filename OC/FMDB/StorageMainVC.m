@@ -1,38 +1,39 @@
 //
-//  SettingVC.m
+//  StorageVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2016/12/19.
+//  Created by 薛坤龙 on 2016/12/27.
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "SettingVC.h"
-#import "IntoSystemLimitsVC.h"
+#import "StorageMainVC.h"
+#import "FMDBVC.h"
 
-@interface SettingVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface StorageMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong,nonnull) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *array;
 
-
 @end
 
-@implementation SettingVC
+@implementation StorageMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"设置";
+    
+    self.navigationItem.title = @"数据存储";
     
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"权限设置跳转"];
+    [_array addObject:@"FMDB"];
   
-    
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
-  
+ 
 }
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -63,19 +64,19 @@
     {
         case 0:
         {
-            IntoSystemLimitsVC *vc = [[IntoSystemLimitsVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
+            FMDBVC *vc1 = [[FMDBVC alloc] init];
+            vc1.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc1 animated:YES];
             break;
         }
         case 1:
         {
- 
+     
             break;
         }
         case 2:
         {
- 
+    
             break;
         }
         case 3:
@@ -85,12 +86,12 @@
         }
         case 4:
         {
-    
+   
             break;
         }
         case 5:
         {
-     
+    
             break;
         }
         case 6:
@@ -100,7 +101,7 @@
         }
         case 7:
         {
-     
+   
             
             break;
         }
@@ -128,7 +129,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
+   
 }
 
 

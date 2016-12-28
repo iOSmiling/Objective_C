@@ -17,14 +17,6 @@
  */
 @property(nonatomic,strong) ShopModel *shopModel;
 
-/**
- *  商品的图片设置
- */
-@property (strong, nonatomic)  UIImageView *picture;
 
-/**
- *  商品的名字
- */
-@property (strong, nonatomic)  UILabel *priceLabel;
 
 @end

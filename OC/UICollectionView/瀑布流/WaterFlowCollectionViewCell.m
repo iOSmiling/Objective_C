@@ -10,6 +10,13 @@
 #import <UIImageView+WebCache.h>
 #import "ShopModel.h"
 
+@interface WaterFlowCollectionViewCell ()
+
+@property (strong, nonatomic)  UIImageView *picture;
+@property (strong, nonatomic)  UILabel *priceLabel;
+
+@end
+
 @implementation WaterFlowCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -33,7 +40,7 @@
 {
     _shopModel = shopModel;
     
-    //图片的高度宽度 (model 中的数据 图片的真实高度宽度)
+    //图片的高度宽度 (model 中的数据 图片的真实高度宽度)      ？如果model中宽高为空怎么办
     CGFloat imagH = shopModel.h;
     CGFloat imagW = shopModel.w;
     

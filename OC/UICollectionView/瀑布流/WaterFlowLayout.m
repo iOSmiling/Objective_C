@@ -10,10 +10,13 @@
 
 /** 默认列数 */
 static const NSInteger JGDefaultColumnCount = 3;
+
 /** 每一列之间的间距 */
 static const NSInteger JGDefaultColumnMargin = 10;
-/** 默认列数 */
+
+/** 每一行之间的间距 */
 static const NSInteger JGDefaultRowMargin = 10;
+
 /** 边缘间距 */
 static const UIEdgeInsets JGDefaultEdgeInsets = {10, 10, 10, 10};
 
@@ -48,6 +51,7 @@ static const UIEdgeInsets JGDefaultEdgeInsets = {10, 10, 10, 10};
     
     //清除以前计算的所有高度
     [self.columnHeights removeAllObjects];
+    
     for (NSInteger i = 0; i < self.columnCount; i++)
     {
         [self.columnHeights addObject:@(self.edgeInsets.top)];

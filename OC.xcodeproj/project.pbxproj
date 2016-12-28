@@ -53,6 +53,7 @@
 		A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7231E07F7960087D92A /* CAPropertyAnimationVC.m */; };
 		A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7261E07F7A50087D92A /* CATransitionVC.m */; };
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
+		A4BFBF191E13513C00A54FF1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF181E13513C00A54FF1 /* Person.m */; };
 		A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */; };
 		A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */; };
 		A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059941E0BBFA300EF5D1B /* JFAssetHelper.m */; };
@@ -91,6 +92,8 @@
 		A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF91E12406D00FA932B /* ShopModel.m */; };
 		A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BFB1E12407D00FA932B /* Foundation+Log.m */; };
 		A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4F86BFD1E1249BE00FA932B /* 1.plist */; };
+		A4F86C011E125A8D00FA932B /* StorageMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86C001E125A8D00FA932B /* StorageMainVC.m */; };
+		A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +208,8 @@
 		A488A7261E07F7A50087D92A /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
 		A488A7281E07F8350087D92A /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		A488A7291E07F8350087D92A /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		A4BFBF171E13513C00A54FF1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A4BFBF181E13513C00A54FF1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A4C059881E0B7F9900EF5D1B /* MethodMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodMainVC.h; sourceTree = "<group>"; };
 		A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodMainVC.m; sourceTree = "<group>"; };
 		A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryVC.h; sourceTree = "<group>"; };
@@ -277,6 +282,10 @@
 		A4F86BF91E12406D00FA932B /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
 		A4F86BFB1E12407D00FA932B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		A4F86BFD1E1249BE00FA932B /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		A4F86BFF1E125A8D00FA932B /* StorageMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMainVC.h; sourceTree = "<group>"; };
+		A4F86C001E125A8D00FA932B /* StorageMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMainVC.m; sourceTree = "<group>"; };
+		A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoSystemLimitsVC.h; sourceTree = "<group>"; };
+		A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoSystemLimitsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +406,8 @@
 		A47135571E08CA2600D1E83D /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				A4F86BFF1E125A8D00FA932B /* StorageMainVC.h */,
+				A4F86C001E125A8D00FA932B /* StorageMainVC.m */,
 				A47135641E08CE5C00D1E83D /* FMDBVC.h */,
 				A47135651E08CE5C00D1E83D /* FMDBVC.m */,
 				A471355B1E08CA5F00D1E83D /* ImageModel.h */,
@@ -501,6 +512,7 @@
 				A4F86BA11E12071800FA932B /* UICollectionView */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
 				A47135571E08CA2600D1E83D /* FMDB */,
+				A4F86C021E125C8C00FA932B /* SystemVC */,
 				A488A6BE1E07C2780087D92A /* Supporting Files */,
 			);
 			path = OC;
@@ -668,6 +680,8 @@
 		A4D64BFD1E0CBD37003D9F23 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A4BFBF171E13513C00A54FF1 /* Person.h */,
+				A4BFBF181E13513C00A54FF1 /* Person.m */,
 				A4D64BFE1E0CBD37003D9F23 /* UserModel.h */,
 				A4D64BFF1E0CBD37003D9F23 /* UserModel.m */,
 			);
@@ -698,6 +712,15 @@
 				A4F86BFD1E1249BE00FA932B /* 1.plist */,
 			);
 			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		A4F86C021E125C8C00FA932B /* SystemVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */,
+				A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */,
+			);
+			path = SystemVC;
 			sourceTree = "<group>";
 		};
 		FE4820C2677D47CAD278DF89 /* Pods */ = {
@@ -899,6 +922,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F86C011E125A8D00FA932B /* StorageMainVC.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
@@ -946,6 +970,7 @@
 				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
 				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
+				A4BFBF191E13513C00A54FF1 /* Person.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
 				A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */,
 				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
@@ -966,6 +991,7 @@
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
 				A4D57A581E0A5B2B0057C297 /* JKImagePickerController.m in Sources */,
+				A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */,
 				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
 				A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */,
 				A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */,
