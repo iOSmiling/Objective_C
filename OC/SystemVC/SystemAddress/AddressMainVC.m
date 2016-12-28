@@ -1,16 +1,19 @@
 //
-//  SettingVC.m
+//  AddressMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2016/12/19.
+//  Created by 薛坤龙 on 2016/12/28.
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "SettingVC.h"
-#import "IntoSystemLimitsVC.h"
 #import "AddressMainVC.h"
 
-@interface SettingVC ()<UITableViewDelegate,UITableViewDataSource>
+#import "AddressOneVC.h"
+#import "AddressListVC.h"
+#import "AddressSortListVC.h"
+
+
+@interface AddressMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong,nonnull) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *array;
@@ -18,22 +21,24 @@
 
 @end
 
-@implementation SettingVC
+@implementation AddressMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"系统";
+    
+    self.navigationItem.title = @"通讯录";
     
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"权限设置跳转"];
-    [_array addObject:@"通讯录"];
-  
+    [_array addObject:@"通讯录单人"];
+    [_array addObject:@"通讯录列表"];
+    [_array addObject:@"通讯录排序"];
+    
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
-  
+   
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -65,47 +70,45 @@
     {
         case 0:
         {
-            IntoSystemLimitsVC *vc = [[IntoSystemLimitsVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
+            AddressOneVC *vc = [[AddressOneVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 1:
         {
-            AddressMainVC *vc = [[AddressMainVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
+            AddressListVC *vc = [[AddressListVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
- 
             break;
         }
         case 2:
         {
- 
+            AddressSortListVC *vc = [[AddressSortListVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 3:
         {
-     
+            
             break;
         }
         case 4:
         {
-    
+            
             break;
         }
         case 5:
         {
-     
+            
             break;
         }
         case 6:
         {
-  
+            
             break;
         }
         case 7:
         {
-     
+            
             
             break;
         }
@@ -133,9 +136,8 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
+ 
 }
-
 
 
 @end

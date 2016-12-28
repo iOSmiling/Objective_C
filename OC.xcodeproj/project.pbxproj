@@ -54,6 +54,26 @@
 		A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7261E07F7A50087D92A /* CATransitionVC.m */; };
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
 		A4BFBF191E13513C00A54FF1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF181E13513C00A54FF1 /* Person.m */; };
+		A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF1B1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m */; };
+		A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF391E13675900A54FF1 /* FCPhotoManager.m */; };
+		A4BFBF481E13675900A54FF1 /* PhotoManagerResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBF3A1E13675900A54FF1 /* PhotoManagerResource.bundle */; };
+		A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF3D1E13675900A54FF1 /* BigPhotoImageCell.m */; };
+		A4BFBF4A1E13675900A54FF1 /* BigPhotoImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBF3E1E13675900A54FF1 /* BigPhotoImageCell.xib */; };
+		A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF401E13675900A54FF1 /* PhotoImageCell.m */; };
+		A4BFBF4C1E13675900A54FF1 /* PhotoImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BFBF411E13675900A54FF1 /* PhotoImageCell.xib */; };
+		A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF441E13675900A54FF1 /* FCBigImageViewController.m */; };
+		A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF461E13675900A54FF1 /* FCSmallImageViewController.m */; };
+		A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF511E13850000A54FF1 /* OCBaseViewController+getContactInfor.m */; };
+		A4BFBF541E13852100A54FF1 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFBF531E13852100A54FF1 /* ContactsUI.framework */; };
+		A4BFBF571E13853A00A54FF1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFBF551E13853A00A54FF1 /* AddressBook.framework */; };
+		A4BFBF581E13853A00A54FF1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFBF561E13853A00A54FF1 /* AddressBookUI.framework */; };
+		A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF5D1E13863A00A54FF1 /* AddressMainVC.m */; };
+		A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF601E13864E00A54FF1 /* AddressListVC.m */; };
+		A4BFBF641E13867200A54FF1 /* AddressOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF631E13867200A54FF1 /* AddressOneVC.m */; };
+		A4BFBF671E13919900A54FF1 /* AddressSortListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF661E13919900A54FF1 /* AddressSortListVC.m */; };
+		A4BFBF701E13926700A54FF1 /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF6A1E13926700A54FF1 /* PPGetAddressBook.m */; };
+		A4BFBF711E13926700A54FF1 /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF6C1E13926700A54FF1 /* PPAddressBookHandle.m */; };
+		A4BFBF721E13926700A54FF1 /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF6E1E13926700A54FF1 /* PPPersonModel.m */; };
 		A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */; };
 		A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */; };
 		A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059941E0BBFA300EF5D1B /* JFAssetHelper.m */; };
@@ -210,6 +230,41 @@
 		A488A7291E07F8350087D92A /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		A4BFBF171E13513C00A54FF1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A4BFBF181E13513C00A54FF1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A4BFBF1A1E1363A500A54FF1 /* XMSelectPhotoTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSelectPhotoTwoVC.h; sourceTree = "<group>"; };
+		A4BFBF1B1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSelectPhotoTwoVC.m; sourceTree = "<group>"; };
+		A4BFBF381E13675900A54FF1 /* FCPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPhotoManager.h; sourceTree = "<group>"; };
+		A4BFBF391E13675900A54FF1 /* FCPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPhotoManager.m; sourceTree = "<group>"; };
+		A4BFBF3A1E13675900A54FF1 /* PhotoManagerResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PhotoManagerResource.bundle; sourceTree = "<group>"; };
+		A4BFBF3C1E13675900A54FF1 /* BigPhotoImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigPhotoImageCell.h; sourceTree = "<group>"; };
+		A4BFBF3D1E13675900A54FF1 /* BigPhotoImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigPhotoImageCell.m; sourceTree = "<group>"; };
+		A4BFBF3E1E13675900A54FF1 /* BigPhotoImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigPhotoImageCell.xib; sourceTree = "<group>"; };
+		A4BFBF3F1E13675900A54FF1 /* PhotoImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImageCell.h; sourceTree = "<group>"; };
+		A4BFBF401E13675900A54FF1 /* PhotoImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImageCell.m; sourceTree = "<group>"; };
+		A4BFBF411E13675900A54FF1 /* PhotoImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoImageCell.xib; sourceTree = "<group>"; };
+		A4BFBF431E13675900A54FF1 /* FCBigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBigImageViewController.h; sourceTree = "<group>"; };
+		A4BFBF441E13675900A54FF1 /* FCBigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBigImageViewController.m; sourceTree = "<group>"; };
+		A4BFBF451E13675900A54FF1 /* FCSmallImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSmallImageViewController.h; sourceTree = "<group>"; };
+		A4BFBF461E13675900A54FF1 /* FCSmallImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCSmallImageViewController.m; sourceTree = "<group>"; };
+		A4BFBF501E13850000A54FF1 /* OCBaseViewController+getContactInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCBaseViewController+getContactInfor.h"; sourceTree = "<group>"; };
+		A4BFBF511E13850000A54FF1 /* OCBaseViewController+getContactInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCBaseViewController+getContactInfor.m"; sourceTree = "<group>"; };
+		A4BFBF531E13852100A54FF1 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		A4BFBF551E13853A00A54FF1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A4BFBF561E13853A00A54FF1 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		A4BFBF5C1E13863A00A54FF1 /* AddressMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressMainVC.h; sourceTree = "<group>"; };
+		A4BFBF5D1E13863A00A54FF1 /* AddressMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressMainVC.m; sourceTree = "<group>"; };
+		A4BFBF5F1E13864E00A54FF1 /* AddressListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListVC.h; sourceTree = "<group>"; };
+		A4BFBF601E13864E00A54FF1 /* AddressListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListVC.m; sourceTree = "<group>"; };
+		A4BFBF621E13867200A54FF1 /* AddressOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressOneVC.h; sourceTree = "<group>"; };
+		A4BFBF631E13867200A54FF1 /* AddressOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressOneVC.m; sourceTree = "<group>"; };
+		A4BFBF651E13919900A54FF1 /* AddressSortListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSortListVC.h; sourceTree = "<group>"; };
+		A4BFBF661E13919900A54FF1 /* AddressSortListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSortListVC.m; sourceTree = "<group>"; };
+		A4BFBF681E13926700A54FF1 /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
+		A4BFBF691E13926700A54FF1 /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
+		A4BFBF6A1E13926700A54FF1 /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
+		A4BFBF6B1E13926700A54FF1 /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
+		A4BFBF6C1E13926700A54FF1 /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
+		A4BFBF6D1E13926700A54FF1 /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
+		A4BFBF6E1E13926700A54FF1 /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
 		A4C059881E0B7F9900EF5D1B /* MethodMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodMainVC.h; sourceTree = "<group>"; };
 		A4C059891E0B7F9900EF5D1B /* MethodMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodMainVC.m; sourceTree = "<group>"; };
 		A4C0598B1E0B816700EF5D1B /* DictionaryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryVC.h; sourceTree = "<group>"; };
@@ -293,6 +348,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BFBF571E13853A00A54FF1 /* AddressBook.framework in Frameworks */,
+				A4BFBF581E13853A00A54FF1 /* AddressBookUI.framework in Frameworks */,
+				A4BFBF541E13852100A54FF1 /* ContactsUI.framework in Frameworks */,
 				A47135B31E08E3B500D1E83D /* AVFoundation.framework in Frameworks */,
 				6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */,
 			);
@@ -318,6 +376,9 @@
 		0E465C6D2E23888B6BAC9A16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4BFBF551E13853A00A54FF1 /* AddressBook.framework */,
+				A4BFBF561E13853A00A54FF1 /* AddressBookUI.framework */,
+				A4BFBF531E13852100A54FF1 /* ContactsUI.framework */,
 				A47135B21E08E3B500D1E83D /* AVFoundation.framework */,
 				81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */,
 			);
@@ -432,6 +493,8 @@
 				A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */,
 				A47135AF1E08DDE300D1E83D /* SavePhotoToAlbumVC.h */,
 				A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */,
+				A4BFBF1A1E1363A500A54FF1 /* XMSelectPhotoTwoVC.h */,
+				A4BFBF1B1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m */,
 				A471357C1E08DC1300D1E83D /* PhotoCell.h */,
 				A471357D1E08DC1300D1E83D /* PhotoCell.m */,
 			);
@@ -468,6 +531,7 @@
 		A471357F1E08DCCA00D1E83D /* XMImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				A4BFBF361E13675900A54FF1 /* FCPhotoManager */,
 				A4C059921E0BBF9700EF5D1B /* JF */,
 				A4D57A2F1E0A5B2B0057C297 /* JK */,
 			);
@@ -603,6 +667,83 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		A4BFBF361E13675900A54FF1 /* FCPhotoManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF371E13675900A54FF1 /* Model */,
+				A4BFBF3A1E13675900A54FF1 /* PhotoManagerResource.bundle */,
+				A4BFBF3B1E13675900A54FF1 /* View */,
+				A4BFBF421E13675900A54FF1 /* ViewController */,
+			);
+			path = FCPhotoManager;
+			sourceTree = "<group>";
+		};
+		A4BFBF371E13675900A54FF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF381E13675900A54FF1 /* FCPhotoManager.h */,
+				A4BFBF391E13675900A54FF1 /* FCPhotoManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4BFBF3B1E13675900A54FF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF3C1E13675900A54FF1 /* BigPhotoImageCell.h */,
+				A4BFBF3D1E13675900A54FF1 /* BigPhotoImageCell.m */,
+				A4BFBF3E1E13675900A54FF1 /* BigPhotoImageCell.xib */,
+				A4BFBF3F1E13675900A54FF1 /* PhotoImageCell.h */,
+				A4BFBF401E13675900A54FF1 /* PhotoImageCell.m */,
+				A4BFBF411E13675900A54FF1 /* PhotoImageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4BFBF421E13675900A54FF1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF431E13675900A54FF1 /* FCBigImageViewController.h */,
+				A4BFBF441E13675900A54FF1 /* FCBigImageViewController.m */,
+				A4BFBF451E13675900A54FF1 /* FCSmallImageViewController.h */,
+				A4BFBF461E13675900A54FF1 /* FCSmallImageViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A4BFBF4F1E1384C500A54FF1 /* SystemAddress */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF6F1E13926700A54FF1 /* PPGetAddressBook */,
+				A4BFBF501E13850000A54FF1 /* OCBaseViewController+getContactInfor.h */,
+				A4BFBF511E13850000A54FF1 /* OCBaseViewController+getContactInfor.m */,
+				A4BFBF5C1E13863A00A54FF1 /* AddressMainVC.h */,
+				A4BFBF5D1E13863A00A54FF1 /* AddressMainVC.m */,
+				A4BFBF621E13867200A54FF1 /* AddressOneVC.h */,
+				A4BFBF631E13867200A54FF1 /* AddressOneVC.m */,
+				A4BFBF5F1E13864E00A54FF1 /* AddressListVC.h */,
+				A4BFBF601E13864E00A54FF1 /* AddressListVC.m */,
+				A4BFBF651E13919900A54FF1 /* AddressSortListVC.h */,
+				A4BFBF661E13919900A54FF1 /* AddressSortListVC.m */,
+			);
+			path = SystemAddress;
+			sourceTree = "<group>";
+		};
+		A4BFBF6F1E13926700A54FF1 /* PPGetAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				A4BFBF681E13926700A54FF1 /* PPSingleton.h */,
+				A4BFBF691E13926700A54FF1 /* PPGetAddressBook.h */,
+				A4BFBF6A1E13926700A54FF1 /* PPGetAddressBook.m */,
+				A4BFBF6B1E13926700A54FF1 /* PPAddressBookHandle.h */,
+				A4BFBF6C1E13926700A54FF1 /* PPAddressBookHandle.m */,
+				A4BFBF6D1E13926700A54FF1 /* PPPersonModel.h */,
+				A4BFBF6E1E13926700A54FF1 /* PPPersonModel.m */,
+			);
+			name = PPGetAddressBook;
+			path = "../../../../../../../Downloads/PPGetAddressBook-master/PPGetAddressBook/PPGetAddressBook";
+			sourceTree = "<group>";
+		};
 		A4C059921E0BBF9700EF5D1B /* JF */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,6 +860,7 @@
 			children = (
 				A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */,
 				A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */,
+				A4BFBF4F1E1384C500A54FF1 /* SystemAddress */,
 			);
 			path = SystemVC;
 			sourceTree = "<group>";
@@ -845,8 +987,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BFBF4C1E13675900A54FF1 /* PhotoImageCell.xib in Resources */,
 				A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */,
 				A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */,
+				A4BFBF481E13675900A54FF1 /* PhotoManagerResource.bundle in Resources */,
+				A4BFBF4A1E13675900A54FF1 /* BigPhotoImageCell.xib in Resources */,
 				A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */,
 				A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */,
 				A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */,
@@ -927,7 +1072,10 @@
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
 				A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */,
+				A4BFBF711E13926700A54FF1 /* PPAddressBookHandle.m in Sources */,
+				A4BFBF721E13926700A54FF1 /* PPPersonModel.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
+				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
@@ -949,6 +1097,7 @@
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
 				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
+				A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */,
 				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
@@ -957,15 +1106,19 @@
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
+				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
 				A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
+				A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */,
 				A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */,
+				A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */,
 				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
+				A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */,
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,
 				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
 				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
@@ -976,9 +1129,11 @@
 				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
+				A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
 				A4C059A41E0BBFA300EF5D1B /* JFImageCollectionViewController.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
+				A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A4D57A5A1E0A5B2B0057C297 /* JKPhotoBrowserCell.m in Sources */,
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
@@ -987,6 +1142,8 @@
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */,
+				A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */,
+				A4BFBF641E13867200A54FF1 /* AddressOneVC.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
@@ -996,9 +1153,11 @@
 				A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */,
 				A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */,
 				A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */,
+				A4BFBF701E13926700A54FF1 /* PPGetAddressBook.m in Sources */,
 				A4C059A61E0BBFA300EF5D1B /* JFImageManager.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
+				A4BFBF671E13919900A54FF1 /* AddressSortListVC.m in Sources */,
 				A4D57A571E0A5B2B0057C297 /* JKAssetsViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

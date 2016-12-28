@@ -10,6 +10,7 @@
 #import "SelectMorePhotoVC.h"
 #import "SavePhotoToAlbumVC.h"
 #import "SelectPhotoAndEditVC.h"
+#import "XMSelectPhotoTwoVC.h"
 
 @interface PhotoMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,9 +27,10 @@
     self.navigationItem.title = @"图片操作";
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"图片多选"];
+    [_array addObject:@"图片多选1"];
     [_array addObject:@"保存图片到系统相册"];
     [_array addObject:@"选取编辑"];
+    [_array addObject:@"图片多选2"];
    
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -86,6 +88,8 @@
         }
         case 3:
         {
+            XMSelectPhotoTwoVC *vc = [[XMSelectPhotoTwoVC alloc] init];
+             [self.navigationController pushViewController:vc animated:YES];
            
             break;
         }
