@@ -10,6 +10,7 @@
 #import "OCMethodVC.h"
 #import "DictionaryVC.h"
 #import "KVOVC.h"
+#import "StringVC.h"
 
 @interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,6 +34,7 @@
     [_array addObject:@"Method"];
     [_array addObject:@"字典"];
     [_array addObject:@"KVO"];
+    [_array addObject:@"NSString"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -87,7 +89,8 @@
         }
         case 3:
         {
-         
+            StringVC *vc = [[StringVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 4:

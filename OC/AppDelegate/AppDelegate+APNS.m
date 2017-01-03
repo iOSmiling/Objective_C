@@ -12,7 +12,17 @@
 
 -(void)initAPNSServse:(UIApplication *)application withOptions:(NSDictionary *)launchOptions
 {
-
+    
+    
 }
+
+
+- (void)APNS_applicationWillResignActive:(UIApplication *)application
+{
+    
+    
+    
+}
+
 
 @end

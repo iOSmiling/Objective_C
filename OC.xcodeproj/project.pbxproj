@@ -14,7 +14,27 @@
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
 		A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCD1E0A52DB0083810B /* LYScrollView.m */; };
 		A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */; };
+		A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A047F1E1B414D00187C9B /* NetworkToos.m */; };
+		A41C4BB21E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B8F1E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m */; };
+		A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B911E15FA1100F6AA64 /* NSDate+CLObjcSugar.m */; };
+		A41C4BB41E15FA1100F6AA64 /* NSDate+MacFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B931E15FA1100F6AA64 /* NSDate+MacFormatter.m */; };
+		A41C4BB51E15FA1100F6AA64 /* NSDictionary+CLMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B951E15FA1100F6AA64 /* NSDictionary+CLMerge.m */; };
+		A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B971E15FA1100F6AA64 /* NSDictionary+MAC.m */; };
+		A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B991E15FA1100F6AA64 /* NSObject+GCD.m */; };
+		A41C4BB81E15FA1100F6AA64 /* NSObject+JKReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B9B1E15FA1100F6AA64 /* NSObject+JKReflection.m */; };
+		A41C4BB91E15FA1100F6AA64 /* NSObject+JKRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B9D1E15FA1100F6AA64 /* NSObject+JKRuntime.m */; };
+		A41C4BBA1E15FA1100F6AA64 /* NSString+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4B9F1E15FA1100F6AA64 /* NSString+CLObjcSugar.m */; };
+		A41C4BBB1E15FA1100F6AA64 /* UIButton+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BA11E15FA1100F6AA64 /* UIButton+CLObjcSugar.m */; };
+		A41C4BBC1E15FA1100F6AA64 /* UIColor+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BA31E15FA1100F6AA64 /* UIColor+CLObjcSugar.m */; };
+		A41C4BBD1E15FA1100F6AA64 /* UIImage+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BA51E15FA1100F6AA64 /* UIImage+CLObjcSugar.m */; };
+		A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BA71E15FA1100F6AA64 /* UILabel+CLObjcSugar.m */; };
+		A41C4BBF1E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BA91E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m */; };
+		A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAB1E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m */; };
+		A41C4BC11E15FA1100F6AA64 /* UITextField+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAD1E15FA1100F6AA64 /* UITextField+CLObjcSugar.m */; };
+		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
+		A41C4BC31E15FA1100F6AA64 /* UIView+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BB11E15FA1100F6AA64 /* UIView+CLObjcSugar.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
+		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
 		A471354F1E08C61600D1E83D /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471354E1E08C61600D1E83D /* OperationVC.m */; };
 		A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135511E08C63600D1E83D /* ThreadMainVC.m */; };
 		A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135551E08C7DA00D1E83D /* UIImage+Extend.m */; };
@@ -149,8 +169,49 @@
 		A4062CCD1E0A52DB0083810B /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
 		A4062CCE1E0A52DB0083810B /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
 		A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
+		A41A047E1E1B414D00187C9B /* NetworkToos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkToos.h; sourceTree = "<group>"; };
+		A41A047F1E1B414D00187C9B /* NetworkToos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkToos.m; sourceTree = "<group>"; };
+		A41C4B8D1E15FA1100F6AA64 /* CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLObjcSugar.h; sourceTree = "<group>"; };
+		A41C4B8E1E15FA1100F6AA64 /* NSBundle+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4B8F1E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4B901E15FA1100F6AA64 /* NSDate+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4B911E15FA1100F6AA64 /* NSDate+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4B921E15FA1100F6AA64 /* NSDate+MacFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MacFormatter.h"; sourceTree = "<group>"; };
+		A41C4B931E15FA1100F6AA64 /* NSDate+MacFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MacFormatter.m"; sourceTree = "<group>"; };
+		A41C4B941E15FA1100F6AA64 /* NSDictionary+CLMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CLMerge.h"; sourceTree = "<group>"; };
+		A41C4B951E15FA1100F6AA64 /* NSDictionary+CLMerge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CLMerge.m"; sourceTree = "<group>"; };
+		A41C4B961E15FA1100F6AA64 /* NSDictionary+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MAC.h"; sourceTree = "<group>"; };
+		A41C4B971E15FA1100F6AA64 /* NSDictionary+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MAC.m"; sourceTree = "<group>"; };
+		A41C4B981E15FA1100F6AA64 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
+		A41C4B991E15FA1100F6AA64 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
+		A41C4B9A1E15FA1100F6AA64 /* NSObject+JKReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKReflection.h"; sourceTree = "<group>"; };
+		A41C4B9B1E15FA1100F6AA64 /* NSObject+JKReflection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKReflection.m"; sourceTree = "<group>"; };
+		A41C4B9C1E15FA1100F6AA64 /* NSObject+JKRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKRuntime.h"; sourceTree = "<group>"; };
+		A41C4B9D1E15FA1100F6AA64 /* NSObject+JKRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKRuntime.m"; sourceTree = "<group>"; };
+		A41C4B9E1E15FA1100F6AA64 /* NSString+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4B9F1E15FA1100F6AA64 /* NSString+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BA01E15FA1100F6AA64 /* UIButton+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BA11E15FA1100F6AA64 /* UIButton+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BA21E15FA1100F6AA64 /* UIColor+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BA31E15FA1100F6AA64 /* UIColor+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BA41E15FA1100F6AA64 /* UIImage+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BA51E15FA1100F6AA64 /* UIImage+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BA61E15FA1100F6AA64 /* UILabel+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BA71E15FA1100F6AA64 /* UILabel+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BA81E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BA91E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BAA1E15FA1100F6AA64 /* UIScreen+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BAB1E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BAC1E15FA1100F6AA64 /* UITextField+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BAD1E15FA1100F6AA64 /* UITextField+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CLObjcSugar.m"; sourceTree = "<group>"; };
+		A41C4BAE1E15FA1100F6AA64 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		A41C4BB01E15FA1100F6AA64 /* UIView+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLObjcSugar.h"; sourceTree = "<group>"; };
+		A41C4BB11E15FA1100F6AA64 /* UIView+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLObjcSugar.m"; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
+		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
+		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
 		A471354D1E08C61600D1E83D /* OperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationVC.h; sourceTree = "<group>"; };
 		A471354E1E08C61600D1E83D /* OperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationVC.m; sourceTree = "<group>"; };
 		A47135501E08C63600D1E83D /* ThreadMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadMainVC.h; sourceTree = "<group>"; };
@@ -430,6 +491,50 @@
 			path = ScrollViewTwo;
 			sourceTree = "<group>";
 		};
+		A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */ = {
+			isa = PBXGroup;
+			children = (
+				A41C4B8D1E15FA1100F6AA64 /* CLObjcSugar.h */,
+				A41C4B8E1E15FA1100F6AA64 /* NSBundle+CLObjcSugar.h */,
+				A41C4B8F1E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m */,
+				A41C4B901E15FA1100F6AA64 /* NSDate+CLObjcSugar.h */,
+				A41C4B911E15FA1100F6AA64 /* NSDate+CLObjcSugar.m */,
+				A41C4B921E15FA1100F6AA64 /* NSDate+MacFormatter.h */,
+				A41C4B931E15FA1100F6AA64 /* NSDate+MacFormatter.m */,
+				A41C4B941E15FA1100F6AA64 /* NSDictionary+CLMerge.h */,
+				A41C4B951E15FA1100F6AA64 /* NSDictionary+CLMerge.m */,
+				A41C4B961E15FA1100F6AA64 /* NSDictionary+MAC.h */,
+				A41C4B971E15FA1100F6AA64 /* NSDictionary+MAC.m */,
+				A41C4B981E15FA1100F6AA64 /* NSObject+GCD.h */,
+				A41C4B991E15FA1100F6AA64 /* NSObject+GCD.m */,
+				A41C4B9A1E15FA1100F6AA64 /* NSObject+JKReflection.h */,
+				A41C4B9B1E15FA1100F6AA64 /* NSObject+JKReflection.m */,
+				A41C4B9C1E15FA1100F6AA64 /* NSObject+JKRuntime.h */,
+				A41C4B9D1E15FA1100F6AA64 /* NSObject+JKRuntime.m */,
+				A41C4B9E1E15FA1100F6AA64 /* NSString+CLObjcSugar.h */,
+				A41C4B9F1E15FA1100F6AA64 /* NSString+CLObjcSugar.m */,
+				A41C4BA01E15FA1100F6AA64 /* UIButton+CLObjcSugar.h */,
+				A41C4BA11E15FA1100F6AA64 /* UIButton+CLObjcSugar.m */,
+				A41C4BA21E15FA1100F6AA64 /* UIColor+CLObjcSugar.h */,
+				A41C4BA31E15FA1100F6AA64 /* UIColor+CLObjcSugar.m */,
+				A41C4BA41E15FA1100F6AA64 /* UIImage+CLObjcSugar.h */,
+				A41C4BA51E15FA1100F6AA64 /* UIImage+CLObjcSugar.m */,
+				A41C4BA61E15FA1100F6AA64 /* UILabel+CLObjcSugar.h */,
+				A41C4BA71E15FA1100F6AA64 /* UILabel+CLObjcSugar.m */,
+				A41C4BA81E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.h */,
+				A41C4BA91E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m */,
+				A41C4BAA1E15FA1100F6AA64 /* UIScreen+CLObjcSugar.h */,
+				A41C4BAB1E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m */,
+				A41C4BAC1E15FA1100F6AA64 /* UITextField+CLObjcSugar.h */,
+				A41C4BAD1E15FA1100F6AA64 /* UITextField+CLObjcSugar.m */,
+				A41C4BAE1E15FA1100F6AA64 /* UITextView+Placeholder.h */,
+				A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */,
+				A41C4BB01E15FA1100F6AA64 /* UIView+CLObjcSugar.h */,
+				A41C4BB11E15FA1100F6AA64 /* UIView+CLObjcSugar.m */,
+			);
+			path = ObjcSugar;
+			sourceTree = "<group>";
+		};
 		A430C7161E08BDB100681AFD /* GestureVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,11 +560,14 @@
 		A47135531E08C7BC00D1E83D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */,
 				A4062CC51E0A4F920083810B /* UIImageEffects.m */,
 				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
 				A47135541E08C7DA00D1E83D /* UIImage+Extend.h */,
 				A47135551E08C7DA00D1E83D /* UIImage+Extend.m */,
 				A4F86BFB1E12407D00FA932B /* Foundation+Log.m */,
+				A41A047E1E1B414D00187C9B /* NetworkToos.h */,
+				A41A047F1E1B414D00187C9B /* NetworkToos.m */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -512,6 +620,8 @@
 				A4C0598C1E0B816700EF5D1B /* DictionaryVC.m */,
 				A4D64BF71E0CBC5A003D9F23 /* KVOVC.h */,
 				A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */,
+				A43E546D1E1501DD00BB9080 /* StringVC.h */,
+				A43E546E1E1501DD00BB9080 /* StringVC.m */,
 				A4D64BFD1E0CBD37003D9F23 /* Model */,
 			);
 			path = OCFuntionVC;
@@ -1067,17 +1177,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4F86C011E125A8D00FA932B /* StorageMainVC.m in Sources */,
+				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
 				A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
+				A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */,
+				A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */,
 				A4BFBF7D1E13BC8500A54FF1 /* PPPersonModel.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
 				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
+				A41C4BB51E15FA1100F6AA64 /* NSDictionary+CLMerge.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
 				A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */,
 				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
@@ -1089,14 +1203,19 @@
 				A488A7061E07F6E10087D92A /* AnimationViewController.m in Sources */,
 				A488A7091E07F70D0087D92A /* AnimationFrameVC.m in Sources */,
 				A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */,
+				A41C4BBB1E15FA1100F6AA64 /* UIButton+CLObjcSugar.m in Sources */,
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
+				A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */,
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
+				A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */,
 				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
 				A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */,
+				A41C4BBA1E15FA1100F6AA64 /* NSString+CLObjcSugar.m in Sources */,
 				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
+				A41C4BB41E15FA1100F6AA64 /* NSDate+MacFormatter.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A4BFBF7B1E13BC8500A54FF1 /* PPAddressBookHandle.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
@@ -1105,6 +1224,7 @@
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A47135661E08CE5C00D1E83D /* FMDBVC.m in Sources */,
+				A41C4BB91E15FA1100F6AA64 /* NSObject+JKRuntime.m in Sources */,
 				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
@@ -1114,8 +1234,10 @@
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */,
 				A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */,
+				A41C4BBC1E15FA1100F6AA64 /* UIColor+CLObjcSugar.m in Sources */,
 				A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */,
 				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
+				A41C4BBF1E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m in Sources */,
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */,
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,
@@ -1124,13 +1246,17 @@
 				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
 				A4BFBF191E13513C00A54FF1 /* Person.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
+				A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */,
 				A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */,
+				A41C4BC11E15FA1100F6AA64 /* UITextField+CLObjcSugar.m in Sources */,
 				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
+				A41C4BB21E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
 				A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
 				A4C059A41E0BBFA300EF5D1B /* JFImageCollectionViewController.m in Sources */,
+				A41C4BBD1E15FA1100F6AA64 /* UIImage+CLObjcSugar.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
@@ -1154,10 +1280,14 @@
 				A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */,
 				A4BFBF7C1E13BC8500A54FF1 /* PPGetAddressBook.m in Sources */,
 				A4C059A61E0BBFA300EF5D1B /* JFImageManager.m in Sources */,
+				A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */,
+				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
+				A41C4BB81E15FA1100F6AA64 /* NSObject+JKReflection.m in Sources */,
 				A4BFBF671E13919900A54FF1 /* AddressSortListVC.m in Sources */,
 				A4D57A571E0A5B2B0057C297 /* JKAssetsViewCell.m in Sources */,
+				A41C4BC31E15FA1100F6AA64 /* UIView+CLObjcSugar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,11 +26,11 @@
     
     self.array = [[NSMutableArray alloc] init];
     
+   
     [_array addObject:@"ShowOne"];
     [_array addObject:@"ShowTwo"];
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
-   
 }
 
 #pragma mark - UITableViewDataSource

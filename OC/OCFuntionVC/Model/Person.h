@@ -15,6 +15,8 @@
     NSInteger age;
 }
 
+@property (nonatomic,copy) NSString *stature;
+
 - (NSString *)getName;
 
 - (void)setName:(NSString *)_name;

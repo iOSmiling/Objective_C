@@ -45,14 +45,17 @@
 - (void)chooseImageToShow
 {
     FCSmallImageViewController *smallVC = [[FCSmallImageViewController alloc]init];
-    smallVC.maxSelect = 5;
-    smallVC.returnBlock = ^(NSArray *imageArr){
+    smallVC.maxSelect = 30;
+    smallVC.returnBlock = ^(NSArray *imageArr)
+    {
         //选择的图片
         [_myScrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
         {
             [obj removeFromSuperview];
         }];
+        
         _myScrollView.contentSize = CGSizeMake((imageArr.count+1)*10+imageArr.count*80, 0);
+        
         [imageArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
          {
             UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(10*(idx+1)+80*idx, 0, 80, 80)];
