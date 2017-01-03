@@ -6,10 +6,10 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseModel.h"
+#import "BaseModel.h"
 #import <UIKit/UIKit.h>
 
-@interface ShopModel : OCBaseModel
+@interface ShopModel : BaseModel
 
 /**
  *  图片的宽度

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "BaseViewController.h"
 
 /// iOS 9前的框架
 #import <AddressBook/AddressBook.h>
@@ -16,7 +16,7 @@
 
 #define Is_up_Ios_9      ([[UIDevice currentDevice].systemVersion floatValue]) >= 9.0
 
-@interface OCBaseViewController (getContactInfor)<ABPeoplePickerNavigationControllerDelegate,CNContactPickerDelegate>
+@interface BaseViewController (getContactInfor)<ABPeoplePickerNavigationControllerDelegate,CNContactPickerDelegate>
 
 //通讯录获取联系人信息
 - (void)CheckAddressBookAuthorizationandGetPeopleInfor:(void (^)(NSDictionary *data))handler;

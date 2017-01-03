@@ -6,10 +6,10 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseModel.h"
+#import "BaseModel.h"
 #import <objc/runtime.h>
 
-@implementation OCBaseModel
+@implementation BaseModel
 
 -(NSString *)debugDescription
 {

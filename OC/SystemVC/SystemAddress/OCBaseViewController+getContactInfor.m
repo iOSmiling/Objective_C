@@ -8,7 +8,7 @@
 
 #import "OCBaseViewController+getContactInfor.h"
 
-@implementation OCBaseViewController (getContactInfor)
+@implementation BaseViewController (getContactInfor)
 
 #pragma  mark -获取通讯录联系人
 void(^addressBlock)(NSDictionary *);

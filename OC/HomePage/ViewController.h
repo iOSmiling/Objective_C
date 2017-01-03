@@ -6,9 +6,9 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface ViewController : OCBaseViewController
+@interface ViewController : BaseViewController
 
 
 @end

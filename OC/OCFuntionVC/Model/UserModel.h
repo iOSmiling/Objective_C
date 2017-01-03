@@ -6,9 +6,9 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseModel.h"
+#import "BaseModel.h"
 
-@interface UserModel : OCBaseModel
+@interface UserModel : BaseModel
 
 //__nullable表示对象可以是NULL或nil，而__nonnull表示对象不应该为空
 

@@ -6,13 +6,13 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseTabBarController.h"
+#import "BaseTabBarController.h"
 
-@interface OCBaseTabBarController ()
+@interface BaseTabBarController ()
 
 @end
 
-@implementation OCBaseTabBarController
+@implementation BaseTabBarController
 
 - (void)viewDidLoad
 {

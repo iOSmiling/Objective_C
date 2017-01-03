@@ -6,9 +6,9 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseTabBarController.h"
+#import "BaseTabBarController.h"
 
-@interface MainTabBarViewController : OCBaseTabBarController<UITabBarControllerDelegate>
+@interface MainTabBarViewController : BaseTabBarController<UITabBarControllerDelegate>
 
 +(id) shareMainTabBarInstance;
 

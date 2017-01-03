@@ -6,9 +6,9 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface DictionaryVC : OCBaseViewController
+@interface DictionaryVC : BaseViewController
 {
     int radius;
     int x;

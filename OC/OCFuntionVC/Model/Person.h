@@ -6,9 +6,9 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseModel.h"
+#import "BaseModel.h"
 
-@interface Person : OCBaseModel
+@interface Person : BaseModel
 {
     NSString *name;
     NSString *sex;

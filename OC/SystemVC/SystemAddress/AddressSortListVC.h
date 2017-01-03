@@ -6,8 +6,8 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface AddressSortListVC : OCBaseViewController
+@interface AddressSortListVC : BaseViewController
 
 @end

@@ -9,7 +9,7 @@
 #import "MainTabBarViewController.h"
 #import "ViewController.h"
 #import "SettingVC.h"
-#import "OCBaseNavigationController.h"
+#import "BaseNavigationController.h"
 
 @interface MainTabBarViewController ()
 
@@ -38,11 +38,11 @@
 -(void)loadTabBarViewController
 {
     ViewController *homePageViewController = [[ViewController alloc] init];
-    OCBaseNavigationController *homePageNavigation = [[OCBaseNavigationController alloc] initWithRootViewController:homePageViewController];
+    BaseNavigationController *homePageNavigation = [[BaseNavigationController alloc] initWithRootViewController:homePageViewController];
     homePageNavigation.tabBarItem.title=@"学习";
 
     SettingVC *liveViewController = [[SettingVC alloc] init];
-    OCBaseNavigationController *livePageNavigation = [[OCBaseNavigationController alloc] initWithRootViewController:liveViewController];
+    BaseNavigationController *livePageNavigation = [[BaseNavigationController alloc] initWithRootViewController:liveViewController];
     livePageNavigation.tabBarItem.title=@"设置";
     self.tabBar.tintColor=[UIColor colorWithRed:252.0/255.0 green:57.0/255.0 blue:108.0/255.0 alpha:1.0];
     self.delegate=self;

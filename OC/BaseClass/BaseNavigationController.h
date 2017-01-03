@@ -1,5 +1,5 @@
 //
-//  OCBaseTabBarController.h
+//  OCBaseNavigationController.h
 //  OC
 //
 //  Created by 薛坤龙 on 2016/12/19.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OCBaseTabBarController : UITabBarController
+@interface BaseNavigationController : UINavigationController
 
 @end

@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OCBaseModel : NSObject
+@interface BaseModel : NSObject
 
 @end

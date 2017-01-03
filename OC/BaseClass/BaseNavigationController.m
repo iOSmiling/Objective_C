@@ -1,31 +1,29 @@
 //
-//  OCBaseViewController.m
+//  OCBaseNavigationController.m
 //  OC
 //
 //  Created by 薛坤龙 on 2016/12/19.
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "BaseNavigationController.h"
 
-@interface OCBaseViewController ()
+@interface BaseNavigationController ()
 
 @end
 
-@implementation OCBaseViewController
+@implementation BaseNavigationController
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    [super viewDidLoad];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+   
 }
-
 
 
 @end

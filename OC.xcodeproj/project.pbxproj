@@ -38,7 +38,7 @@
 		A471354F1E08C61600D1E83D /* OperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A471354E1E08C61600D1E83D /* OperationVC.m */; };
 		A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135511E08C63600D1E83D /* ThreadMainVC.m */; };
 		A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135551E08C7DA00D1E83D /* UIImage+Extend.m */; };
-		A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135591E08CA4800D1E83D /* OCBaseModel.m */; };
+		A471355A1E08CA4800D1E83D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135591E08CA4800D1E83D /* BaseModel.m */; };
 		A471355D1E08CA5F00D1E83D /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A471355C1E08CA5F00D1E83D /* ImageModel.m */; };
 		A47135601E08CB3600D1E83D /* XMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A471355F1E08CB3600D1E83D /* XMDBManager.m */; };
 		A47135631E08CCE600D1E83D /* ImageDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135621E08CCE600D1E83D /* ImageDB.m */; };
@@ -56,9 +56,9 @@
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
 		A488A6D91E07C2780087D92A /* OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6D81E07C2780087D92A /* OCTests.m */; };
 		A488A6E41E07C2780087D92A /* OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6E31E07C2780087D92A /* OCUITests.m */; };
-		A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F31E07F2FC0087D92A /* OCBaseViewController.m */; };
-		A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F61E07F3400087D92A /* OCBaseNavigationController.m */; };
-		A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F91E07F37F0087D92A /* OCBaseTabBarController.m */; };
+		A488A6F41E07F2FC0087D92A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F31E07F2FC0087D92A /* BaseViewController.m */; };
+		A488A6F71E07F3400087D92A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F61E07F3400087D92A /* BaseNavigationController.m */; };
+		A488A6FA1E07F37F0087D92A /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6F91E07F37F0087D92A /* BaseTabBarController.m */; };
 		A488A7021E07F4930087D92A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7011E07F4930087D92A /* ViewController.m */; };
 		A488A7061E07F6E10087D92A /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7051E07F6E10087D92A /* AnimationViewController.m */; };
 		A488A7091E07F70D0087D92A /* AnimationFrameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7081E07F70D0087D92A /* AnimationFrameVC.m */; };
@@ -218,8 +218,8 @@
 		A47135511E08C63600D1E83D /* ThreadMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadMainVC.m; sourceTree = "<group>"; };
 		A47135541E08C7DA00D1E83D /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
 		A47135551E08C7DA00D1E83D /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
-		A47135581E08CA4800D1E83D /* OCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseModel.h; sourceTree = "<group>"; };
-		A47135591E08CA4800D1E83D /* OCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseModel.m; sourceTree = "<group>"; };
+		A47135581E08CA4800D1E83D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		A47135591E08CA4800D1E83D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		A471355B1E08CA5F00D1E83D /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		A471355C1E08CA5F00D1E83D /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
 		A471355E1E08CB3600D1E83D /* XMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDBManager.h; sourceTree = "<group>"; };
@@ -255,12 +255,12 @@
 		A488A6DF1E07C2780087D92A /* OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6E31E07C2780087D92A /* OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUITests.m; sourceTree = "<group>"; };
 		A488A6E51E07C2780087D92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A488A6F21E07F2FC0087D92A /* OCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseViewController.h; sourceTree = "<group>"; };
-		A488A6F31E07F2FC0087D92A /* OCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseViewController.m; sourceTree = "<group>"; };
-		A488A6F51E07F3400087D92A /* OCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseNavigationController.h; sourceTree = "<group>"; };
-		A488A6F61E07F3400087D92A /* OCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseNavigationController.m; sourceTree = "<group>"; };
-		A488A6F81E07F37F0087D92A /* OCBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseTabBarController.h; sourceTree = "<group>"; };
-		A488A6F91E07F37F0087D92A /* OCBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseTabBarController.m; sourceTree = "<group>"; };
+		A488A6F21E07F2FC0087D92A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A488A6F31E07F2FC0087D92A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A488A6F51E07F3400087D92A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		A488A6F61E07F3400087D92A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		A488A6F81E07F37F0087D92A /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		A488A6F91E07F37F0087D92A /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		A488A7001E07F4930087D92A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A488A7011E07F4930087D92A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A488A7041E07F6E10087D92A /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
@@ -723,14 +723,14 @@
 		A488A6F11E07F2E50087D92A /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				A47135581E08CA4800D1E83D /* OCBaseModel.h */,
-				A47135591E08CA4800D1E83D /* OCBaseModel.m */,
-				A488A6F21E07F2FC0087D92A /* OCBaseViewController.h */,
-				A488A6F31E07F2FC0087D92A /* OCBaseViewController.m */,
-				A488A6F51E07F3400087D92A /* OCBaseNavigationController.h */,
-				A488A6F61E07F3400087D92A /* OCBaseNavigationController.m */,
-				A488A6F81E07F37F0087D92A /* OCBaseTabBarController.h */,
-				A488A6F91E07F37F0087D92A /* OCBaseTabBarController.m */,
+				A47135581E08CA4800D1E83D /* BaseModel.h */,
+				A47135591E08CA4800D1E83D /* BaseModel.m */,
+				A488A6F21E07F2FC0087D92A /* BaseViewController.h */,
+				A488A6F31E07F2FC0087D92A /* BaseViewController.m */,
+				A488A6F51E07F3400087D92A /* BaseNavigationController.h */,
+				A488A6F61E07F3400087D92A /* BaseNavigationController.m */,
+				A488A6F81E07F37F0087D92A /* BaseTabBarController.h */,
+				A488A6F91E07F37F0087D92A /* BaseTabBarController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -1190,12 +1190,12 @@
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
-				A471355A1E08CA4800D1E83D /* OCBaseModel.m in Sources */,
+				A471355A1E08CA4800D1E83D /* BaseModel.m in Sources */,
 				A41C4BB51E15FA1100F6AA64 /* NSDictionary+CLMerge.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
 				A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */,
 				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
-				A488A6F71E07F3400087D92A /* OCBaseNavigationController.m in Sources */,
+				A488A6F71E07F3400087D92A /* BaseNavigationController.m in Sources */,
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
 				A488A72A1E07F8350087D92A /* SettingVC.m in Sources */,
 				A4D57A521E0A5B2B0057C297 /* JKAssets.m in Sources */,
@@ -1218,7 +1218,7 @@
 				A41C4BB41E15FA1100F6AA64 /* NSDate+MacFormatter.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A4BFBF7B1E13BC8500A54FF1 /* PPAddressBookHandle.m in Sources */,
-				A488A6FA1E07F37F0087D92A /* OCBaseTabBarController.m in Sources */,
+				A488A6FA1E07F37F0087D92A /* BaseTabBarController.m in Sources */,
 				A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */,
 				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
@@ -1243,7 +1243,7 @@
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,
 				A47135711E08D21E00D1E83D /* OCMethodVC.m in Sources */,
 				A47135631E08CCE600D1E83D /* ImageDB.m in Sources */,
-				A488A6F41E07F2FC0087D92A /* OCBaseViewController.m in Sources */,
+				A488A6F41E07F2FC0087D92A /* BaseViewController.m in Sources */,
 				A4BFBF191E13513C00A54FF1 /* Person.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
 				A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */,
