@@ -7,6 +7,7 @@
 //
 
 #import "GCDVC.h"
+#import "UIImage+Extend.h"
 
 #import <AFNetworking.h>
 
@@ -18,6 +19,9 @@
     
 }
 
+@property (nonatomic,strong) UIImageView *imageView1;
+@property (nonatomic,strong) UIImageView *imageView2;
+
 @end
 
 @implementation GCDVC
@@ -26,6 +30,13 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"GCD";
+    
+    [self.view addSubview:self.imageView1];
+    [self.view addSubview:self.imageView2];
+    
+    _imageView1.frame = CGRectMake(100, 120, 100, 100);
+    _imageView2.frame = CGRectMake(100, 240, 100, 100);
+    
     
     manager = [AFNetworkReachabilityManager sharedManager];
     __weak typeof(self) weakSelf = self;
@@ -91,8 +102,7 @@
     dispatch_queue_t mainQueue;
     mainQueue = dispatch_get_main_queue();
     
-    
-    
+
     dispatch_queue_t myCustomQueue;
     myCustomQueue = dispatch_queue_create("com.example.MyCustomQueue", NULL);
     //异步执行
@@ -112,14 +122,64 @@
      3 并发队列：这是在后台执行非 UI 工作的一般选择
      */
     
+    [self downLoadImage];
+    
     
 }
 
 - (void)reconnect
 {
-    //此处代码忽略...
     NSLog(@"网络变化，重连");
-    
+}
+
+- (void)downLoadImage
+{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        
+        //GCD group的使用
+        dispatch_group_t group = dispatch_group_create();
+        
+        __block UIImage *image1 = nil;
+        __block UIImage *image2 = nil;
+        
+        dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSString *url1 = @"http://car0.autoimg.cn/upload/spec/9579/u_20120110174805627264.jpg";
+            image1 = [UIImage getImageFromURLString:url1];
+        });
+        
+        dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // 下载第一张图片
+            NSString *url2 = @"http://hiphotos.baidu.com/lvpics/pic/item/3a86813d1fa41768bba16746.jpg";
+            image2 = [UIImage getImageFromURLString:url2];;
+        });
+        
+        // 等待组中的任务执行完毕,回到主线程执行block回调
+        dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+            self.imageView1.image = image1;
+            self.imageView2.image = image2;
+            
+        });
+        
+    });
+}
+
+- (UIImageView *)imageView1
+{
+    if (!_imageView1)
+    {
+        _imageView1 = [[UIImageView alloc] init];
+    }
+    return _imageView1;
+}
+
+- (UIImageView *)imageView2
+{
+    if (!_imageView2)
+    {
+        _imageView2 = [[UIImageView alloc] init];
+    }
+    return _imageView2;
 }
 
 - (void)dealloc
@@ -132,7 +192,5 @@
     [super didReceiveMemoryWarning];
    
 }
-
-
 
 @end
