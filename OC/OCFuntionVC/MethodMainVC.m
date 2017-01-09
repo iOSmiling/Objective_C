@@ -11,6 +11,7 @@
 #import "DictionaryVC.h"
 #import "KVOVC.h"
 #import "StringVC.h"
+#import "BlockVC.h"
 
 @interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,6 +36,7 @@
     [_array addObject:@"字典"];
     [_array addObject:@"KVO"];
     [_array addObject:@"NSString"];
+    [_array addObject:@"Block"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -95,6 +97,8 @@
         }
         case 4:
         {
+            BlockVC *vc = [[BlockVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
           
             break;
         }

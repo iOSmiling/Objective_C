@@ -43,6 +43,7 @@
 //    [self deleteData];
 }
 
+
 - (void)addData
 {
     _model2 = [[ImageModel alloc] init];

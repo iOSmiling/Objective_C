@@ -11,6 +11,7 @@
 
 @interface PhotoCell ()
 
+
 @property (nonatomic, strong) UIButton *deleteButton;
 
 @property (nonatomic, strong) UIImageView *chooseImageView;
@@ -45,6 +46,7 @@
         
     }];
 }
+
 
 -(void)deleteButtonEvent:(UIButton *)sender
 {
