@@ -7,7 +7,7 @@
 //
 
 #import "MethodMainVC.h"
-#import "OCMethodVC.h"
+#import "MethodVC.h"
 #import "DictionaryVC.h"
 #import "KVOVC.h"
 #import "StringVC.h"
@@ -72,7 +72,7 @@
     {
         case 0:
         {
-            OCMethodVC *vc1 = [[OCMethodVC alloc] init];
+            MethodVC *vc1 = [[MethodVC alloc] init];
             [self.navigationController pushViewController:vc1 animated:YES];
          
             break;
@@ -104,12 +104,10 @@
         }
         case 5:
         {
-        
             break;
         }
         case 6:
         {
-        
             break;
         }
         default:

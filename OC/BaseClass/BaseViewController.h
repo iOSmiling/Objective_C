@@ -133,7 +133,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)axcBaseOpenTheLeftBackSkip;
 
-
+#define  ScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define  ScreenHeight  [UIScreen mainScreen].bounds.size.height
 
 /**
  *  宏指针定义下文

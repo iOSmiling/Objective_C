@@ -6,13 +6,13 @@
 //  Copyright © 2016年 sigboat. All rights reserved.
 //
 
-#import "OCMethodVC.h"
+#import "MethodVC.h"
 
-@interface OCMethodVC ()
+@interface MethodVC ()
 
 @end
 
-@implementation OCMethodVC
+@implementation MethodVC
 
 - (void)viewDidLoad
 {
@@ -22,10 +22,6 @@
     //随机数的使用
     int random = [self getRandomNumber:1 to:3];
     NSLog(@"1-3 随机：%d",random);
-    
-    
-    
-
 }
 
 //获取一个随机整数，范围在[from,to]，包括from，包括to

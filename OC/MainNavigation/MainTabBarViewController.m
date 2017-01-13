@@ -24,7 +24,6 @@
     [self loadTabBarViewController];
 }
 
-
 +(id)shareMainTabBarInstance
 {
     static MainTabBarViewController *mainController=nil;

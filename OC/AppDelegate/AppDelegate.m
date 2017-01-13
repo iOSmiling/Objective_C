@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainTabBarViewController.h"
 #import "AppDelegate+APNS.h"
+#import "AppDelegate+InitLocalData.h"
 
 @interface AppDelegate ()
 
@@ -36,7 +37,7 @@
 {
      NSLog(@"程序将要失去焦点...");
     [self APNS_applicationWillResignActive:application]; //APNS
-    
+    [self LocalData_applicationWillResignActive:application]; //LocalData
 }
 
 

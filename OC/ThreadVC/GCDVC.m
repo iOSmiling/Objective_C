@@ -14,9 +14,7 @@
 @interface GCDVC ()
 {
     dispatch_queue_t socketQueue;
-    
     AFNetworkReachabilityManager *manager;
-    
 }
 
 @property (nonatomic,strong) UIImageView *imageView1;

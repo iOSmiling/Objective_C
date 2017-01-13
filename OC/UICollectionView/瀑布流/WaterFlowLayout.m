@@ -77,6 +77,12 @@ static const UIEdgeInsets JGDefaultEdgeInsets = {10, 10, 10, 10};
  */
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
+    
+    for (int section=0; section<[self.collectionView numberOfSections]; section++) {
+        UICollectionViewLayoutAttributes* attHeader = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+        [self.attrsArray addObject:attHeader];
+    }
+    
     return self.attrsArray;
 }
 
@@ -128,6 +134,25 @@ static const UIEdgeInsets JGDefaultEdgeInsets = {10, 10, 10, 10};
         self.contentHeight = columnHeight;
     }
     return attrs;
+}
+
+//生成对应的SupplementaryView Attributes
+- (nullable UICollectionViewLayoutAttributes *)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UICollectionViewLayoutAttributes *orgAttributes=  [super layoutAttributesForSupplementaryViewOfKind:elementKind atIndexPath:indexPath];
+    if ([elementKind isEqualToString:UICollectionElementKindSectionHeader])
+    {
+        
+        CGRect tempFrame=orgAttributes.frame;
+        NSInteger section=orgAttributes.indexPath.section;
+        CGFloat perx= [self sectionItemStarX:section];
+        tempFrame.origin.x=perx;
+        tempFrame.origin.y=0;
+        tempFrame.size=self.headerReferenceSize;
+        orgAttributes.frame=tempFrame;
+    }
+    return orgAttributes;
 }
 
 - (CGSize)collectionViewContentSize
@@ -186,6 +211,36 @@ static const UIEdgeInsets JGDefaultEdgeInsets = {10, 10, 10, 10};
         return JGDefaultEdgeInsets;
     }
 }
+
+#pragma mrak tool method
+//每个section宽
+-(CGFloat)sectionWidth:(NSUInteger)section
+{
+    NSInteger column=  [self numColumnOfSection:section];
+    CGFloat re=self.sectionInset.left+self.sectionInset.right+column*(self.itemSize.width+self.minimumLineSpacing);
+    return re;
+}
+
+//根据视图的高度，计算section的 行列数
+-(NSInteger)numColumnOfSection:(NSUInteger)section
+{
+    NSInteger numOfItmes=[self.collectionView numberOfItemsInSection:section];
+    CGFloat viewHeight=self.collectionView.frame.size.height;
+    NSInteger line=  viewHeight/self.itemSize.height;
+    CGFloat fcolumn=numOfItmes/line;
+    NSInteger  column= ceil(fcolumn);
+    return column;
+}
+
+-(CGFloat)sectionItemStarX:(NSUInteger)section
+{
+    CGFloat x=self.sectionInset.left;//计算每个head.x
+    for (NSInteger i=1;i<=section ;i++) {
+        x+=  [self sectionWidth:i];
+    }
+    return x;
+}
+
 
 
 #pragma mark - 懒加载

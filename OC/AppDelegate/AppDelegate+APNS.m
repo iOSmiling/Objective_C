@@ -19,8 +19,7 @@
 
 - (void)APNS_applicationWillResignActive:(UIApplication *)application
 {
-    
-    
+    NSLog(@"APNS");
     
 }
 

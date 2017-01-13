@@ -17,4 +17,7 @@
 /// @return 1 * 1 图像
 + (nonnull UIImage *)cl_singleDotImageWithColor:(nonnull UIColor *)color;
 
+
++ (nonnull UIImage *)snapImageForView:(nonnull UIView *)view;
+
 @end

@@ -23,4 +23,13 @@
     return result;
 }
 
++ (nonnull UIImage *)snapImageForView:(nonnull UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *aImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return aImage;
+}
+
 @end

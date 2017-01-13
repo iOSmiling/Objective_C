@@ -9,6 +9,7 @@ target 'OC' do
  pod 'SVProgressHUD'
  pod 'MJRefresh'
  pod 'MJExtension'
+ pod 'Masonry'
 end
 
 

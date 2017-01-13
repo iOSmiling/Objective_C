@@ -40,7 +40,6 @@ typedef void(^FAILEDBLOCK)(BOOL isFailure);
     }];
     
     [self testBlock1:@"11" sucess:^(NSString *name) {
-        
         NSLog(@"block :%@",name);
     } failure:^(NSString *sex) {
         NSLog(@"block :%@",sex);
@@ -48,15 +47,15 @@ typedef void(^FAILEDBLOCK)(BOOL isFailure);
     
     // XXEngine
     
-//    XXEngine *xxEngine = [[XXEngine alloc] init];
-//    [xxEngine testGlobalBlock:nil success:^(BOOL isSuccess) {
-//        NSLog(@"2秒已到");
-//    } failure:^(BOOL isSuccess) {
-//        NSLog(@"2秒结束");
-//    }];
+    XXEngine *xxEngine1 = [[XXEngine alloc] init];
+    [xxEngine1 testGlobalBlock:nil success:^(BOOL isSuccess) {
+        NSLog(@"2秒已到");
+    } failure:^(BOOL isSuccess) {
+        NSLog(@"2秒结束");
+    }];
     
-    XXEngine *xxEngine = [[XXEngine alloc] init];
-    [xxEngine testMallocBlock:nil success:^(BOOL isSuccess) {
+    XXEngine *xxEngine2 = [[XXEngine alloc] init];
+    [xxEngine2 testMallocBlock:nil success:^(BOOL isSuccess) {
         NSLog(@"2秒已到");
     } failure:^(BOOL isSuccess) {
         NSLog(@"2秒结束");

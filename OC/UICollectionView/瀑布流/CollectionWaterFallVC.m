@@ -13,6 +13,8 @@
 #import "WaterFlowLayout.h"
 #import "ShopModel.h"
 
+#import "CollectionHeaderReusableView.h"
+
 static NSString *Cell = @"UICollectionViewCell";
 
 @interface CollectionWaterFallVC ()<UICollectionViewDelegate,UICollectionViewDataSource,WaterflowLayoutDelegate>
@@ -82,6 +84,11 @@ static NSString *Cell = @"UICollectionViewCell";
     });
 }
 
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     self.collectionView.mj_footer.hidden = self.array.count == 0;
@@ -94,6 +101,24 @@ static NSString *Cell = @"UICollectionViewCell";
     cell.shopModel = self.array[indexPath.item];
     return cell;
 }
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *reusableview = nil;
+    if (kind == UICollectionElementKindSectionHeader)
+    {
+           CollectionHeaderReusableView  *myTipsCollectionFootView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+    
+        reusableview = myTipsCollectionFootView;
+    
+    }else
+    {
+        
+    
+    }
+    return reusableview;
+}
+
 
 #pragma mark JGWaterflowLayoutDelegate
 - (CGFloat)waterflowlayout:(WaterFlowLayout *)waterlayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth
@@ -122,11 +147,15 @@ static NSString *Cell = @"UICollectionViewCell";
 {
     if (!_collectionView)
     {
+        
+        
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:self.layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
-        [self.collectionView registerClass:[WaterFlowCollectionViewCell class] forCellWithReuseIdentifier:Cell];
+        [_collectionView registerClass:[WaterFlowCollectionViewCell class] forCellWithReuseIdentifier:Cell];
+        
+        [_collectionView registerClass:[CollectionHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
         
     }
     return _collectionView;
@@ -137,6 +166,11 @@ static NSString *Cell = @"UICollectionViewCell";
     if (!_layout)
     {
         _layout = [[WaterFlowLayout alloc] init];
+
+        _layout.headerReferenceSize = CGSizeMake(ScreenWidth, 100);
+        
+        _layout.sectionInset = UIEdgeInsetsMake(0, 15, 0, 15);
+        
         _layout.delegate = self;
     }
     return _layout;

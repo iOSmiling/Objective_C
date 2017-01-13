@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface OCMethodVC : BaseViewController
+@interface MethodVC : BaseViewController
 
 @end
