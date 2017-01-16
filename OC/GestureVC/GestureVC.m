@@ -72,6 +72,13 @@
 
 }
 
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+
+
+}
+
 //点按手势
 -(void)tapGesture
 {
@@ -87,6 +94,7 @@
     
     NSLog(@"旋转了");
 }
+
 //缩放手势
 -(void)pinchGesture:(UIPinchGestureRecognizer *)gesture
 {

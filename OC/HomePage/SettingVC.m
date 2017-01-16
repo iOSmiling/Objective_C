@@ -7,6 +7,7 @@
 //
 
 #import "SettingVC.h"
+#import <Masonry.h>
 #import "IntoSystemLimitsVC.h"
 #import "AddressMainVC.h"
 
@@ -20,6 +21,7 @@
 
 @implementation SettingVC
 
+#pragma mark - Life cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,6 +38,25 @@
   
 }
 
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+
+    __weak typeof(self) weakSelf = self;
+    
+    [self.view addSubview:self.tableView];
+    
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(weakSelf.view.mas_top).offset(0);
+        make.left.equalTo(weakSelf.view.mas_left).offset(0);
+        make.right.equalTo(weakSelf.view.mas_right).offset(0);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-64);
+        
+    }];
+    
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.array.count;
@@ -44,9 +65,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     static NSString *identifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell==nil)
     {

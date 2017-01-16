@@ -23,14 +23,10 @@
 {
     [super viewDidLoad];
  
-    
     self.navigationItem.title = @"CollectionView";
-    
     self.array = [[NSMutableArray alloc] init];
-    
     [_array addObject:@"瀑布流"];
-  
-    
+
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
     

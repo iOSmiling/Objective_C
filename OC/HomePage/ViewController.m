@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Masonry.h>
 #import "AnimationViewController.h"
 #import "GestureVC.h"
 #import "ThreadMainVC.h"
@@ -44,8 +45,25 @@
     [_array addObject:@"ScrollView"];
     [_array addObject:@"Collection"];
     
+}
+
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    __weak typeof(self) weakSelf = self;
+    
     [self.view addSubview:self.tableView];
-    _tableView.frame = self.view.frame;
+    
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(weakSelf.view.mas_top).offset(0);
+        make.left.equalTo(weakSelf.view.mas_left).offset(0);
+        make.right.equalTo(weakSelf.view.mas_right).offset(0);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-64);
+        
+    }];
     
 }
 

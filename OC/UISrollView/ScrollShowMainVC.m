@@ -26,7 +26,6 @@
     
     self.array = [[NSMutableArray alloc] init];
     
-   
     [_array addObject:@"ShowOne"];
     [_array addObject:@"ShowTwo"];
     [self.view addSubview:self.tableView];
@@ -38,14 +37,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.array.count;
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     static NSString *identifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell==nil)
     {
@@ -54,7 +50,6 @@
     cell.textLabel.text = _array[indexPath.row];
     
     return cell;
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,9 +91,7 @@
         }
         default:
             break;
-            
     }
-    
 }
 
 #pragma mark - Getters and Setters
@@ -118,7 +111,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    
 }
 
 /*
