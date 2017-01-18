@@ -12,6 +12,7 @@
 #import "KVOVC.h"
 #import "StringVC.h"
 #import "BlockVC.h"
+#import "ValidateVC.h"
 
 @interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -37,6 +38,7 @@
     [_array addObject:@"KVO"];
     [_array addObject:@"NSString"];
     [_array addObject:@"Block"];
+    [_array addObject:@"正则验证"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -99,11 +101,12 @@
         {
             BlockVC *vc = [[BlockVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
-          
             break;
         }
         case 5:
         {
+            ValidateVC *vc = [[ValidateVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 6:
