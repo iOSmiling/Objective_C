@@ -36,7 +36,13 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [_textView resignFirstResponder];
+    
 
+}
 
 - (void)validate
 {
