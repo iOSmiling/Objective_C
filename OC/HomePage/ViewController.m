@@ -16,6 +16,7 @@
 #import "ScrollShowMainVC.h"
 #import "CollectionMainVC.h"
 #import "StorageMainVC.h"
+#import "ThirdPartyVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -44,9 +45,9 @@
     [_array addObject:@"OC常用方法"];
     [_array addObject:@"ScrollView"];
     [_array addObject:@"Collection"];
+    [_array addObject:@"第三方使用"];
     
 }
-
 
 - (void)viewWillLayoutSubviews
 {
@@ -148,6 +149,14 @@
         case 7:
         {
             CollectionMainVC *vc = [[CollectionMainVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        
+            break;
+        }
+        case 8:
+        {
+            ThirdPartyVC *vc = [[ThirdPartyVC alloc] init];
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         

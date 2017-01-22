@@ -34,7 +34,7 @@
     self.array = [[NSMutableArray alloc] init];
     
     [_array addObject:@"Method"];
-    [_array addObject:@"字典"];
+    [_array addObject:@"集合"];
     [_array addObject:@"KVO"];
     [_array addObject:@"NSString"];
     [_array addObject:@"Block"];

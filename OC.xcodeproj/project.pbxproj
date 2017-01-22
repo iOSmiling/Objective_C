@@ -39,6 +39,10 @@
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
+		A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9D71E31BF3600E501C3 /* PersonModel.m */; };
+		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
+		A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */; };
+		A456A9E21E31D9F400E501C3 /* AFNVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9E11E31D9F400E501C3 /* AFNVC.m */; };
 		A45EBCF01E2322EF00154216 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCEF1E2322EF00154216 /* BlockVC.m */; };
 		A45EBCF71E233F3000154216 /* XXEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCF61E233F3000154216 /* XXEngine.m */; };
 		A45EBCFA1E23663B00154216 /* AppDelegate+InitLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCF91E23663B00154216 /* AppDelegate+InitLocalData.m */; };
@@ -228,6 +232,14 @@
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
+		A456A9D61E31BF3600E501C3 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		A456A9D71E31BF3600E501C3 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		A456A9D91E31C41100E501C3 /* PersonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBuilder.h; sourceTree = "<group>"; };
+		A456A9DA1E31C41100E501C3 /* PersonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBuilder.m; sourceTree = "<group>"; };
+		A456A9DD1E31D8CF00E501C3 /* ThirdPartyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyVC.h; sourceTree = "<group>"; };
+		A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyVC.m; sourceTree = "<group>"; };
+		A456A9E01E31D9F400E501C3 /* AFNVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNVC.h; sourceTree = "<group>"; };
+		A456A9E11E31D9F400E501C3 /* AFNVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNVC.m; sourceTree = "<group>"; };
 		A45EBCEE1E2322EF00154216 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
 		A45EBCEF1E2322EF00154216 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		A45EBCF51E233F3000154216 /* XXEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXEngine.h; sourceTree = "<group>"; };
@@ -568,6 +580,17 @@
 			path = GestureVC;
 			sourceTree = "<group>";
 		};
+		A456A9DC1E31D8A100E501C3 /* 第三方的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				A456A9DD1E31D8CF00E501C3 /* ThirdPartyVC.h */,
+				A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */,
+				A456A9E01E31D9F400E501C3 /* AFNVC.h */,
+				A456A9E11E31D9F400E501C3 /* AFNVC.m */,
+			);
+			path = "第三方的使用";
+			sourceTree = "<group>";
+		};
 		A45EBCF41E233F1600154216 /* Object */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,14 +603,14 @@
 		A45EBCFB1E2369DA00154216 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A45EBD021E2369DA00154216 /* StorageMainVC.h */,
+				A45EBD031E2369DA00154216 /* StorageMainVC.m */,
 				A45EBCFC1E2369DA00154216 /* FMDBVC.h */,
 				A45EBCFD1E2369DA00154216 /* FMDBVC.m */,
 				A45EBCFE1E2369DA00154216 /* ImageDB.h */,
 				A45EBCFF1E2369DA00154216 /* ImageDB.m */,
 				A45EBD001E2369DA00154216 /* ImageModel.h */,
 				A45EBD011E2369DA00154216 /* ImageModel.m */,
-				A45EBD021E2369DA00154216 /* StorageMainVC.h */,
-				A45EBD031E2369DA00154216 /* StorageMainVC.m */,
 				A45EBD041E2369DA00154216 /* XMDBManager.h */,
 				A45EBD051E2369DA00154216 /* XMDBManager.m */,
 			);
@@ -728,6 +751,7 @@
 				A488A7031E07F6BB0087D92A /* Animation */,
 				A430C7161E08BDB100681AFD /* GestureVC */,
 				A471354C1E08C5F200D1E83D /* ThreadVC */,
+				A456A9DC1E31D8A100E501C3 /* 第三方的使用 */,
 				A4062CBE1E0A4D520083810B /* UISrollView */,
 				A4F86BA11E12071800FA932B /* UICollectionView */,
 				A45EBCFB1E2369DA00154216 /* Storage */,
@@ -978,6 +1002,10 @@
 			children = (
 				A4BFBF171E13513C00A54FF1 /* Person.h */,
 				A4BFBF181E13513C00A54FF1 /* Person.m */,
+				A456A9D61E31BF3600E501C3 /* PersonModel.h */,
+				A456A9D71E31BF3600E501C3 /* PersonModel.m */,
+				A456A9D91E31C41100E501C3 /* PersonBuilder.h */,
+				A456A9DA1E31C41100E501C3 /* PersonBuilder.m */,
 				A4D64BFE1E0CBD37003D9F23 /* UserModel.h */,
 				A4D64BFF1E0CBD37003D9F23 /* UserModel.m */,
 			);
@@ -1280,9 +1308,11 @@
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */,
 				A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */,
+				A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */,
 				A4BFBF7D1E13BC8500A54FF1 /* PPPersonModel.m in Sources */,
 				A41A048F1E1B87B100187C9B /* UIView+CLObjcSugar.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
+				A456A9E21E31D9F400E501C3 /* AFNVC.m in Sources */,
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
@@ -1316,6 +1346,7 @@
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A4BFBF7B1E13BC8500A54FF1 /* PPAddressBookHandle.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* BaseTabBarController.m in Sources */,
+				A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */,
 				A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */,
 				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A45EBCF71E233F3000154216 /* XXEngine.m in Sources */,
@@ -1340,6 +1371,7 @@
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A41A048C1E1B875500187C9B /* UIView+Extension.m in Sources */,
 				A45EBD071E2369DA00154216 /* ImageDB.m in Sources */,
+				A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */,
 				A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */,
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,
 				A47135711E08D21E00D1E83D /* MethodVC.m in Sources */,
