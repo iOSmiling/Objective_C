@@ -17,6 +17,7 @@
 #import "CollectionMainVC.h"
 #import "StorageMainVC.h"
 #import "ThirdPartyVC.h"
+#import "InteractiveMainVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -46,6 +47,9 @@
     [_array addObject:@"ScrollView"];
     [_array addObject:@"Collection"];
     [_array addObject:@"第三方使用"];
+    [_array addObject:@"自定义转场"];
+    
+    [self.view addSubview:self.tableView];
     
 }
 
@@ -54,8 +58,6 @@
     [super viewWillLayoutSubviews];
     
     __weak typeof(self) weakSelf = self;
-    
-    [self.view addSubview:self.tableView];
     
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         
@@ -161,6 +163,14 @@
             [self.navigationController pushViewController:vc animated:YES];
         
             break;
+        }
+        case 9:
+        {
+            InteractiveMainVC *vc = [[InteractiveMainVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        
         }
         default:
             break;
