@@ -120,6 +120,18 @@
 		A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C059AB1E0BCA4E00EF5D1B /* movies.plist */; };
 		A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */; };
 		A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */; };
+		A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C581E48085D00F85801 /* InheritVC.m */; };
+		A4CD4C5C1E4808BF00F85801 /* InheritA.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5B1E4808BF00F85801 /* InheritA.m */; };
+		A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5E1E4808D100F85801 /* InheritB.m */; };
+		A4CD4C7F1E48129400F85801 /* XWPresentedOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C7A1E48129400F85801 /* XWPresentedOneController.m */; };
+		A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C7C1E48129400F85801 /* XWPresentOneController.m */; };
+		A4CD4C811E48129400F85801 /* XWPresentOneTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C7E1E48129400F85801 /* XWPresentOneTransition.m */; };
+		A4CD4C851E48136B00F85801 /* MXNavigationBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C841E48136B00F85801 /* MXNavigationBarManager.m */; };
+		A4CD4C901E48138600F85801 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C871E48138600F85801 /* MenuTableViewController.m */; };
+		A4CD4C911E48138600F85801 /* TranslateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C891E48138600F85801 /* TranslateTableViewController.m */; };
+		A4CD4C921E48138600F85801 /* GradientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8B1E48138600F85801 /* GradientTableViewController.m */; };
+		A4CD4C931E48138600F85801 /* MutationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */; };
+		A4CD4C941E48138600F85801 /* ReversalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */; };
 		A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */; };
 		A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A311E0A5B2B0057C297 /* JKImagePickerController.strings */; };
 		A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A331E0A5B2B0057C297 /* ImagesPicker.xcassets */; };
@@ -153,15 +165,13 @@
 		A4DAAF3F1E46C5EC002BACA7 /* XWPageCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF3A1E46C5EC002BACA7 /* XWPageCoverController.m */; };
 		A4DAAF401E46C5EC002BACA7 /* XWPageCoverPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF3C1E46C5EC002BACA7 /* XWPageCoverPushController.m */; };
 		A4DAAF411E46C5EC002BACA7 /* XWPageCoverTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF3E1E46C5EC002BACA7 /* XWPageCoverTransition.m */; };
-		A4DAAF491E46C689002BACA7 /* XWPresentOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF431E46C689002BACA7 /* XWPresentOneController.m */; };
-		A4DAAF4A1E46C689002BACA7 /* XWPresentedOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF451E46C689002BACA7 /* XWPresentedOneController.m */; };
-		A4DAAF4B1E46C689002BACA7 /* XWPresentOneTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF471E46C689002BACA7 /* XWPresentOneTransition.m */; };
 		A4DAAF4E1E46D57A002BACA7 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF4D1E46D57A002BACA7 /* UIViewController+Utils.m */; };
 		A4DAAF521E470131002BACA7 /* SimpleTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF511E470131002BACA7 /* SimpleTransitionVC.m */; };
 		A4DAAF5B1E47013F002BACA7 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF541E47013F002BACA7 /* ModalViewController.m */; };
 		A4DAAF5C1E47013F002BACA7 /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF561E47013F002BACA7 /* BouncePresentAnimation.m */; };
 		A4DAAF5D1E47013F002BACA7 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF581E47013F002BACA7 /* NormalDismissAnimation.m */; };
 		A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */; };
+		A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */; };
 		A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BA31E12073C00FA932B /* CollectionMainVC.m */; };
 		A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */; };
 		A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */; };
@@ -413,6 +423,30 @@
 		A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
 		A4C059AF1E0BCA5800EF5D1B /* ZXMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovie.h; sourceTree = "<group>"; };
 		A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
+		A4CD4C571E48085D00F85801 /* InheritVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritVC.h; sourceTree = "<group>"; };
+		A4CD4C581E48085D00F85801 /* InheritVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritVC.m; sourceTree = "<group>"; };
+		A4CD4C5A1E4808BF00F85801 /* InheritA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritA.h; sourceTree = "<group>"; };
+		A4CD4C5B1E4808BF00F85801 /* InheritA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritA.m; sourceTree = "<group>"; };
+		A4CD4C5D1E4808D100F85801 /* InheritB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritB.h; sourceTree = "<group>"; };
+		A4CD4C5E1E4808D100F85801 /* InheritB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritB.m; sourceTree = "<group>"; };
+		A4CD4C791E48129400F85801 /* XWPresentedOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentedOneController.h; sourceTree = "<group>"; };
+		A4CD4C7A1E48129400F85801 /* XWPresentedOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentedOneController.m; sourceTree = "<group>"; };
+		A4CD4C7B1E48129400F85801 /* XWPresentOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentOneController.h; sourceTree = "<group>"; };
+		A4CD4C7C1E48129400F85801 /* XWPresentOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentOneController.m; sourceTree = "<group>"; };
+		A4CD4C7D1E48129400F85801 /* XWPresentOneTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentOneTransition.h; sourceTree = "<group>"; };
+		A4CD4C7E1E48129400F85801 /* XWPresentOneTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentOneTransition.m; sourceTree = "<group>"; };
+		A4CD4C831E48136B00F85801 /* MXNavigationBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNavigationBarManager.h; sourceTree = "<group>"; };
+		A4CD4C841E48136B00F85801 /* MXNavigationBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNavigationBarManager.m; sourceTree = "<group>"; };
+		A4CD4C861E48138600F85801 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		A4CD4C871E48138600F85801 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		A4CD4C881E48138600F85801 /* TranslateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateTableViewController.h; sourceTree = "<group>"; };
+		A4CD4C891E48138600F85801 /* TranslateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateTableViewController.m; sourceTree = "<group>"; };
+		A4CD4C8A1E48138600F85801 /* GradientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientTableViewController.h; sourceTree = "<group>"; };
+		A4CD4C8B1E48138600F85801 /* GradientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientTableViewController.m; sourceTree = "<group>"; };
+		A4CD4C8C1E48138600F85801 /* MutationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutationTableViewController.h; sourceTree = "<group>"; };
+		A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutationTableViewController.m; sourceTree = "<group>"; };
+		A4CD4C8E1E48138600F85801 /* ReversalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReversalTableViewController.h; sourceTree = "<group>"; };
+		A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReversalTableViewController.m; sourceTree = "<group>"; };
 		A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
 		A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
 		A4D57A321E0A5B2B0057C297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
@@ -477,12 +511,6 @@
 		A4DAAF3C1E46C5EC002BACA7 /* XWPageCoverPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPageCoverPushController.m; sourceTree = "<group>"; };
 		A4DAAF3D1E46C5EC002BACA7 /* XWPageCoverTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPageCoverTransition.h; sourceTree = "<group>"; };
 		A4DAAF3E1E46C5EC002BACA7 /* XWPageCoverTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPageCoverTransition.m; sourceTree = "<group>"; };
-		A4DAAF421E46C689002BACA7 /* XWPresentOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentOneController.h; sourceTree = "<group>"; };
-		A4DAAF431E46C689002BACA7 /* XWPresentOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentOneController.m; sourceTree = "<group>"; };
-		A4DAAF441E46C689002BACA7 /* XWPresentedOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentedOneController.h; sourceTree = "<group>"; };
-		A4DAAF451E46C689002BACA7 /* XWPresentedOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentedOneController.m; sourceTree = "<group>"; };
-		A4DAAF461E46C689002BACA7 /* XWPresentOneTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWPresentOneTransition.h; sourceTree = "<group>"; };
-		A4DAAF471E46C689002BACA7 /* XWPresentOneTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWPresentOneTransition.m; sourceTree = "<group>"; };
 		A4DAAF4C1E46D57A002BACA7 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		A4DAAF4D1E46D57A002BACA7 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
 		A4DAAF501E470131002BACA7 /* SimpleTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTransitionVC.h; sourceTree = "<group>"; };
@@ -495,6 +523,8 @@
 		A4DAAF581E47013F002BACA7 /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
 		A4DAAF591E47013F002BACA7 /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
 		A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		A4DAAF5F1E47158E002BACA7 /* MasonryMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainVC.h; sourceTree = "<group>"; };
+		A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainVC.m; sourceTree = "<group>"; };
 		A4F86BA21E12073C00FA932B /* CollectionMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionMainVC.h; sourceTree = "<group>"; };
 		A4F86BA31E12073C00FA932B /* CollectionMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMainVC.m; sourceTree = "<group>"; };
 		A4F86BEF1E1218BE00FA932B /* CollectionWaterFallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionWaterFallVC.h; sourceTree = "<group>"; };
@@ -658,6 +688,8 @@
 				A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */,
 				A456A9E01E31D9F400E501C3 /* AFNVC.h */,
 				A456A9E11E31D9F400E501C3 /* AFNVC.m */,
+				A4DAAF5F1E47158E002BACA7 /* MasonryMainVC.h */,
+				A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */,
 			);
 			path = "第三方的使用";
 			sourceTree = "<group>";
@@ -667,6 +699,10 @@
 			children = (
 				A45EBCF51E233F3000154216 /* XXEngine.h */,
 				A45EBCF61E233F3000154216 /* XXEngine.m */,
+				A4CD4C5A1E4808BF00F85801 /* InheritA.h */,
+				A4CD4C5B1E4808BF00F85801 /* InheritA.m */,
+				A4CD4C5D1E4808D100F85801 /* InheritB.h */,
+				A4CD4C5E1E4808D100F85801 /* InheritB.m */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -707,6 +743,7 @@
 				A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */,
 				A4062CC51E0A4F920083810B /* UIImageEffects.m */,
 				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
+				A4F86BFB1E12407D00FA932B /* Foundation+Log.m */,
 				A47135541E08C7DA00D1E83D /* UIImage+Extend.h */,
 				A47135551E08C7DA00D1E83D /* UIImage+Extend.m */,
 				A41A04841E1B871800187C9B /* UIBarButtonItem+Extension.h */,
@@ -717,7 +754,6 @@
 				A41A048B1E1B875500187C9B /* UIView+Extension.m */,
 				A41A047E1E1B414D00187C9B /* NetworkToos.h */,
 				A41A047F1E1B414D00187C9B /* NetworkToos.m */,
-				A4F86BFB1E12407D00FA932B /* Foundation+Log.m */,
 				A4DAAEDF1E46C067002BACA7 /* UIView+anchorPoint.h */,
 				A4DAAEE01E46C067002BACA7 /* UIView+anchorPoint.m */,
 				A4DAAEDC1E46C033002BACA7 /* UIView+FrameChange.h */,
@@ -765,6 +801,8 @@
 				A45EBCEF1E2322EF00154216 /* BlockVC.m */,
 				A41F58DF1E2F1B3200AA1BE2 /* ValidateVC.h */,
 				A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */,
+				A4CD4C571E48085D00F85801 /* InheritVC.h */,
+				A4CD4C581E48085D00F85801 /* InheritVC.m */,
 				A45EBCF41E233F1600154216 /* Object */,
 				A4D64BFD1E0CBD37003D9F23 /* Model */,
 			);
@@ -831,6 +869,7 @@
 				A456A9DC1E31D8A100E501C3 /* 第三方的使用 */,
 				A4DAAEA51E46BDAB002BACA7 /* 自定义转场 */,
 				A4062CBE1E0A4D520083810B /* UISrollView */,
+				A4CD4C821E48132A00F85801 /* 导航栏控制 */,
 				A4F86BA11E12071800FA932B /* UICollectionView */,
 				A45EBCFB1E2369DA00154216 /* Storage */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
@@ -1024,6 +1063,38 @@
 			path = JF;
 			sourceTree = "<group>";
 		};
+		A4CD4C781E48129400F85801 /* PresentOneController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD4C791E48129400F85801 /* XWPresentedOneController.h */,
+				A4CD4C7A1E48129400F85801 /* XWPresentedOneController.m */,
+				A4CD4C7B1E48129400F85801 /* XWPresentOneController.h */,
+				A4CD4C7C1E48129400F85801 /* XWPresentOneController.m */,
+				A4CD4C7D1E48129400F85801 /* XWPresentOneTransition.h */,
+				A4CD4C7E1E48129400F85801 /* XWPresentOneTransition.m */,
+			);
+			path = PresentOneController;
+			sourceTree = "<group>";
+		};
+		A4CD4C821E48132A00F85801 /* 导航栏控制 */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD4C831E48136B00F85801 /* MXNavigationBarManager.h */,
+				A4CD4C841E48136B00F85801 /* MXNavigationBarManager.m */,
+				A4CD4C861E48138600F85801 /* MenuTableViewController.h */,
+				A4CD4C871E48138600F85801 /* MenuTableViewController.m */,
+				A4CD4C881E48138600F85801 /* TranslateTableViewController.h */,
+				A4CD4C891E48138600F85801 /* TranslateTableViewController.m */,
+				A4CD4C8A1E48138600F85801 /* GradientTableViewController.h */,
+				A4CD4C8B1E48138600F85801 /* GradientTableViewController.m */,
+				A4CD4C8C1E48138600F85801 /* MutationTableViewController.h */,
+				A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */,
+				A4CD4C8E1E48138600F85801 /* ReversalTableViewController.h */,
+				A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */,
+			);
+			path = "导航栏控制";
+			sourceTree = "<group>";
+		};
 		A4D57A2F1E0A5B2B0057C297 /* JK */ = {
 			isa = PBXGroup;
 			children = (
@@ -1097,8 +1168,8 @@
 				A4DAAEA71E46BE2D002BACA7 /* InteractiveMainVC.m */,
 				A4DAAEA91E46BF70002BACA7 /* XWInteractiveTransition.h */,
 				A4DAAEAA1E46BF70002BACA7 /* XWInteractiveTransition.m */,
+				A4CD4C781E48129400F85801 /* PresentOneController */,
 				A4DAAF4F1E47010D002BACA7 /* SimpleUserC */,
-				A4DAAF481E46C689002BACA7 /* PresentOneController */,
 				A4DAAF381E46C5EC002BACA7 /* PageCoverController */,
 				A4DAAF2E1E46C51F002BACA7 /* CircleSpreadController */,
 				A4DAAF1F1E46C4F8002BACA7 /* MagicMoveController */,
@@ -1146,20 +1217,6 @@
 				A4DAAF3E1E46C5EC002BACA7 /* XWPageCoverTransition.m */,
 			);
 			path = PageCoverController;
-			sourceTree = "<group>";
-		};
-		A4DAAF481E46C689002BACA7 /* PresentOneController */ = {
-			isa = PBXGroup;
-			children = (
-				A4DAAF421E46C689002BACA7 /* XWPresentOneController.h */,
-				A4DAAF431E46C689002BACA7 /* XWPresentOneController.m */,
-				A4DAAF441E46C689002BACA7 /* XWPresentedOneController.h */,
-				A4DAAF451E46C689002BACA7 /* XWPresentedOneController.m */,
-				A4DAAF461E46C689002BACA7 /* XWPresentOneTransition.h */,
-				A4DAAF471E46C689002BACA7 /* XWPresentOneTransition.m */,
-			);
-			name = PresentOneController;
-			path = "../../../../../../Downloads/XWTrasitionPractice-master/XWTrasitionPractice/PresentOneController";
 			sourceTree = "<group>";
 		};
 		A4DAAF4F1E47010D002BACA7 /* SimpleUserC */ = {
@@ -1469,21 +1526,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
+				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
 				A4DAAEDE1E46C033002BACA7 /* UIView+FrameChange.m in Sources */,
+				A4CD4C921E48138600F85801 /* GradientTableViewController.m in Sources */,
 				A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */,
 				A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */,
+				A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */,
 				A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */,
 				A4BFBF7D1E13BC8500A54FF1 /* PPPersonModel.m in Sources */,
 				A41A048F1E1B87B100187C9B /* UIView+CLObjcSugar.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A4DAAEE11E46C067002BACA7 /* UIView+anchorPoint.m in Sources */,
+				A4CD4C911E48138600F85801 /* TranslateTableViewController.m in Sources */,
+				A4CD4C901E48138600F85801 /* MenuTableViewController.m in Sources */,
 				A4DAAF411E46C5EC002BACA7 /* XWPageCoverTransition.m in Sources */,
 				A456A9E21E31D9F400E501C3 /* AFNVC.m in Sources */,
+				A4CD4C811E48129400F85801 /* XWPresentOneTransition.m in Sources */,
 				A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */,
 				A4DAAEA81E46BE2D002BACA7 /* InteractiveMainVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
@@ -1506,10 +1569,10 @@
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */,
 				A41A04861E1B871800187C9B /* UIBarButtonItem+Extension.m in Sources */,
+				A4CD4C931E48138600F85801 /* MutationTableViewController.m in Sources */,
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
-				A4DAAF4A1E46C689002BACA7 /* XWPresentedOneController.m in Sources */,
 				A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */,
 				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
@@ -1528,7 +1591,7 @@
 				A41A04891E1B872400187C9B /* UITabBar+badge.m in Sources */,
 				A45EBD0A1E2369DA00154216 /* XMDBManager.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
-				A4DAAF491E46C689002BACA7 /* XWPresentOneController.m in Sources */,
+				A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A41C4BB91E15FA1100F6AA64 /* NSObject+JKRuntime.m in Sources */,
 				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
@@ -1542,6 +1605,7 @@
 				A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */,
 				A41C4BBC1E15FA1100F6AA64 /* UIColor+CLObjcSugar.m in Sources */,
 				A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */,
+				A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */,
 				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
 				A41C4BBF1E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m in Sources */,
 				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
@@ -1568,6 +1632,8 @@
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A41C4BB21E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
+				A4CD4C7F1E48129400F85801 /* XWPresentedOneController.m in Sources */,
+				A4CD4C851E48136B00F85801 /* MXNavigationBarManager.m in Sources */,
 				A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */,
 				A4DAAF2B1E46C4F8002BACA7 /* XWMagicMoveController.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
@@ -1589,9 +1655,9 @@
 				A4DAAF2C1E46C4F8002BACA7 /* XWMagicMovePushController.m in Sources */,
 				A4879D7D1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m in Sources */,
 				A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */,
+				A4CD4C5C1E4808BF00F85801 /* InheritA.m in Sources */,
 				A45EBD091E2369DA00154216 /* StorageMainVC.m in Sources */,
 				A4BFBF641E13867200A54FF1 /* AddressOneVC.m in Sources */,
-				A4DAAF4B1E46C689002BACA7 /* XWPresentOneTransition.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
@@ -1611,6 +1677,7 @@
 				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
+				A4CD4C941E48138600F85801 /* ReversalTableViewController.m in Sources */,
 				A4DAAF5B1E47013F002BACA7 /* ModalViewController.m in Sources */,
 				A41C4BB81E15FA1100F6AA64 /* NSObject+JKReflection.m in Sources */,
 				A4BFBF671E13919900A54FF1 /* AddressSortListVC.m in Sources */,

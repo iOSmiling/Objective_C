@@ -9,6 +9,7 @@
 #import "ThirdPartyVC.h"
 #import <Masonry.h>
 #import "AFNVC.h"
+#import "MasonryMainVC.h"
 
 @interface ThirdPartyVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -27,6 +28,7 @@
     
     self.array = [[NSMutableArray alloc] init];
     [_array addObject:@"AFN"];
+    [_array addObject:@"Masonry"];
     
     [self.view addSubview:self.tableView];
     
@@ -81,6 +83,12 @@
             AFNVC *vc = [[AFNVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
            
+            break;
+        }
+        case 1:
+        {
+            MasonryMainVC *vc = [[MasonryMainVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:

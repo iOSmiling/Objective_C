@@ -10,7 +10,7 @@
 
 @interface UIViewController (Utils)
 
-+ (UIViewController*) currentViewController;
++ (UIViewController*)currentViewController;
 
 + (UINavigationController *)currentNavigationController;
 

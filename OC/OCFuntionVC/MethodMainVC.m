@@ -13,6 +13,7 @@
 #import "StringVC.h"
 #import "BlockVC.h"
 #import "ValidateVC.h"
+#import "InheritVC.h"
 
 @interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -39,6 +40,7 @@
     [_array addObject:@"NSString"];
     [_array addObject:@"Block"];
     [_array addObject:@"正则验证"];
+    [_array addObject:@"继承"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -111,6 +113,8 @@
         }
         case 6:
         {
+            InheritVC *vc = [[InheritVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:

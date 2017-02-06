@@ -18,6 +18,7 @@
 #import "StorageMainVC.h"
 #import "ThirdPartyVC.h"
 #import "InteractiveMainVC.h"
+#import "MenuTableViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -48,6 +49,7 @@
     [_array addObject:@"Collection"];
     [_array addObject:@"第三方使用"];
     [_array addObject:@"自定义转场"];
+    [_array addObject:@"导航控制"];
     
     [self.view addSubview:self.tableView];
     
@@ -171,6 +173,13 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         
+        }
+        case 10:
+        {
+            MenuTableViewController *vc = [[MenuTableViewController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         default:
             break;
