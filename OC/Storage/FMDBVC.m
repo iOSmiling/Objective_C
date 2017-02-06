@@ -31,9 +31,10 @@
     self.imageView.frame = CGRectMake(self.view.frame.size.width/4, 200, self.view.frame.size.width/2, self.view.frame.size.height/2);
     
     
-    //创建表
+    
     self.imageDB = [[ImageDB alloc] init];
     
+    //创建表
     [_imageDB createDataBase];
     
     //增加数据

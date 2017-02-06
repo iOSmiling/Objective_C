@@ -10,6 +10,7 @@
 #import "MXNavigationBarManager.h"
 
 #define SCREEN_RECT [UIScreen mainScreen].bounds
+
 static NSString *const kBackCellIdentifer = @"kBackCellIdentifer";
 static const CGFloat headerImageHeight = 260.0f;
 

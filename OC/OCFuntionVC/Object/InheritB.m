@@ -12,8 +12,10 @@
 
 
 //重写父类方法
-- (void) inheritAPrint
+- (void) inheritAPrint1
 {
+    [super inheritAPrint]; //调用执行父类的方法
+    
     NSLog(@"InheritB :%@",_inheritBString);
 }
 

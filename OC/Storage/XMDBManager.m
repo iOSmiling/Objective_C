@@ -31,9 +31,11 @@ static XMDBManager * _sharedDBManager;
     if (self)
     {
         int state = [self initializeDBWithName:kXMDBName];
-        if (state == -1) {
+        if (state == -1)
+        {
             NSLog(@"数据库初始化失败");
-        } else {
+        } else
+        {
             NSLog(@"数据库初始化成功");
         }
 

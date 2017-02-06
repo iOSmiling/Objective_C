@@ -37,70 +37,85 @@ static const float   kDefaultAnimationTime = 0.35f;
 @implementation MXNavigationBarManager
 
 #pragma mark - property set
-+ (void)setBarColor:(UIColor *)color {
++ (void)setBarColor:(UIColor *)color
+{
     [self sharedManager].barColor = color;
 }
 
-+ (void)setTintColor:(UIColor *)color {
++ (void)setTintColor:(UIColor *)color
+{
     [self sharedManager].tintColor = color;
     [self sharedManager].selfNavigationBar.tintColor = color;
     [self setTitleColorWithColor:color];
 }
 
-+ (void)setBackgroundImage:(UIImage *)image {
++ (void)setBackgroundImage:(UIImage *)image
+{
     [[self sharedManager].selfNavigationBar setBackgroundImage:image
                                                  forBarMetrics:UIBarMetricsDefault];
 }
 
-+ (void)setStatusBarStyle:(UIStatusBarStyle)style {
++ (void)setStatusBarStyle:(UIStatusBarStyle)style
+{
     [self sharedManager].statusBarStyle = style;
     [[UIApplication sharedApplication] setStatusBarStyle:style];
 }
 
-+ (void)setZeroAlphaOffset:(float)offset {
++ (void)setZeroAlphaOffset:(float)offset
+{
     [self sharedManager].zeroAlphaOffset = offset;
 }
 
-+ (void)setFullAlphaOffset:(float)offset {
++ (void)setFullAlphaOffset:(float)offset
+{
     [self sharedManager].fullAlphaOffset = offset;
 }
 
-+ (void)setMinAlphaValue:(float)value {
++ (void)setMinAlphaValue:(float)value
+{
     value = value < kMinAlphaValue ? kMinAlphaValue : value;
     [self sharedManager].minAlphaValue = value;
 }
 
-+ (void)setMaxAlphaValue:(float)value {
++ (void)setMaxAlphaValue:(float)value
+{
     value = value > kMaxAlphaValue ? kMaxAlphaValue : value;
     [self sharedManager].maxAlphaValue = value;
 }
 
-+ (void)setFullAlphaTintColor:(UIColor *)color {
++ (void)setFullAlphaTintColor:(UIColor *)color
+{
     [self sharedManager].fullAlphaTintColor = color;
 }
 
-+ (void)setFullAlphaBarStyle:(UIStatusBarStyle)style {
++ (void)setFullAlphaBarStyle:(UIStatusBarStyle)style
+{
     [self sharedManager].fullAlphaBarStyle = style;
 }
 
-+ (void)setAllChange:(BOOL)allChange {
++ (void)setAllChange:(BOOL)allChange
+{
     [self sharedManager].allChange = allChange;
 }
 
-+ (void)setReversal:(BOOL)reversal {
++ (void)setReversal:(BOOL)reversal
+{
     [self sharedManager].reversal = reversal;
 }
 
-+ (void)setContinues:(BOOL)continues {
++ (void)setContinues:(BOOL)continues
+{
     [self sharedManager].continues = continues;
 }
 
-+ (void)reStoreToSystemNavigationBar {
++ (void)reStoreToSystemNavigationBar
+{
     [[self sharedManager].selfNavigationController setValue:[UINavigationBar new] forKey:@"navigationBar"];
 }
 
 #pragma mark - Public Method
-+ (void)managerWithController:(UIViewController *)viewController {
++ (void)managerWithController:(UIViewController *)viewController
+{
     UINavigationBar *navigationBar = viewController.navigationController.navigationBar;
     [self sharedManager].selfNavigationController = viewController.navigationController;
     [self sharedManager].selfNavigationBar = navigationBar;
@@ -108,7 +123,8 @@ static const float   kDefaultAnimationTime = 0.35f;
     [navigationBar setShadowImage:[UIImage new]];
 }
 
-+ (void)changeAlphaWithCurrentOffset:(CGFloat)currentOffset {
++ (void)changeAlphaWithCurrentOffset:(CGFloat)currentOffset
+{
     MXNavigationBarManager *manager = [self sharedManager];
     
     float currentAlpha = [self curretAlphaForOffset:currentOffset];

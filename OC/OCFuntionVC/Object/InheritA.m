@@ -20,6 +20,19 @@
     NSLog(@"InheritA");
     NSLog(@"InheritA :%@",_inheritAString);
     
+    
+    if (self.delegate)
+    {
+        [self.delegate eat];
+        
+        [self.delegate lovePeople:@"薛坤龙"];
+    }
+}
+
+- (void)inheritANSLog
+{
+    NSLog(@"NSLog");
+
 }
 
 @end
