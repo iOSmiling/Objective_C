@@ -8,8 +8,9 @@
 
 #import "InheritB.h"
 
-@implementation InheritB
+static int sCount = 100;
 
+@implementation InheritB
 
 //重写父类方法
 - (void) inheritAPrint1
@@ -17,6 +18,12 @@
     [super inheritAPrint]; //调用执行父类的方法
     
     NSLog(@"InheritB :%@",_inheritBString);
+}
+
+
++ (int)getStatic
+{
+    return sCount;
 }
 
 @end

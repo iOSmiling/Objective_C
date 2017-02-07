@@ -20,10 +20,14 @@
 #import "InteractiveMainVC.h"
 #import "MenuTableViewController.h"
 
+
+static const CGFloat tableViewCellHight = 60.0;
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
-@property (nonatomic,strong) NSMutableArray *array;
+@property (nonatomic,strong) NSArray *array;
+@property (nonatomic,strong) NSArray *viewControllers;
 
 @end
 
@@ -39,17 +43,30 @@
     
     self.array = [[NSMutableArray alloc] init];
     
-    [_array addObject:@"Animation"];
-    [_array addObject:@"GestureVC"];
-    [_array addObject:@"Thread"];
-    [_array addObject:@"Storage"];
-    [_array addObject:@"图片操作"];
-    [_array addObject:@"OC常用方法"];
-    [_array addObject:@"ScrollView"];
-    [_array addObject:@"Collection"];
-    [_array addObject:@"第三方使用"];
-    [_array addObject:@"自定义转场"];
-    [_array addObject:@"导航控制"];
+    _array = @[@"Animation",
+               @"GestureVC",
+               @"Thread",
+               @"Storage",
+               @"图片操作",
+               @"OC常用方法",
+               @"ScrollView",
+               @"Collection",
+               @"第三方使用",
+               @"自定义转场",
+               @"导航栏渐变控制"];
+
+    _viewControllers = @[[AnimationViewController class],
+                         [GestureVC class],
+                         [ThreadMainVC class],
+                         [StorageMainVC class],
+                         [PhotoMainVC class],
+                         [MethodMainVC class],
+                         [ScrollShowMainVC class],
+                         [CollectionMainVC class],
+                         [ThirdPartyVC class],
+                         [InteractiveMainVC class],
+                         [MenuTableViewController class]];
+    
     
     [self.view addSubview:self.tableView];
     
@@ -74,118 +91,53 @@
 
 #pragma mark - UITableViewDataSource
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return tableViewCellHight;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.array.count;
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
+     设置 Cell 的存在差异性的那些属性（包括样式和内容）时，有了 if 最好就要有 else，要显式的覆盖所有可能性。
+     设置 Cell 的存在差异性的那些属性时，代码要放在初始化代码块的外部。
+     */
     
     static NSString *identifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell==nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     cell.textLabel.text = _array[indexPath.row];
     
-    return cell;
+    if (indexPath.row % 2 == 0)
+    {
+        [cell.textLabel setTextColor:[UIColor redColor]];
+        cell.detailTextLabel.text =[NSString stringWithFormat:@"%ld",(long)indexPath.row];
+        cell.imageView.image = nil;
+        
+    }else
+    {
+        [cell.textLabel setTextColor:[UIColor blueColor]];
+        cell.detailTextLabel.text =nil;
+        cell.imageView.image = [UIImage imageNamed:@"Test_1"];
+    }
     
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger row = indexPath.row;
-    switch (row)
-    {
-        case 0:
-        {
-            AnimationViewController *vc1 = [[AnimationViewController alloc] init];
-            vc1.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc1 animated:YES];
-            break;
-        }
-        case 1:
-        {
-            GestureVC *vc2 = [[GestureVC alloc] init];
-            vc2.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc2 animated:YES];
-            break;
-        }
-        case 2:
-        {
-            ThreadMainVC *vc3 = [[ThreadMainVC alloc] init];
-            vc3.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc3 animated:YES];
-            break;
-        }
-        case 3:
-        {
-            StorageMainVC *vc4 = [[StorageMainVC alloc] init];
-            vc4.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc4 animated:YES];
-            break;
-        }
-        case 4:
-        {
-            PhotoMainVC *vc5 = [[PhotoMainVC alloc] init];
-            vc5.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc5 animated:YES];
-            break;
-        }
-        case 5:
-        {
-            MethodMainVC *vc6 = [[MethodMainVC alloc] init];
-            vc6.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc6 animated:YES];
-            break;
-        }
-        case 6:
-        {
-            ScrollShowMainVC *vc7 = [[ScrollShowMainVC alloc] init];
-            vc7.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc7 animated:YES];
-            break;
-        }
-        case 7:
-        {
-            CollectionMainVC *vc = [[CollectionMainVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
-        
-            break;
-        }
-        case 8:
-        {
-            ThirdPartyVC *vc = [[ThirdPartyVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
-        
-            break;
-        }
-        case 9:
-        {
-            InteractiveMainVC *vc = [[InteractiveMainVC alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        
-        }
-        case 10:
-        {
-            MenuTableViewController *vc = [[MenuTableViewController alloc] init];
-            vc.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        default:
-            break;
-            
-    }
-
+    UIViewController *vc = [_viewControllers[indexPath.row] new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - Getters and Setters
@@ -206,6 +158,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

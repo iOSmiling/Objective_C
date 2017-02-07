@@ -29,6 +29,10 @@
     
     [inheritB inheritAPrint]; //
     
+    
+    
+    NSLog(@"私有的全局变量 %d",[InheritB getStatic]) ;
+    
 }
 
 #pragma mark - InteritDelegate

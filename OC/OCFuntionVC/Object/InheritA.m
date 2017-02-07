@@ -9,6 +9,7 @@
 #import "InheritA.h"
 
 
+
 @interface InheritA ()
 
 @end
@@ -20,8 +21,8 @@
     NSLog(@"InheritA");
     NSLog(@"InheritA :%@",_inheritAString);
     
-    
-    if (self.delegate)
+    // 判断代理对象是否实现这个方法，没有实现会导致崩溃
+    if ([self.delegate respondsToSelector:@selector(lovePeople:)])
     {
         [self.delegate eat];
         
