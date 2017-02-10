@@ -13,6 +13,20 @@
 @end
 
 /*
+ 
+    NSOperation有三种状态
+ 
+    isReady -> isExecution -> isFinish
+ 
+     isReady: 返回 YES 表示操作已经准备好被执行, 如果返回NO则说明还有其他没有先前的相关步骤没有完成。
+     isExecuting: 返回YES表示操作正在执行，反之则没在执行。
+     isFinished : 返回YES表示操作执行成功或者被取消了
+ 
+ 
+ */
+
+
+/*
  NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];  //主队列   凡是添加到主队列中的任务（NSOperation），都会放到主线程中执行
  
  NSOperationQueue *queue = [[NSOperationQueue alloc] init]; //自定义队列同时包含了：串行、并发功能,添加到这种队列中的任务（NSOperation），就会自动放到子线程中执行

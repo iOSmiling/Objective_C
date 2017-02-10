@@ -12,6 +12,26 @@ static int sCount = 100;
 
 @implementation InheritB
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        
+    }
+    return self;
+}
+
+- (instancetype)initWith:(NSString *)name andSex:(NSString *)sex
+{
+    self = [super initWith:name andSex:sex];
+    if (self)
+    {
+        
+    }
+    return self;
+}
+
 //重写父类方法
 - (void) inheritAPrint1
 {
@@ -20,10 +40,9 @@ static int sCount = 100;
     NSLog(@"InheritB :%@",_inheritBString);
 }
 
-
 + (int)getStatic
 {
-    return sCount;
+    return sCount * 3;
 }
 
 @end

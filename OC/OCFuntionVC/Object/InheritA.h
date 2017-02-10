@@ -27,6 +27,11 @@
 
 @property (nonatomic,weak) id<InteritDelegate>delegate;
 
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *sex;
+
+- (instancetype)initWith:(NSString *)name andSex:(NSString *)sex;
+
 - (void)inheritAPrint;
 
 - (void)inheritANSLog;

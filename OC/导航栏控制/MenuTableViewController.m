@@ -13,6 +13,8 @@
 #import "MutationTableViewController.h"
 #import "ReversalTableViewController.h"
 
+#import "NaviTestShowOneVC.h"
+
 static NSString *const menuCellIdentifer = @"menuCellIdentifer";
 
 @interface MenuTableViewController ()
@@ -32,11 +34,13 @@ static NSString *const menuCellIdentifer = @"menuCellIdentifer";
     _titles = @[@"全透明导航栏",
                 @"渐变导航栏",
                 @"突变导航栏",
-                @"颜色反转导航栏"];
+                @"颜色反转导航栏",
+                @"自定义Navi"];
     _viewControllers = @[[TranslateTableViewController class],
                          [GradientTableViewController class],
                          [MutationTableViewController class],
-                         [ReversalTableViewController class]];
+                         [ReversalTableViewController class],
+                         [NaviTestShowOneVC class]];
     
     [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:menuCellIdentifer];
     

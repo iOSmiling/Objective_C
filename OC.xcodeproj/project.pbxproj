@@ -10,10 +10,8 @@
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
 		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
-		A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */; };
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
-		A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCD1E0A52DB0083810B /* LYScrollView.m */; };
-		A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */; };
+		A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */; };
 		A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A047F1E1B414D00187C9B /* NetworkToos.m */; };
 		A41A04861E1B871800187C9B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A04851E1B871800187C9B /* UIBarButtonItem+Extension.m */; };
 		A41A04891E1B872400187C9B /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A04881E1B872400187C9B /* UITabBar+badge.m */; };
@@ -43,6 +41,7 @@
 		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
 		A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */; };
 		A456A9E21E31D9F400E501C3 /* AFNVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9E11E31D9F400E501C3 /* AFNVC.m */; };
+		A45EB7BE1E4ADECC00F47C4B /* MasonryCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EB7BD1E4ADECC00F47C4B /* MasonryCellModel.m */; };
 		A45EBCF01E2322EF00154216 /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCEF1E2322EF00154216 /* BlockVC.m */; };
 		A45EBCF71E233F3000154216 /* XXEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCF61E233F3000154216 /* XXEngine.m */; };
 		A45EBCFA1E23663B00154216 /* AppDelegate+InitLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = A45EBCF91E23663B00154216 /* AppDelegate+InitLocalData.m */; };
@@ -64,7 +63,24 @@
 		A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A471357D1E08DC1300D1E83D /* PhotoCell.m */; };
 		A47135B11E08DDE300D1E83D /* SavePhotoToAlbumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */; };
 		A47135B31E08E3B500D1E83D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47135B21E08E3B500D1E83D /* AVFoundation.framework */; };
-		A4879D7D1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4879D7C1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m */; };
+		A47935FE1E4D89BF00FB5B45 /* NaviTestShowOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47935FD1E4D89BF00FB5B45 /* NaviTestShowOneVC.m */; };
+		A47936051E4D89CD00FB5B45 /* HeadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936001E4D89CD00FB5B45 /* HeadImageView.m */; };
+		A47936061E4D89CD00FB5B45 /* HeadLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936021E4D89CD00FB5B45 /* HeadLineView.m */; };
+		A47936071E4D89CD00FB5B45 /* NavHeadTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936041E4D89CD00FB5B45 /* NavHeadTitleView.m */; };
+		A47936271E4D9B5A00FB5B45 /* CollectionMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A479360A1E4D9B5A00FB5B45 /* CollectionMainVC.m */; };
+		A47936281E4D9B5A00FB5B45 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A479360C1E4D9B5A00FB5B45 /* 1.plist */; };
+		A47936291E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479360E1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m */; };
+		A479362A1E4D9B5A00FB5B45 /* CollectionWaterFallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936101E4D9B5A00FB5B45 /* CollectionWaterFallVC.m */; };
+		A479362B1E4D9B5A00FB5B45 /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936121E4D9B5A00FB5B45 /* ShopModel.m */; };
+		A479362C1E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936141E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m */; };
+		A479362D1E4D9B5A00FB5B45 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936161E4D9B5A00FB5B45 /* WaterFlowLayout.m */; };
+		A479362E1E4D9B5A00FB5B45 /* ScrollShowMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936191E4D9B5A00FB5B45 /* ScrollShowMainVC.m */; };
+		A479362F1E4D9B5A00FB5B45 /* LYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A479361C1E4D9B5A00FB5B45 /* LYScrollView.m */; };
+		A47936301E4D9B5A00FB5B45 /* ScrollShowTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A479361E1E4D9B5A00FB5B45 /* ScrollShowTestOneVC.m */; };
+		A47936311E4D9B5A00FB5B45 /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = A47936201E4D9B5A00FB5B45 /* movies.plist */; };
+		A47936321E4D9B5A00FB5B45 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936221E4D9B5A00FB5B45 /* ScrollShowTwoVC.m */; };
+		A47936331E4D9B5A00FB5B45 /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936241E4D9B5A00FB5B45 /* ZXMovie.m */; };
+		A47936341E4D9B5A00FB5B45 /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936261E4D9B5A00FB5B45 /* ZXMovieBrowser.m */; };
 		A488A6C01E07C2780087D92A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6BF1E07C2780087D92A /* main.m */; };
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
 		A488A6D91E07C2780087D92A /* OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6D81E07C2780087D92A /* OCTests.m */; };
@@ -117,9 +133,6 @@
 		A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0599E1E0BBFA300EF5D1B /* JFImagePickerViewCell.m */; };
 		A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */; };
 		A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */; };
-		A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C059AB1E0BCA4E00EF5D1B /* movies.plist */; };
-		A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */; };
-		A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */; };
 		A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C581E48085D00F85801 /* InheritVC.m */; };
 		A4CD4C5C1E4808BF00F85801 /* InheritA.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5B1E4808BF00F85801 /* InheritA.m */; };
 		A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5E1E4808D100F85801 /* InheritB.m */; };
@@ -132,7 +145,6 @@
 		A4CD4C921E48138600F85801 /* GradientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8B1E48138600F85801 /* GradientTableViewController.m */; };
 		A4CD4C931E48138600F85801 /* MutationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */; };
 		A4CD4C941E48138600F85801 /* ReversalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */; };
-		A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */; };
 		A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A311E0A5B2B0057C297 /* JKImagePickerController.strings */; };
 		A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D57A331E0A5B2B0057C297 /* ImagesPicker.xcassets */; };
 		A4D57A521E0A5B2B0057C297 /* JKAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A371E0A5B2B0057C297 /* JKAssets.m */; };
@@ -172,14 +184,10 @@
 		A4DAAF5D1E47013F002BACA7 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF581E47013F002BACA7 /* NormalDismissAnimation.m */; };
 		A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */; };
 		A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */; };
-		A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BA31E12073C00FA932B /* CollectionMainVC.m */; };
-		A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */; };
-		A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */; };
-		A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */; };
-		A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BF91E12406D00FA932B /* ShopModel.m */; };
 		A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BFB1E12407D00FA932B /* Foundation+Log.m */; };
-		A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4F86BFD1E1249BE00FA932B /* 1.plist */; };
 		A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */; };
+		A4FA786B1E4AE7F900824CA3 /* UIMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */; };
+		A4FA786E1E4AE8C500824CA3 /* UILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA786D1E4AE8C500824CA3 /* UILabelVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,14 +215,10 @@
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
 		A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoAndEditVC.m; sourceTree = "<group>"; };
-		A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowMainVC.h; sourceTree = "<group>"; };
-		A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowMainVC.m; sourceTree = "<group>"; };
 		A4062CC51E0A4F920083810B /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		A4062CC61E0A4F920083810B /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
-		A4062CCC1E0A52DB0083810B /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
-		A4062CCD1E0A52DB0083810B /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
-		A4062CCE1E0A52DB0083810B /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
-		A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
+		A40B2FB61E49BEF800C05EA8 /* MasonryMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainTableViewCell.h; sourceTree = "<group>"; };
+		A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainTableViewCell.m; sourceTree = "<group>"; };
 		A41A047E1E1B414D00187C9B /* NetworkToos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkToos.h; sourceTree = "<group>"; };
 		A41A047F1E1B414D00187C9B /* NetworkToos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkToos.m; sourceTree = "<group>"; };
 		A41A04841E1B871800187C9B /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 		A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyVC.m; sourceTree = "<group>"; };
 		A456A9E01E31D9F400E501C3 /* AFNVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNVC.h; sourceTree = "<group>"; };
 		A456A9E11E31D9F400E501C3 /* AFNVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNVC.m; sourceTree = "<group>"; };
+		A45EB7BC1E4ADECC00F47C4B /* MasonryCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryCellModel.h; sourceTree = "<group>"; };
+		A45EB7BD1E4ADECC00F47C4B /* MasonryCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryCellModel.m; sourceTree = "<group>"; };
 		A45EBCEE1E2322EF00154216 /* BlockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
 		A45EBCEF1E2322EF00154216 /* BlockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockVC.m; sourceTree = "<group>"; };
 		A45EBCF51E233F3000154216 /* XXEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXEngine.h; sourceTree = "<group>"; };
@@ -315,8 +321,40 @@
 		A47135AF1E08DDE300D1E83D /* SavePhotoToAlbumVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavePhotoToAlbumVC.h; sourceTree = "<group>"; };
 		A47135B01E08DDE300D1E83D /* SavePhotoToAlbumVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavePhotoToAlbumVC.m; sourceTree = "<group>"; };
 		A47135B21E08E3B500D1E83D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A4879D7B1E24DBC4000D0AE8 /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
-		A4879D7C1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
+		A47935FC1E4D89BF00FB5B45 /* NaviTestShowOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviTestShowOneVC.h; sourceTree = "<group>"; };
+		A47935FD1E4D89BF00FB5B45 /* NaviTestShowOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviTestShowOneVC.m; sourceTree = "<group>"; };
+		A47935FF1E4D89CD00FB5B45 /* HeadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageView.h; sourceTree = "<group>"; };
+		A47936001E4D89CD00FB5B45 /* HeadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageView.m; sourceTree = "<group>"; };
+		A47936011E4D89CD00FB5B45 /* HeadLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadLineView.h; sourceTree = "<group>"; };
+		A47936021E4D89CD00FB5B45 /* HeadLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadLineView.m; sourceTree = "<group>"; };
+		A47936031E4D89CD00FB5B45 /* NavHeadTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavHeadTitleView.h; sourceTree = "<group>"; };
+		A47936041E4D89CD00FB5B45 /* NavHeadTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavHeadTitleView.m; sourceTree = "<group>"; };
+		A47936091E4D9B5A00FB5B45 /* CollectionMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionMainVC.h; sourceTree = "<group>"; };
+		A479360A1E4D9B5A00FB5B45 /* CollectionMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMainVC.m; sourceTree = "<group>"; };
+		A479360C1E4D9B5A00FB5B45 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		A479360D1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
+		A479360E1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
+		A479360F1E4D9B5A00FB5B45 /* CollectionWaterFallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionWaterFallVC.h; sourceTree = "<group>"; };
+		A47936101E4D9B5A00FB5B45 /* CollectionWaterFallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionWaterFallVC.m; sourceTree = "<group>"; };
+		A47936111E4D9B5A00FB5B45 /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
+		A47936121E4D9B5A00FB5B45 /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
+		A47936131E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCollectionViewCell.h; sourceTree = "<group>"; };
+		A47936141E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCollectionViewCell.m; sourceTree = "<group>"; };
+		A47936151E4D9B5A00FB5B45 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		A47936161E4D9B5A00FB5B45 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		A47936181E4D9B5A00FB5B45 /* ScrollShowMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowMainVC.h; sourceTree = "<group>"; };
+		A47936191E4D9B5A00FB5B45 /* ScrollShowMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowMainVC.m; sourceTree = "<group>"; };
+		A479361B1E4D9B5A00FB5B45 /* LYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYScrollView.h; sourceTree = "<group>"; };
+		A479361C1E4D9B5A00FB5B45 /* LYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYScrollView.m; sourceTree = "<group>"; };
+		A479361D1E4D9B5A00FB5B45 /* ScrollShowTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTestOneVC.h; sourceTree = "<group>"; };
+		A479361E1E4D9B5A00FB5B45 /* ScrollShowTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTestOneVC.m; sourceTree = "<group>"; };
+		A47936201E4D9B5A00FB5B45 /* movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
+		A47936211E4D9B5A00FB5B45 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
+		A47936221E4D9B5A00FB5B45 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
+		A47936231E4D9B5A00FB5B45 /* ZXMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovie.h; sourceTree = "<group>"; };
+		A47936241E4D9B5A00FB5B45 /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
+		A47936251E4D9B5A00FB5B45 /* ZXMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovieBrowser.h; sourceTree = "<group>"; };
+		A47936261E4D9B5A00FB5B45 /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
 		A488A6BB1E07C2780087D92A /* OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6BF1E07C2780087D92A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A488A6CA1E07C2780087D92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -418,11 +456,6 @@
 		A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		A4C059A11E0BBFA300EF5D1B /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
 		A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
-		A4C059AB1E0BCA4E00EF5D1B /* movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
-		A4C059AD1E0BCA5800EF5D1B /* ZXMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovieBrowser.h; sourceTree = "<group>"; };
-		A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
-		A4C059AF1E0BCA5800EF5D1B /* ZXMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovie.h; sourceTree = "<group>"; };
-		A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
 		A4CD4C571E48085D00F85801 /* InheritVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritVC.h; sourceTree = "<group>"; };
 		A4CD4C581E48085D00F85801 /* InheritVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritVC.m; sourceTree = "<group>"; };
 		A4CD4C5A1E4808BF00F85801 /* InheritA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritA.h; sourceTree = "<group>"; };
@@ -447,8 +480,6 @@
 		A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutationTableViewController.m; sourceTree = "<group>"; };
 		A4CD4C8E1E48138600F85801 /* ReversalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReversalTableViewController.h; sourceTree = "<group>"; };
 		A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReversalTableViewController.m; sourceTree = "<group>"; };
-		A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollShowTwoVC.h; sourceTree = "<group>"; };
-		A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollShowTwoVC.m; sourceTree = "<group>"; };
 		A4D57A321E0A5B2B0057C297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JKImagePickerController.strings; sourceTree = "<group>"; };
 		A4D57A331E0A5B2B0057C297 /* ImagesPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPicker.xcassets; sourceTree = "<group>"; };
 		A4D57A341E0A5B2B0057C297 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/JKImagePickerController.strings"; sourceTree = "<group>"; };
@@ -525,20 +556,13 @@
 		A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
 		A4DAAF5F1E47158E002BACA7 /* MasonryMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainVC.h; sourceTree = "<group>"; };
 		A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainVC.m; sourceTree = "<group>"; };
-		A4F86BA21E12073C00FA932B /* CollectionMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionMainVC.h; sourceTree = "<group>"; };
-		A4F86BA31E12073C00FA932B /* CollectionMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionMainVC.m; sourceTree = "<group>"; };
-		A4F86BEF1E1218BE00FA932B /* CollectionWaterFallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionWaterFallVC.h; sourceTree = "<group>"; };
-		A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionWaterFallVC.m; sourceTree = "<group>"; };
-		A4F86BF11E1218BE00FA932B /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
-		A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
-		A4F86BF51E1218ED00FA932B /* WaterFlowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowCollectionViewCell.h; sourceTree = "<group>"; };
-		A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowCollectionViewCell.m; sourceTree = "<group>"; };
-		A4F86BF81E12406D00FA932B /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
-		A4F86BF91E12406D00FA932B /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
 		A4F86BFB1E12407D00FA932B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
-		A4F86BFD1E1249BE00FA932B /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoSystemLimitsVC.h; sourceTree = "<group>"; };
 		A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoSystemLimitsVC.m; sourceTree = "<group>"; };
+		A4FA78691E4AE7F900824CA3 /* UIMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainVC.h; sourceTree = "<group>"; };
+		A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMainVC.m; sourceTree = "<group>"; };
+		A4FA786C1E4AE8C500824CA3 /* UILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelVC.h; sourceTree = "<group>"; };
+		A4FA786D1E4AE8C500824CA3 /* UILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,40 +616,15 @@
 			path = MainNavigation;
 			sourceTree = "<group>";
 		};
-		A4062CBE1E0A4D520083810B /* UISrollView */ = {
+		A40B2FB51E49BEC800C05EA8 /* MasonryObject */ = {
 			isa = PBXGroup;
 			children = (
-				A4062CC21E0A4ED60083810B /* ScrollShowMainVC.h */,
-				A4062CC31E0A4ED60083810B /* ScrollShowMainVC.m */,
-				A4062CD21E0A53050083810B /* ScrollViewTwo */,
-				A4062CCB1E0A52DB0083810B /* ScrollViewOne */,
+				A40B2FB61E49BEF800C05EA8 /* MasonryMainTableViewCell.h */,
+				A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */,
+				A45EB7BC1E4ADECC00F47C4B /* MasonryCellModel.h */,
+				A45EB7BD1E4ADECC00F47C4B /* MasonryCellModel.m */,
 			);
-			path = UISrollView;
-			sourceTree = "<group>";
-		};
-		A4062CCB1E0A52DB0083810B /* ScrollViewOne */ = {
-			isa = PBXGroup;
-			children = (
-				A4062CCC1E0A52DB0083810B /* LYScrollView.h */,
-				A4062CCD1E0A52DB0083810B /* LYScrollView.m */,
-				A4062CCE1E0A52DB0083810B /* ScrollShowTestOneVC.h */,
-				A4062CCF1E0A52DB0083810B /* ScrollShowTestOneVC.m */,
-			);
-			path = ScrollViewOne;
-			sourceTree = "<group>";
-		};
-		A4062CD21E0A53050083810B /* ScrollViewTwo */ = {
-			isa = PBXGroup;
-			children = (
-				A4C059AD1E0BCA5800EF5D1B /* ZXMovieBrowser.h */,
-				A4C059AE1E0BCA5800EF5D1B /* ZXMovieBrowser.m */,
-				A4C059AF1E0BCA5800EF5D1B /* ZXMovie.h */,
-				A4C059B01E0BCA5800EF5D1B /* ZXMovie.m */,
-				A4C059AB1E0BCA4E00EF5D1B /* movies.plist */,
-				A4D57A2B1E0A58CB0057C297 /* ScrollShowTwoVC.h */,
-				A4D57A2C1E0A58CB0057C297 /* ScrollShowTwoVC.m */,
-			);
-			path = ScrollViewTwo;
+			path = MasonryObject;
 			sourceTree = "<group>";
 		};
 		A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */ = {
@@ -690,6 +689,7 @@
 				A456A9E11E31D9F400E501C3 /* AFNVC.m */,
 				A4DAAF5F1E47158E002BACA7 /* MasonryMainVC.h */,
 				A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */,
+				A40B2FB51E49BEC800C05EA8 /* MasonryObject */,
 			);
 			path = "第三方的使用";
 			sourceTree = "<group>";
@@ -832,6 +832,85 @@
 			path = XMImagePicker;
 			sourceTree = "<group>";
 		};
+		A47935FB1E4D897E00FB5B45 /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				A47935FC1E4D89BF00FB5B45 /* NaviTestShowOneVC.h */,
+				A47935FD1E4D89BF00FB5B45 /* NaviTestShowOneVC.m */,
+				A47935FF1E4D89CD00FB5B45 /* HeadImageView.h */,
+				A47936001E4D89CD00FB5B45 /* HeadImageView.m */,
+				A47936011E4D89CD00FB5B45 /* HeadLineView.h */,
+				A47936021E4D89CD00FB5B45 /* HeadLineView.m */,
+				A47936031E4D89CD00FB5B45 /* NavHeadTitleView.h */,
+				A47936041E4D89CD00FB5B45 /* NavHeadTitleView.m */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		A47936081E4D9B5A00FB5B45 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				A47936091E4D9B5A00FB5B45 /* CollectionMainVC.h */,
+				A479360A1E4D9B5A00FB5B45 /* CollectionMainVC.m */,
+				A479360B1E4D9B5A00FB5B45 /* 瀑布流 */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		A479360B1E4D9B5A00FB5B45 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				A479360C1E4D9B5A00FB5B45 /* 1.plist */,
+				A479360D1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.h */,
+				A479360E1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m */,
+				A479360F1E4D9B5A00FB5B45 /* CollectionWaterFallVC.h */,
+				A47936101E4D9B5A00FB5B45 /* CollectionWaterFallVC.m */,
+				A47936111E4D9B5A00FB5B45 /* ShopModel.h */,
+				A47936121E4D9B5A00FB5B45 /* ShopModel.m */,
+				A47936131E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.h */,
+				A47936141E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m */,
+				A47936151E4D9B5A00FB5B45 /* WaterFlowLayout.h */,
+				A47936161E4D9B5A00FB5B45 /* WaterFlowLayout.m */,
+			);
+			path = "瀑布流";
+			sourceTree = "<group>";
+		};
+		A47936171E4D9B5A00FB5B45 /* UISrollView */ = {
+			isa = PBXGroup;
+			children = (
+				A47936181E4D9B5A00FB5B45 /* ScrollShowMainVC.h */,
+				A47936191E4D9B5A00FB5B45 /* ScrollShowMainVC.m */,
+				A479361A1E4D9B5A00FB5B45 /* ScrollViewOne */,
+				A479361F1E4D9B5A00FB5B45 /* ScrollViewTwo */,
+			);
+			path = UISrollView;
+			sourceTree = "<group>";
+		};
+		A479361A1E4D9B5A00FB5B45 /* ScrollViewOne */ = {
+			isa = PBXGroup;
+			children = (
+				A479361B1E4D9B5A00FB5B45 /* LYScrollView.h */,
+				A479361C1E4D9B5A00FB5B45 /* LYScrollView.m */,
+				A479361D1E4D9B5A00FB5B45 /* ScrollShowTestOneVC.h */,
+				A479361E1E4D9B5A00FB5B45 /* ScrollShowTestOneVC.m */,
+			);
+			path = ScrollViewOne;
+			sourceTree = "<group>";
+		};
+		A479361F1E4D9B5A00FB5B45 /* ScrollViewTwo */ = {
+			isa = PBXGroup;
+			children = (
+				A47936201E4D9B5A00FB5B45 /* movies.plist */,
+				A47936211E4D9B5A00FB5B45 /* ScrollShowTwoVC.h */,
+				A47936221E4D9B5A00FB5B45 /* ScrollShowTwoVC.m */,
+				A47936231E4D9B5A00FB5B45 /* ZXMovie.h */,
+				A47936241E4D9B5A00FB5B45 /* ZXMovie.m */,
+				A47936251E4D9B5A00FB5B45 /* ZXMovieBrowser.h */,
+				A47936261E4D9B5A00FB5B45 /* ZXMovieBrowser.m */,
+			);
+			path = ScrollViewTwo;
+			sourceTree = "<group>";
+		};
 		A488A6B21E07C2780087D92A = {
 			isa = PBXGroup;
 			children = (
@@ -868,10 +947,9 @@
 				A471354C1E08C5F200D1E83D /* ThreadVC */,
 				A456A9DC1E31D8A100E501C3 /* 第三方的使用 */,
 				A4DAAEA51E46BDAB002BACA7 /* 自定义转场 */,
-				A4062CBE1E0A4D520083810B /* UISrollView */,
 				A4CD4C821E48132A00F85801 /* 导航栏控制 */,
-				A4F86BA11E12071800FA932B /* UICollectionView */,
 				A45EBCFB1E2369DA00154216 /* Storage */,
+				A4FA78681E4AE7DD00824CA3 /* UI */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
 				A4F86C021E125C8C00FA932B /* SystemVC */,
 				A488A6BE1E07C2780087D92A /* Supporting Files */,
@@ -1079,8 +1157,6 @@
 		A4CD4C821E48132A00F85801 /* 导航栏控制 */ = {
 			isa = PBXGroup;
 			children = (
-				A4CD4C831E48136B00F85801 /* MXNavigationBarManager.h */,
-				A4CD4C841E48136B00F85801 /* MXNavigationBarManager.m */,
 				A4CD4C861E48138600F85801 /* MenuTableViewController.h */,
 				A4CD4C871E48138600F85801 /* MenuTableViewController.m */,
 				A4CD4C881E48138600F85801 /* TranslateTableViewController.h */,
@@ -1091,6 +1167,9 @@
 				A4CD4C8D1E48138600F85801 /* MutationTableViewController.m */,
 				A4CD4C8E1E48138600F85801 /* ReversalTableViewController.h */,
 				A4CD4C8F1E48138600F85801 /* ReversalTableViewController.m */,
+				A4CD4C831E48136B00F85801 /* MXNavigationBarManager.h */,
+				A4CD4C841E48136B00F85801 /* MXNavigationBarManager.m */,
+				A47935FB1E4D897E00FB5B45 /* Navi */,
 			);
 			path = "导航栏控制";
 			sourceTree = "<group>";
@@ -1236,34 +1315,6 @@
 			path = SimpleUserC;
 			sourceTree = "<group>";
 		};
-		A4F86BA11E12071800FA932B /* UICollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				A4F86BA21E12073C00FA932B /* CollectionMainVC.h */,
-				A4F86BA31E12073C00FA932B /* CollectionMainVC.m */,
-				A4F86BEE1E1218BE00FA932B /* 瀑布流 */,
-			);
-			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		A4F86BEE1E1218BE00FA932B /* 瀑布流 */ = {
-			isa = PBXGroup;
-			children = (
-				A4F86BEF1E1218BE00FA932B /* CollectionWaterFallVC.h */,
-				A4F86BF01E1218BE00FA932B /* CollectionWaterFallVC.m */,
-				A4F86BF51E1218ED00FA932B /* WaterFlowCollectionViewCell.h */,
-				A4F86BF61E1218ED00FA932B /* WaterFlowCollectionViewCell.m */,
-				A4F86BF81E12406D00FA932B /* ShopModel.h */,
-				A4F86BF91E12406D00FA932B /* ShopModel.m */,
-				A4F86BF11E1218BE00FA932B /* WaterFlowLayout.h */,
-				A4F86BF21E1218BE00FA932B /* WaterFlowLayout.m */,
-				A4879D7B1E24DBC4000D0AE8 /* CollectionHeaderReusableView.h */,
-				A4879D7C1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m */,
-				A4F86BFD1E1249BE00FA932B /* 1.plist */,
-			);
-			path = "瀑布流";
-			sourceTree = "<group>";
-		};
 		A4F86C021E125C8C00FA932B /* SystemVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,6 +1323,19 @@
 				A4BFBF4F1E1384C500A54FF1 /* SystemAddress */,
 			);
 			path = SystemVC;
+			sourceTree = "<group>";
+		};
+		A4FA78681E4AE7DD00824CA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA78691E4AE7F900824CA3 /* UIMainVC.h */,
+				A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */,
+				A4FA786C1E4AE8C500824CA3 /* UILabelVC.h */,
+				A4FA786D1E4AE8C500824CA3 /* UILabelVC.m */,
+				A47936081E4D9B5A00FB5B45 /* UICollectionView */,
+				A47936171E4D9B5A00FB5B45 /* UISrollView */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		FE4820C2677D47CAD278DF89 /* Pods */ = {
@@ -1399,13 +1463,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47936311E4D9B5A00FB5B45 /* movies.plist in Resources */,
+				A47936281E4D9B5A00FB5B45 /* 1.plist in Resources */,
 				A4BFBF4C1E13675900A54FF1 /* PhotoImageCell.xib in Resources */,
 				A4DAAF2A1E46C4F8002BACA7 /* XWMagicMoveCell.xib in Resources */,
-				A4F86BFE1E1249BE00FA932B /* 1.plist in Resources */,
 				A4D57A501E0A5B2B0057C297 /* JKImagePickerController.strings in Resources */,
 				A4BFBF481E13675900A54FF1 /* PhotoManagerResource.bundle in Resources */,
 				A4BFBF4A1E13675900A54FF1 /* BigPhotoImageCell.xib in Resources */,
-				A4C059AC1E0BCA4E00EF5D1B /* movies.plist in Resources */,
 				A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */,
 				A4D57A511E0A5B2B0057C297 /* ImagesPicker.xcassets in Resources */,
 			);
@@ -1526,13 +1590,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
+				A479362D1E4D9B5A00FB5B45 /* WaterFlowLayout.m in Sources */,
 				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
 				A4DAAEDE1E46C033002BACA7 /* UIView+FrameChange.m in Sources */,
 				A4CD4C921E48138600F85801 /* GradientTableViewController.m in Sources */,
-				A4C059B21E0BCA5800EF5D1B /* ZXMovie.m in Sources */,
+				A479362F1E4D9B5A00FB5B45 /* LYScrollView.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
 				A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */,
 				A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */,
@@ -1542,6 +1607,7 @@
 				A41A048F1E1B87B100187C9B /* UIView+CLObjcSugar.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A4DAAEE11E46C067002BACA7 /* UIView+anchorPoint.m in Sources */,
+				A47936271E4D9B5A00FB5B45 /* CollectionMainVC.m in Sources */,
 				A4CD4C911E48138600F85801 /* TranslateTableViewController.m in Sources */,
 				A4CD4C901E48138600F85801 /* MenuTableViewController.m in Sources */,
 				A4DAAF411E46C5EC002BACA7 /* XWPageCoverTransition.m in Sources */,
@@ -1552,9 +1618,9 @@
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
 				A471355A1E08CA4800D1E83D /* BaseModel.m in Sources */,
+				A47936321E4D9B5A00FB5B45 /* ScrollShowTwoVC.m in Sources */,
 				A41C4BB51E15FA1100F6AA64 /* NSDictionary+CLMerge.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
-				A4F86BF31E1218BE00FA932B /* CollectionWaterFallVC.m in Sources */,
 				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* BaseNavigationController.m in Sources */,
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
@@ -1574,22 +1640,24 @@
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
 				A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */,
-				A4062CD11E0A52DB0083810B /* ScrollShowTestOneVC.m in Sources */,
+				A47936331E4D9B5A00FB5B45 /* ZXMovie.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
 				A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */,
 				A41C4BBA1E15FA1100F6AA64 /* NSString+CLObjcSugar.m in Sources */,
 				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
 				A45EBD061E2369DA00154216 /* FMDBVC.m in Sources */,
 				A41C4BB41E15FA1100F6AA64 /* NSDate+MacFormatter.m in Sources */,
+				A479362A1E4D9B5A00FB5B45 /* CollectionWaterFallVC.m in Sources */,
 				A471356D1E08D10900D1E83D /* PhotoMainVC.m in Sources */,
 				A4BFBF7B1E13BC8500A54FF1 /* PPAddressBookHandle.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* BaseTabBarController.m in Sources */,
 				A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */,
-				A4F86BF71E1218ED00FA932B /* WaterFlowCollectionViewCell.m in Sources */,
 				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A45EBCF71E233F3000154216 /* XXEngine.m in Sources */,
 				A41A04891E1B872400187C9B /* UITabBar+badge.m in Sources */,
+				A479362E1E4D9B5A00FB5B45 /* ScrollShowMainVC.m in Sources */,
 				A45EBD0A1E2369DA00154216 /* XMDBManager.m in Sources */,
+				A47936051E4D89CD00FB5B45 /* HeadImageView.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
 				A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
@@ -1597,21 +1665,18 @@
 				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
-				A4F86BA41E12073C00FA932B /* CollectionMainVC.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
-				A4F86BFA1E12406D00FA932B /* ShopModel.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */,
-				A4F86BF41E1218BE00FA932B /* WaterFlowLayout.m in Sources */,
 				A41C4BBC1E15FA1100F6AA64 /* UIColor+CLObjcSugar.m in Sources */,
 				A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */,
 				A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */,
-				A4D57A2D1E0A58CB0057C297 /* ScrollShowTwoVC.m in Sources */,
 				A41C4BBF1E15FA1100F6AA64 /* UINavigationController+CLObjcSugar.m in Sources */,
-				A4062CC41E0A4ED60083810B /* ScrollShowMainVC.m in Sources */,
 				A4DAAF401E46C5EC002BACA7 /* XWPageCoverPushController.m in Sources */,
+				A4FA786E1E4AE8C500824CA3 /* UILabelVC.m in Sources */,
 				A4DAAF3F1E46C5EC002BACA7 /* XWPageCoverController.m in Sources */,
 				A41A048C1E1B875500187C9B /* UIView+Extension.m in Sources */,
+				A47936341E4D9B5A00FB5B45 /* ZXMovieBrowser.m in Sources */,
 				A45EBD071E2369DA00154216 /* ImageDB.m in Sources */,
 				A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */,
 				A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */,
@@ -1621,12 +1686,16 @@
 				A488A6F41E07F2FC0087D92A /* BaseViewController.m in Sources */,
 				A4BFBF191E13513C00A54FF1 /* Person.m in Sources */,
 				A488A70F1E07F7290087D92A /* AnimationCenterVC.m in Sources */,
+				A47936061E4D89CD00FB5B45 /* HeadLineView.m in Sources */,
 				A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */,
+				A4FA786B1E4AE7F900824CA3 /* UIMainVC.m in Sources */,
 				A4DAAF5D1E47013F002BACA7 /* NormalDismissAnimation.m in Sources */,
 				A45EBCFA1E23663B00154216 /* AppDelegate+InitLocalData.m in Sources */,
 				A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */,
 				A41C4BC11E15FA1100F6AA64 /* UITextField+CLObjcSugar.m in Sources */,
 				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
+				A47935FE1E4D89BF00FB5B45 /* NaviTestShowOneVC.m in Sources */,
+				A47936291E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m in Sources */,
 				A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */,
 				A4DAAEAB1E46BF70002BACA7 /* XWInteractiveTransition.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
@@ -1635,6 +1704,7 @@
 				A4CD4C7F1E48129400F85801 /* XWPresentedOneController.m in Sources */,
 				A4CD4C851E48136B00F85801 /* MXNavigationBarManager.m in Sources */,
 				A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */,
+				A47936071E4D89CD00FB5B45 /* NavHeadTitleView.m in Sources */,
 				A4DAAF2B1E46C4F8002BACA7 /* XWMagicMoveController.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
 				A4C059A41E0BBFA300EF5D1B /* JFImageCollectionViewController.m in Sources */,
@@ -1647,21 +1717,23 @@
 				A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */,
 				A4D57A5A1E0A5B2B0057C297 /* JKPhotoBrowserCell.m in Sources */,
 				A47135521E08C63600D1E83D /* ThreadMainVC.m in Sources */,
-				A4062CD01E0A52DB0083810B /* LYScrollView.m in Sources */,
-				A4C059B11E0BCA5800EF5D1B /* ZXMovieBrowser.m in Sources */,
+				A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */,
+				A479362C1E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */,
 				A4DAAF2C1E46C4F8002BACA7 /* XWMagicMovePushController.m in Sources */,
-				A4879D7D1E24DBC4000D0AE8 /* CollectionHeaderReusableView.m in Sources */,
 				A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */,
 				A4CD4C5C1E4808BF00F85801 /* InheritA.m in Sources */,
+				A45EB7BE1E4ADECC00F47C4B /* MasonryCellModel.m in Sources */,
 				A45EBD091E2369DA00154216 /* StorageMainVC.m in Sources */,
 				A4BFBF641E13867200A54FF1 /* AddressOneVC.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
+				A479362B1E4D9B5A00FB5B45 /* ShopModel.m in Sources */,
 				A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */,
 				A4D57A581E0A5B2B0057C297 /* JKImagePickerController.m in Sources */,
+				A47936301E4D9B5A00FB5B45 /* ScrollShowTestOneVC.m in Sources */,
 				A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */,
 				A45EBD081E2369DA00154216 /* ImageModel.m in Sources */,
 				A4DAAF4E1E46D57A002BACA7 /* UIViewController+Utils.m in Sources */,

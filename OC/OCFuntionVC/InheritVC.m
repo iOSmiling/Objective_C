@@ -21,16 +21,18 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"继承";
-   
-    InheritB *inheritB = [[InheritB alloc] init];
+    
+    //父类
+    InheritA *inheritA = [[InheritA alloc] initWith:@"薛坤龙" andSex:@"nan"];
+    NSLog(@"inheritA.name:%@",inheritA.name);
+    
+    //子类
+    InheritB *inheritB = [[InheritB alloc] initWith:@"李便纳" andSex:@"女"];
+    NSLog(@"inheritB.name:%@",inheritB.name);
     inheritB.inheritAString = @"inheritA";
     inheritB.inheritBString = @"inheritB";
     inheritB.delegate = self; //子类继承父类的代理事件
-    
     [inheritB inheritAPrint]; //
-    
-    
-    
     NSLog(@"私有的全局变量 %d",[InheritB getStatic]) ;
     
 }

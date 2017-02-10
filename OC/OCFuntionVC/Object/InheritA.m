@@ -8,13 +8,42 @@
 
 #import "InheritA.h"
 
-
-
 @interface InheritA ()
 
 @end
 
 @implementation InheritA
+
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        
+    }
+    return self;
+}
+
+- (instancetype)initWith:(NSString *)name andSex:(NSString *)sex
+{
+    //第一张方式
+    self = [super init];
+    if (self)
+    {
+        _name = name;
+        _sex = sex;
+    }
+    return self;
+    
+    //第二种方式
+    /*
+    InheritA *inheritA = [[InheritA alloc] init];
+    inheritA.name = name;
+    inheritA.sex = sex;
+    return inheritA;
+     */
+}
 
 - (void)inheritAPrint
 {
@@ -28,6 +57,7 @@
         
         [self.delegate lovePeople:@"薛坤龙"];
     }
+    
 }
 
 - (void)inheritANSLog

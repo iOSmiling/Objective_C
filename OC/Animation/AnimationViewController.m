@@ -18,16 +18,19 @@
 #import "CAAnimationDescriptionVC.h"
 #import "CAPropertyAnimationVC.h"
 #import "CATransitionVC.h"
+#import "UIViewController+Utils.h"
 
 @interface AnimationViewController ()<UITableViewDelegate,UITableViewDataSource>
+
 @property (nonatomic,strong,nonnull) UITableView *animationTableView;
-@property (nonatomic,strong) NSMutableArray *animationArray;
+@property (nonatomic,strong,nonnull) NSMutableArray *animationArray;
 
 @end
 
 @implementation AnimationViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -49,6 +52,7 @@
     [self.view addSubview:self.animationTableView];
     _animationTableView.frame = self.view.frame;
     
+    NSLog(@"%@",[UIViewController currentViewController]);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -168,20 +172,10 @@
     return _animationTableView;
 }
 
-
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

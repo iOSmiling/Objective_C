@@ -13,13 +13,11 @@
 #import "ThreadMainVC.h"
 #import "PhotoMainVC.h"
 #import "MethodMainVC.h"
-#import "ScrollShowMainVC.h"
-#import "CollectionMainVC.h"
 #import "StorageMainVC.h"
 #import "ThirdPartyVC.h"
 #import "InteractiveMainVC.h"
 #import "MenuTableViewController.h"
-
+#import "UIMainVC.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
@@ -34,14 +32,11 @@ static const CGFloat tableViewCellHight = 60.0;
 @implementation ViewController
 
 #pragma mark - Life cycle
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.title = @"学习";
     
-    self.array = [[NSMutableArray alloc] init];
+    self.navigationItem.title = @"学习";
     
     _array = @[@"Animation",
                @"GestureVC",
@@ -49,11 +44,10 @@ static const CGFloat tableViewCellHight = 60.0;
                @"Storage",
                @"图片操作",
                @"OC常用方法",
-               @"ScrollView",
-               @"Collection",
                @"第三方使用",
                @"自定义转场",
-               @"导航栏渐变控制"];
+               @"导航栏渐变控制",
+               @"UI"];
 
     _viewControllers = @[[AnimationViewController class],
                          [GestureVC class],
@@ -61,12 +55,10 @@ static const CGFloat tableViewCellHight = 60.0;
                          [StorageMainVC class],
                          [PhotoMainVC class],
                          [MethodMainVC class],
-                         [ScrollShowMainVC class],
-                         [CollectionMainVC class],
                          [ThirdPartyVC class],
                          [InteractiveMainVC class],
-                         [MenuTableViewController class]];
-    
+                         [MenuTableViewController class],
+                         [UIMainVC class]];
     
     [self.view addSubview:self.tableView];
     
@@ -83,14 +75,13 @@ static const CGFloat tableViewCellHight = 60.0;
         make.top.equalTo(weakSelf.view.mas_top).offset(0);
         make.left.equalTo(weakSelf.view.mas_left).offset(0);
         make.right.equalTo(weakSelf.view.mas_right).offset(0);
-        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-64);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-49);
         
     }];
     
 }
 
 #pragma mark - UITableViewDataSource
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return tableViewCellHight;
@@ -121,7 +112,7 @@ static const CGFloat tableViewCellHight = 60.0;
     {
         [cell.textLabel setTextColor:[UIColor redColor]];
         cell.detailTextLabel.text =[NSString stringWithFormat:@"%ld",(long)indexPath.row];
-        cell.imageView.image = nil;
+        cell.imageView.image = [UIImage imageNamed:@"29"];
         
     }else
     {
@@ -141,7 +132,6 @@ static const CGFloat tableViewCellHight = 60.0;
 }
 
 #pragma mark - Getters and Setters
-
 -(UITableView *)tableView
 {
     if (!_tableView)
@@ -153,10 +143,16 @@ static const CGFloat tableViewCellHight = 60.0;
     return _tableView;
 }
 
+#pragma mark - dealloc
+- (void)dealloc
+{
+    _tableView.delegate = nil;
+    _tableView.dataSource = nil;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

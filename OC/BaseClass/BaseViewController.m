@@ -44,7 +44,7 @@
     // 设置取消ScrollerView自适应属性
     self.automaticallyAdjustsScrollViewInsets = YES;
     // 设置tabbar选中的渲染颜色
-    [self.navigationController.tabBarController.tabBar setTintColor:COLOR(220, 9, 64, 1)];
+//    [self.navigationController.tabBarController.tabBar setTintColor:COLOR(220, 9, 64, 1)];
     // 选择打印当前日志
     [self performSelector:@selector(printNSLog) withObject:nil afterDelay:1.0f];
 }

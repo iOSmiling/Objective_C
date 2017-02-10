@@ -12,7 +12,6 @@
 
 @property (nonatomic,copy) NSString *inheritBString;
 
-
 + (int)getStatic;
 
 @end

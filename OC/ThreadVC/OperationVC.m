@@ -60,7 +60,6 @@
         NSLog(@"download1 --- %@", [NSThread currentThread]);
     }];
     
-    
     //创建操作 第二种方式
     [queue addOperationWithBlock:^{
         NSLog(@"download2 --- %@", [NSThread currentThread]);
@@ -89,8 +88,6 @@
     [qOp4 setCompletionBlock:^{
         NSLog(@"qOP4完成");
     }];
-
-   
 }
 
 -(void)requestData
