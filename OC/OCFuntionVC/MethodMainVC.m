@@ -14,6 +14,7 @@
 #import "BlockVC.h"
 #import "ValidateVC.h"
 #import "InheritVC.h"
+#import "SandBoxVC.h"
 
 @interface MethodMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -41,6 +42,7 @@
     [_array addObject:@"Block"];
     [_array addObject:@"正则验证"];
     [_array addObject:@"继承"];
+    [_array addObject:@"沙盒"];
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
@@ -114,6 +116,12 @@
         case 6:
         {
             InheritVC *vc = [[InheritVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            SandBoxVC *vc = [[SandBoxVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

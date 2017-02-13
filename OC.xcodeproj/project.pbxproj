@@ -133,6 +133,7 @@
 		A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0599E1E0BBFA300EF5D1B /* JFImagePickerViewCell.m */; };
 		A4C059A91E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */; };
 		A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */; };
+		A4C0A2C61E4DAF1C00B22F09 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C0A2C51E4DAF1C00B22F09 /* NSString+Size.m */; };
 		A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C581E48085D00F85801 /* InheritVC.m */; };
 		A4CD4C5C1E4808BF00F85801 /* InheritA.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5B1E4808BF00F85801 /* InheritA.m */; };
 		A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD4C5E1E4808D100F85801 /* InheritB.m */; };
@@ -184,6 +185,7 @@
 		A4DAAF5D1E47013F002BACA7 /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF581E47013F002BACA7 /* NormalDismissAnimation.m */; };
 		A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */; };
 		A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */; };
+		A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D00B1E51641A0080E41D /* SandBoxVC.m */; };
 		A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BFB1E12407D00FA932B /* Foundation+Log.m */; };
 		A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */; };
 		A4FA786B1E4AE7F900824CA3 /* UIMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */; };
@@ -456,6 +458,8 @@
 		A4C059A01E0BBFA300EF5D1B /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		A4C059A11E0BBFA300EF5D1B /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
 		A4C059A21E0BBFA300EF5D1B /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
+		A4C0A2C41E4DAF1C00B22F09 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		A4C0A2C51E4DAF1C00B22F09 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		A4CD4C571E48085D00F85801 /* InheritVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritVC.h; sourceTree = "<group>"; };
 		A4CD4C581E48085D00F85801 /* InheritVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InheritVC.m; sourceTree = "<group>"; };
 		A4CD4C5A1E4808BF00F85801 /* InheritA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InheritA.h; sourceTree = "<group>"; };
@@ -556,6 +560,8 @@
 		A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
 		A4DAAF5F1E47158E002BACA7 /* MasonryMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainVC.h; sourceTree = "<group>"; };
 		A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainVC.m; sourceTree = "<group>"; };
+		A4E5D00A1E51641A0080E41D /* SandBoxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxVC.h; sourceTree = "<group>"; };
+		A4E5D00B1E51641A0080E41D /* SandBoxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxVC.m; sourceTree = "<group>"; };
 		A4F86BFB1E12407D00FA932B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoSystemLimitsVC.h; sourceTree = "<group>"; };
 		A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoSystemLimitsVC.m; sourceTree = "<group>"; };
@@ -760,6 +766,8 @@
 				A4DAAEDD1E46C033002BACA7 /* UIView+FrameChange.m */,
 				A4DAAF4C1E46D57A002BACA7 /* UIViewController+Utils.h */,
 				A4DAAF4D1E46D57A002BACA7 /* UIViewController+Utils.m */,
+				A4C0A2C41E4DAF1C00B22F09 /* NSString+Size.h */,
+				A4C0A2C51E4DAF1C00B22F09 /* NSString+Size.m */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -803,6 +811,8 @@
 				A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */,
 				A4CD4C571E48085D00F85801 /* InheritVC.h */,
 				A4CD4C581E48085D00F85801 /* InheritVC.m */,
+				A4E5D00A1E51641A0080E41D /* SandBoxVC.h */,
+				A4E5D00B1E51641A0080E41D /* SandBoxVC.m */,
 				A45EBCF41E233F1600154216 /* Object */,
 				A4D64BFD1E0CBD37003D9F23 /* Model */,
 			);
@@ -1592,6 +1602,7 @@
 				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
 				A479362D1E4D9B5A00FB5B45 /* WaterFlowLayout.m in Sources */,
 				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
+				A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
@@ -1711,6 +1722,7 @@
 				A41C4BBD1E15FA1100F6AA64 /* UIImage+CLObjcSugar.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */,
+				A4C0A2C61E4DAF1C00B22F09 /* NSString+Size.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A4DAAF521E470131002BACA7 /* SimpleTransitionVC.m in Sources */,
 				A45EBCF01E2322EF00154216 /* BlockVC.m in Sources */,
