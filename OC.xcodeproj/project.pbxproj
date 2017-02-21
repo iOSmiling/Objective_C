@@ -81,6 +81,7 @@
 		A47936321E4D9B5A00FB5B45 /* ScrollShowTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936221E4D9B5A00FB5B45 /* ScrollShowTwoVC.m */; };
 		A47936331E4D9B5A00FB5B45 /* ZXMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936241E4D9B5A00FB5B45 /* ZXMovie.m */; };
 		A47936341E4D9B5A00FB5B45 /* ZXMovieBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A47936261E4D9B5A00FB5B45 /* ZXMovieBrowser.m */; };
+		A4830D581E56CE50003EDDE7 /* WKWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */; };
 		A488A6C01E07C2780087D92A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6BF1E07C2780087D92A /* main.m */; };
 		A488A6CB1E07C2780087D92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A488A6CA1E07C2780087D92A /* Assets.xcassets */; };
 		A488A6D91E07C2780087D92A /* OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A6D81E07C2780087D92A /* OCTests.m */; };
@@ -186,6 +187,11 @@
 		A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF5A1E47013F002BACA7 /* SwipeUpInteractiveTransition.m */; };
 		A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */; };
 		A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D00B1E51641A0080E41D /* SandBoxVC.m */; };
+		A4E5D00F1E51816F0080E41D /* InitializeTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D00E1E51816F0080E41D /* InitializeTestVC.m */; };
+		A4E5D0131E5189B80080E41D /* MediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D0121E5189B80080E41D /* MediatorVC.m */; };
+		A4E5D0161E518A600080E41D /* MediatorTestOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D0151E518A600080E41D /* MediatorTestOneVC.m */; };
+		A4E5D0191E518A770080E41D /* MediatorTestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D0181E518A770080E41D /* MediatorTestTwoVC.m */; };
+		A4E5D01C1E518C960080E41D /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E5D01B1E518C960080E41D /* Mediator.m */; };
 		A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86BFB1E12407D00FA932B /* Foundation+Log.m */; };
 		A4F86C051E125CD600FA932B /* IntoSystemLimitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */; };
 		A4FA786B1E4AE7F900824CA3 /* UIMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */; };
@@ -357,6 +363,8 @@
 		A47936241E4D9B5A00FB5B45 /* ZXMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovie.m; sourceTree = "<group>"; };
 		A47936251E4D9B5A00FB5B45 /* ZXMovieBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMovieBrowser.h; sourceTree = "<group>"; };
 		A47936261E4D9B5A00FB5B45 /* ZXMovieBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMovieBrowser.m; sourceTree = "<group>"; };
+		A4830D561E56CE50003EDDE7 /* WKWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewVC.h; sourceTree = "<group>"; };
+		A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewVC.m; sourceTree = "<group>"; };
 		A488A6BB1E07C2780087D92A /* OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A488A6BF1E07C2780087D92A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A488A6CA1E07C2780087D92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -562,6 +570,16 @@
 		A4DAAF601E47158E002BACA7 /* MasonryMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainVC.m; sourceTree = "<group>"; };
 		A4E5D00A1E51641A0080E41D /* SandBoxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandBoxVC.h; sourceTree = "<group>"; };
 		A4E5D00B1E51641A0080E41D /* SandBoxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandBoxVC.m; sourceTree = "<group>"; };
+		A4E5D00D1E51816F0080E41D /* InitializeTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializeTestVC.h; sourceTree = "<group>"; };
+		A4E5D00E1E51816F0080E41D /* InitializeTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitializeTestVC.m; sourceTree = "<group>"; };
+		A4E5D0111E5189B80080E41D /* MediatorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorVC.h; sourceTree = "<group>"; };
+		A4E5D0121E5189B80080E41D /* MediatorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatorVC.m; sourceTree = "<group>"; };
+		A4E5D0141E518A600080E41D /* MediatorTestOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorTestOneVC.h; sourceTree = "<group>"; };
+		A4E5D0151E518A600080E41D /* MediatorTestOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatorTestOneVC.m; sourceTree = "<group>"; };
+		A4E5D0171E518A770080E41D /* MediatorTestTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorTestTwoVC.h; sourceTree = "<group>"; };
+		A4E5D0181E518A770080E41D /* MediatorTestTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatorTestTwoVC.m; sourceTree = "<group>"; };
+		A4E5D01A1E518C960080E41D /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		A4E5D01B1E518C960080E41D /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
 		A4F86BFB1E12407D00FA932B /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		A4F86C031E125CD600FA932B /* IntoSystemLimitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntoSystemLimitsVC.h; sourceTree = "<group>"; };
 		A4F86C041E125CD600FA932B /* IntoSystemLimitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntoSystemLimitsVC.m; sourceTree = "<group>"; };
@@ -709,6 +727,8 @@
 				A4CD4C5B1E4808BF00F85801 /* InheritA.m */,
 				A4CD4C5D1E4808D100F85801 /* InheritB.h */,
 				A4CD4C5E1E4808D100F85801 /* InheritB.m */,
+				A4E5D00D1E51816F0080E41D /* InitializeTestVC.h */,
+				A4E5D00E1E51816F0080E41D /* InitializeTestVC.m */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -958,6 +978,7 @@
 				A456A9DC1E31D8A100E501C3 /* 第三方的使用 */,
 				A4DAAEA51E46BDAB002BACA7 /* 自定义转场 */,
 				A4CD4C821E48132A00F85801 /* 导航栏控制 */,
+				A4E5D0101E5189A00080E41D /* Mdiator */,
 				A45EBCFB1E2369DA00154216 /* Storage */,
 				A4FA78681E4AE7DD00824CA3 /* UI */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
@@ -1325,6 +1346,21 @@
 			path = SimpleUserC;
 			sourceTree = "<group>";
 		};
+		A4E5D0101E5189A00080E41D /* Mdiator */ = {
+			isa = PBXGroup;
+			children = (
+				A4E5D0111E5189B80080E41D /* MediatorVC.h */,
+				A4E5D0121E5189B80080E41D /* MediatorVC.m */,
+				A4E5D0141E518A600080E41D /* MediatorTestOneVC.h */,
+				A4E5D0151E518A600080E41D /* MediatorTestOneVC.m */,
+				A4E5D0171E518A770080E41D /* MediatorTestTwoVC.h */,
+				A4E5D0181E518A770080E41D /* MediatorTestTwoVC.m */,
+				A4E5D01A1E518C960080E41D /* Mediator.h */,
+				A4E5D01B1E518C960080E41D /* Mediator.m */,
+			);
+			path = Mdiator;
+			sourceTree = "<group>";
+		};
 		A4F86C021E125C8C00FA932B /* SystemVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1342,6 +1378,8 @@
 				A4FA786A1E4AE7F900824CA3 /* UIMainVC.m */,
 				A4FA786C1E4AE8C500824CA3 /* UILabelVC.h */,
 				A4FA786D1E4AE8C500824CA3 /* UILabelVC.m */,
+				A4830D561E56CE50003EDDE7 /* WKWebViewVC.h */,
+				A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */,
 				A47936081E4D9B5A00FB5B45 /* UICollectionView */,
 				A47936171E4D9B5A00FB5B45 /* UISrollView */,
 			);
@@ -1615,6 +1653,7 @@
 				A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */,
 				A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */,
 				A4BFBF7D1E13BC8500A54FF1 /* PPPersonModel.m in Sources */,
+				A4E5D00F1E51816F0080E41D /* InitializeTestVC.m in Sources */,
 				A41A048F1E1B87B100187C9B /* UIView+CLObjcSugar.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A4DAAEE11E46C067002BACA7 /* UIView+anchorPoint.m in Sources */,
@@ -1643,6 +1682,7 @@
 				A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */,
 				A4DAAF371E46C51F002BACA7 /* XWCircleSpreadTransition.m in Sources */,
 				A41C4BBB1E15FA1100F6AA64 /* UIButton+CLObjcSugar.m in Sources */,
+				A4E5D0191E518A770080E41D /* MediatorTestTwoVC.m in Sources */,
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */,
 				A41A04861E1B871800187C9B /* UIBarButtonItem+Extension.m in Sources */,
@@ -1650,6 +1690,7 @@
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
+				A4830D581E56CE50003EDDE7 /* WKWebViewVC.m in Sources */,
 				A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */,
 				A47936331E4D9B5A00FB5B45 /* ZXMovie.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
@@ -1715,6 +1756,7 @@
 				A4CD4C7F1E48129400F85801 /* XWPresentedOneController.m in Sources */,
 				A4CD4C851E48136B00F85801 /* MXNavigationBarManager.m in Sources */,
 				A4BFBF611E13864E00A54FF1 /* AddressListVC.m in Sources */,
+				A4E5D01C1E518C960080E41D /* Mediator.m in Sources */,
 				A47936071E4D89CD00FB5B45 /* NavHeadTitleView.m in Sources */,
 				A4DAAF2B1E46C4F8002BACA7 /* XWMagicMoveController.m in Sources */,
 				A47135781E08D37F00D1E83D /* AppDelegate+APNS.m in Sources */,
@@ -1724,6 +1766,7 @@
 				A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */,
 				A4C0A2C61E4DAF1C00B22F09 /* NSString+Size.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
+				A4E5D0131E5189B80080E41D /* MediatorVC.m in Sources */,
 				A4DAAF521E470131002BACA7 /* SimpleTransitionVC.m in Sources */,
 				A45EBCF01E2322EF00154216 /* BlockVC.m in Sources */,
 				A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */,
@@ -1761,6 +1804,7 @@
 				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
+				A4E5D0161E518A600080E41D /* MediatorTestOneVC.m in Sources */,
 				A4CD4C941E48138600F85801 /* ReversalTableViewController.m in Sources */,
 				A4DAAF5B1E47013F002BACA7 /* ModalViewController.m in Sources */,
 				A41C4BB81E15FA1100F6AA64 /* NSObject+JKReflection.m in Sources */,

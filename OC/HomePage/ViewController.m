@@ -18,6 +18,9 @@
 #import "InteractiveMainVC.h"
 #import "MenuTableViewController.h"
 #import "UIMainVC.h"
+#import "MediatorVC.h"
+
+#import "NetworkToos.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
@@ -47,7 +50,8 @@ static const CGFloat tableViewCellHight = 60.0;
                @"第三方使用",
                @"自定义转场",
                @"导航栏渐变控制",
-               @"UI"];
+               @"UI",
+               @"组件化尝试"];
 
     _viewControllers = @[[AnimationViewController class],
                          [GestureVC class],
@@ -58,9 +62,13 @@ static const CGFloat tableViewCellHight = 60.0;
                          [ThirdPartyVC class],
                          [InteractiveMainVC class],
                          [MenuTableViewController class],
-                         [UIMainVC class]];
+                         [UIMainVC class],
+                         [MediatorVC class]];
     
     [self.view addSubview:self.tableView];
+    
+  NSLog(@"state :%ld",(long)[NetworkToos sharedManager].state)  ;
+    
     
 }
 

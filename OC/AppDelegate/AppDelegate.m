@@ -11,7 +11,11 @@
 #import "AppDelegate+APNS.h"
 #import "AppDelegate+InitLocalData.h"
 
+#import "NetworkToos.h"
+
 @interface AppDelegate ()
+
+@property (nonatomic,strong) NetworkToos *netWorkTools;
 
 @end
 
@@ -22,6 +26,13 @@
 {
     
     NSLog(@"程序已经启动...");
+    
+  
+ 
+   self.netWorkTools = [NetworkToos sharedManager];
+    
+    NSLog(@"[NetworkToos sharedManager].state :%ld",[ self.netWorkTools getState]);
+    
     
     [self initAPNSServse:application withOptions:launchOptions]; //apns
     

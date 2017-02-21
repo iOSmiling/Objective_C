@@ -10,6 +10,8 @@
 
 #import "InheritB.h" //InheritA的子类
 
+#import "InitializeTestVC.h"
+
 @interface InheritVC ()<InteritDelegate>
 
 @end
@@ -35,6 +37,8 @@
     [inheritB inheritAPrint]; //
     NSLog(@"私有的全局变量 %d",[InheritB getStatic]) ;
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"初始化" style:UIBarButtonItemStylePlain target:self action:@selector(goNext)];
+    
 }
 
 #pragma mark - InteritDelegate
@@ -46,6 +50,13 @@
 - (void)lovePeople:(NSString *)name
 {
     NSLog(@"代理传值：%@",name);
+
+}
+
+- (void)goNext
+{
+    InitializeTestVC *vc = [[InitializeTestVC alloc] initWithTestID:@"11111"];
+    [self.navigationController pushViewController:vc animated:YES];
 
 }
 

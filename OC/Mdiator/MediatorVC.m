@@ -1,21 +1,18 @@
 //
-//  UIMainVC.m
+//  MediatorVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2017/2/8.
+//  Created by 薛坤龙 on 2017/2/13.
 //  Copyright © 2017年 sigboat. All rights reserved.
 //
 
-#import "UIMainVC.h"
+#import "MediatorVC.h"
 #import <Masonry.h>
-#import "UILabelVC.h"
-#import "ScrollShowMainVC.h"
-#import "CollectionMainVC.h"
-#import "WKWebViewVC.h"
 
-static const CGFloat tableViewCellHight = 60.0;
+#import "MediatorTestOneVC.h"
+#import "MediatorTestTwoVC.h"
 
-@interface UIMainVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface MediatorVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *array;
@@ -23,26 +20,21 @@ static const CGFloat tableViewCellHight = 60.0;
 
 @end
 
-@implementation UIMainVC
+@implementation MediatorVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"组件化尝试";
     
-    self.navigationItem.title = @"UI";
+    _array = @[@"测试1",@"测试2"];
     
-    _array = @[@"UILabel",
-               @"ScrollView",
-               @"Collection",
-               @"WKWebView"];
-    _viewControllers = @[[UILabelVC class],
-                         [ScrollShowMainVC class],
-                         [CollectionMainVC class],
-                         [WKWebViewVC class]];
-    
+    _viewControllers = @[[MediatorTestOneVC class],
+                         [MediatorTestTwoVC class]];
     
     [self.view addSubview:self.tableView];
-    
+
 }
 
 - (void)viewWillLayoutSubviews
@@ -56,16 +48,10 @@ static const CGFloat tableViewCellHight = 60.0;
         make.top.equalTo(weakSelf.view.mas_top).offset(0);
         make.left.equalTo(weakSelf.view.mas_left).offset(0);
         make.right.equalTo(weakSelf.view.mas_right).offset(0);
-        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-64);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-49);
         
     }];
     
-}
-
-#pragma mark - UITableViewDataSource
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return tableViewCellHight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -76,7 +62,6 @@ static const CGFloat tableViewCellHight = 60.0;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell==nil)
     {
@@ -106,18 +91,11 @@ static const CGFloat tableViewCellHight = 60.0;
     return _tableView;
 }
 
-#pragma mark - dealloc
-- (void)dealloc
-{
-    _tableView.delegate = nil;
-    _tableView.dataSource = nil;
-}
-
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end
