@@ -17,6 +17,8 @@
 
 @property (nonatomic,strong) NetworkToos *netWorkTools;
 
+@property (nonatomic,assign) NetWorkingState status;
+
 @end
 
 @implementation AppDelegate
@@ -27,11 +29,52 @@
     
     NSLog(@"程序已经启动...");
     
-  
- 
-   self.netWorkTools = [NetworkToos sharedManager];
     
-    NSLog(@"[NetworkToos sharedManager].state :%ld",[ self.netWorkTools getState]);
+    //真机测试时在同一个页面测试不同的网络的状态
+    [NetworkToos LGwithSuccessBlock:^(NetWorkingState status)
+    {
+        
+        switch (status) {
+            case 0:
+            {
+                NSLog(@" 未知网络");
+            
+            }
+                
+                break;
+            case 1:
+            {
+                NSLog(@" 无网络");
+            
+            }
+                break;
+            case 2:
+            {
+                NSLog(@" wifi");
+            
+            }
+                break;
+            case 3:
+            {
+                NSLog(@" 手机自带网络");
+            
+            }
+                break;
+            
+            default:
+                break;
+        }
+        
+        
+        
+    }] ;
+    
+
+  
+// 
+//   self.netWorkTools = [NetworkToos sharedManager];
+//    
+//    NSLog(@"[NetworkToos sharedManager].state :%ld",[ self.netWorkTools getState]);
     
     
     [self initAPNSServse:application withOptions:launchOptions]; //apns

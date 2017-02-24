@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 
 typedef NS_ENUM(NSInteger, NetWorkingState)
 {
@@ -16,14 +17,16 @@ typedef NS_ENUM(NSInteger, NetWorkingState)
     WWANWorking, //手机自带网络
 };
 
-#import "AFHTTPSessionManager.h"
+//成功回调
+typedef void (^successBlock)(NetWorkingState status);
 
-@interface NetworkToos : NSObject
-
-+ (instancetype)sharedManager;
+@interface NetworkToos : AFNetworkReachabilityManager
 
 @property (nonatomic,assign) NetWorkingState state;
 
-- (NetWorkingState)getState;
+/**
+ *  网络状态
+ */
++ (void)LGwithSuccessBlock:(successBlock)success;
 
 @end

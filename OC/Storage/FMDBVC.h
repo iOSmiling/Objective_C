@@ -67,13 +67,13 @@
  */
 
 
-#pragma mark 删除
+#pragma mark - 删除
 /*
     1: 删除整个表的数据
       [_shonemeDBManager.db executeUpdate:@"DELETE FROM TalentList"];
  
     2：根据查询结构删除
-        [_shonemeDBManager.db executeUpdate:@"delete from DiscoverGoodsClassifyList where type = %@",type]
+        [_shonemeDBManager.db executeUpdate:@"delete from DiscoverGoodsClassifyList where type = ?",type];
 
  */
 
