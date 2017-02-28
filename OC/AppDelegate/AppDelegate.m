@@ -10,6 +10,7 @@
 #import "MainTabBarViewController.h"
 #import "AppDelegate+APNS.h"
 #import "AppDelegate+InitLocalData.h"
+#import "AYYFPSIndicator.h"
 
 #import "NetworkToos.h"
 
@@ -70,18 +71,21 @@
     }] ;
     
 
-  
-// 
-//   self.netWorkTools = [NetworkToos sharedManager];
-//    
-//    NSLog(@"[NetworkToos sharedManager].state :%ld",[ self.netWorkTools getState]);
-    
     
     [self initAPNSServse:application withOptions:launchOptions]; //apns
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     [self.window setRootViewController:[MainTabBarViewController shareMainTabBarInstance]];
     [self.window makeKeyAndVisible];
+    
+#ifdef DEBUG
+    // 1. 默认位置开启 FPS 监听,可拖动
+    [[AYYFPSIndicator sharedInstance] start];
+    
+    //    // 2. 在 statusBar 显示 FPS
+    //    [[AYYFPSIndicator sharedInstance] start];
+    //    [AYYFPSIndicator sharedInstance].indicatorPosition = AYYFPSIndicatorPositionStatusBar;
+#endif
     
     return YES;
 }

@@ -36,6 +36,7 @@
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
+		A43B8BD31E654F35000E29EA /* AYYFPSIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
 		A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9D71E31BF3600E501C3 /* PersonModel.m */; };
 		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
@@ -276,6 +277,8 @@
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
+		A43B8BD11E654F35000E29EA /* AYYFPSIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYYFPSIndicator.h; sourceTree = "<group>"; };
+		A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYFPSIndicator.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
 		A456A9D61E31BF3600E501C3 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
@@ -704,6 +707,15 @@
 			path = GestureVC;
 			sourceTree = "<group>";
 		};
+		A43B8BD01E654F2A000E29EA /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				A43B8BD11E654F35000E29EA /* AYYFPSIndicator.h */,
+				A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
 		A456A9DC1E31D8A100E501C3 /* 第三方的使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -766,6 +778,7 @@
 		A47135531E08C7BC00D1E83D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				A43B8BD01E654F2A000E29EA /* Unit */,
 				A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */,
 				A4062CC51E0A4F920083810B /* UIImageEffects.m */,
 				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
@@ -1794,6 +1807,7 @@
 				A4DAAF4E1E46D57A002BACA7 /* UIViewController+Utils.m in Sources */,
 				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
 				A4DAAF361E46C51F002BACA7 /* XWCircleSpreadPresentedController.m in Sources */,
+				A43B8BD31E654F35000E29EA /* AYYFPSIndicator.m in Sources */,
 				A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */,
 				A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */,
 				A4DAAF291E46C4F8002BACA7 /* XWMagicMoveCell.m in Sources */,
@@ -1954,6 +1968,7 @@
 			baseConfigurationReference = 25FC48CF59387486D4A8B031 /* Pods-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				DEVELOPMENT_TEAM = 8DQR5VT4B3;
 				INFOPLIST_FILE = OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1968,6 +1983,7 @@
 			baseConfigurationReference = 0DBEA0A80AA2C323BF167113 /* Pods-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				DEVELOPMENT_TEAM = 8DQR5VT4B3;
 				INFOPLIST_FILE = OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

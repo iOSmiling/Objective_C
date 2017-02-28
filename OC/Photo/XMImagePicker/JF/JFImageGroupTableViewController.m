@@ -26,7 +26,8 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated
+{
 //	self.navigationItem.title = @"相册";
     UILabel *label = [[UILabel alloc] init];
     label.textColor = [UIColor whiteColor];

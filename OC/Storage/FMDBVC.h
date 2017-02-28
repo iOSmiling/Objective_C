@@ -22,7 +22,11 @@
 
 #pragma mark - 插入数据
 /*
+    1:
      [_shonemeDBManager.db executeUpdate:@"INSERT INTO TalentList (userid,nickname,photo,is_myself,is_follow) VALUES (?,?,?,?,?)",model.user_id,model.nickname,model.photo,model.is_myself,model.is_follow];
+ 
+    2:
+    [self.db executeUpdateWithFormat:@"INSERT INTO t_student (name, age) VALUES ('jack_%d', %d);", name, arc4random_uniform(40)];
  
  */
 
@@ -63,6 +67,8 @@
 #pragma mark - 根据条件查询修改某个对象属性
 /*
     [_shonemeDBManager.db executeUpdate:@"UPDATE TalentList SET is_follow = ? WHERE userid = ?",model.is_follow,model.user_id];
+ 
+ 
  
  */
 
