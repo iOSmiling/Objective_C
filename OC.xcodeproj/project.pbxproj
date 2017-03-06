@@ -36,7 +36,6 @@
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
-		A43B8BD31E654F35000E29EA /* AYYFPSIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
 		A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9D71E31BF3600E501C3 /* PersonModel.m */; };
 		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
@@ -104,6 +103,10 @@
 		A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7231E07F7960087D92A /* CAPropertyAnimationVC.m */; };
 		A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7261E07F7A50087D92A /* CATransitionVC.m */; };
 		A488A72A1E07F8350087D92A /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A488A7291E07F8350087D92A /* SettingVC.m */; };
+		A4970E871E6D2E6B00F54BD7 /* LayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E861E6D2E6B00F54BD7 /* LayoutVC.m */; };
+		A4970E8A1E6D2E8A00F54BD7 /* Layout_1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */; };
+		A4970E8E1E6D390100F54BD7 /* AYYFPSIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E8D1E6D390100F54BD7 /* AYYFPSIndicator.m */; };
+		A4970E971E6D39CC00F54BD7 /* UIControl+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */; };
 		A4BFBF191E13513C00A54FF1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF181E13513C00A54FF1 /* Person.m */; };
 		A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF1B1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m */; };
 		A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF391E13675900A54FF1 /* FCPhotoManager.m */; };
@@ -277,8 +280,6 @@
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
-		A43B8BD11E654F35000E29EA /* AYYFPSIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYYFPSIndicator.h; sourceTree = "<group>"; };
-		A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYFPSIndicator.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
 		A456A9D61E31BF3600E501C3 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
@@ -412,6 +413,14 @@
 		A488A7261E07F7A50087D92A /* CATransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionVC.m; sourceTree = "<group>"; };
 		A488A7281E07F8350087D92A /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		A488A7291E07F8350087D92A /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		A4970E851E6D2E6B00F54BD7 /* LayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutVC.h; sourceTree = "<group>"; };
+		A4970E861E6D2E6B00F54BD7 /* LayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutVC.m; sourceTree = "<group>"; };
+		A4970E881E6D2E8A00F54BD7 /* Layout_1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout_1VC.h; sourceTree = "<group>"; };
+		A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout_1VC.m; sourceTree = "<group>"; };
+		A4970E8C1E6D390100F54BD7 /* AYYFPSIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYYFPSIndicator.h; sourceTree = "<group>"; };
+		A4970E8D1E6D390100F54BD7 /* AYYFPSIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYFPSIndicator.m; sourceTree = "<group>"; };
+		A4970E951E6D39CC00F54BD7 /* UIControl+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Interval.h"; sourceTree = "<group>"; };
+		A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Interval.m"; sourceTree = "<group>"; };
 		A4BFBF171E13513C00A54FF1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A4BFBF181E13513C00A54FF1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A4BFBF1A1E1363A500A54FF1 /* XMSelectPhotoTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSelectPhotoTwoVC.h; sourceTree = "<group>"; };
@@ -707,15 +716,6 @@
 			path = GestureVC;
 			sourceTree = "<group>";
 		};
-		A43B8BD01E654F2A000E29EA /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				A43B8BD11E654F35000E29EA /* AYYFPSIndicator.h */,
-				A43B8BD21E654F35000E29EA /* AYYFPSIndicator.m */,
-			);
-			path = Unit;
-			sourceTree = "<group>";
-		};
 		A456A9DC1E31D8A100E501C3 /* 第三方的使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,7 +778,7 @@
 		A47135531E08C7BC00D1E83D /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				A43B8BD01E654F2A000E29EA /* Unit */,
+				A4970E8B1E6D390100F54BD7 /* UnitView */,
 				A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */,
 				A4062CC51E0A4F920083810B /* UIImageEffects.m */,
 				A4062CC61E0A4F920083810B /* UIImageEffects.h */,
@@ -1084,6 +1084,28 @@
 				A488A7261E07F7A50087D92A /* CATransitionVC.m */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		A4970E841E6D2E5700F54BD7 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A4970E851E6D2E6B00F54BD7 /* LayoutVC.h */,
+				A4970E861E6D2E6B00F54BD7 /* LayoutVC.m */,
+				A4970E881E6D2E8A00F54BD7 /* Layout_1VC.h */,
+				A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A4970E8B1E6D390100F54BD7 /* UnitView */ = {
+			isa = PBXGroup;
+			children = (
+				A4970E8C1E6D390100F54BD7 /* AYYFPSIndicator.h */,
+				A4970E8D1E6D390100F54BD7 /* AYYFPSIndicator.m */,
+				A4970E951E6D39CC00F54BD7 /* UIControl+Interval.h */,
+				A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */,
+			);
+			path = UnitView;
 			sourceTree = "<group>";
 		};
 		A4BFBF361E13675900A54FF1 /* FCPhotoManager */ = {
@@ -1393,6 +1415,7 @@
 				A4FA786D1E4AE8C500824CA3 /* UILabelVC.m */,
 				A4830D561E56CE50003EDDE7 /* WKWebViewVC.h */,
 				A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */,
+				A4970E841E6D2E5700F54BD7 /* Layout */,
 				A47936081E4D9B5A00FB5B45 /* UICollectionView */,
 				A47936171E4D9B5A00FB5B45 /* UISrollView */,
 			);
@@ -1684,6 +1707,7 @@
 				A47936321E4D9B5A00FB5B45 /* ScrollShowTwoVC.m in Sources */,
 				A41C4BB51E15FA1100F6AA64 /* NSDictionary+CLMerge.m in Sources */,
 				A47135751E08D34F00D1E83D /* AppDelegate.m in Sources */,
+				A4970E871E6D2E6B00F54BD7 /* LayoutVC.m in Sources */,
 				A4C059A51E0BBFA300EF5D1B /* JFImageGroupTableViewController.m in Sources */,
 				A488A6F71E07F3400087D92A /* BaseNavigationController.m in Sources */,
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
@@ -1695,6 +1719,7 @@
 				A4C059A81E0BBFA300EF5D1B /* JFImagePickerViewCell.m in Sources */,
 				A4DAAF371E46C51F002BACA7 /* XWCircleSpreadTransition.m in Sources */,
 				A41C4BBB1E15FA1100F6AA64 /* UIButton+CLObjcSugar.m in Sources */,
+				A4970E8A1E6D2E8A00F54BD7 /* Layout_1VC.m in Sources */,
 				A4E5D0191E518A770080E41D /* MediatorTestTwoVC.m in Sources */,
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */,
@@ -1717,6 +1742,7 @@
 				A4BFBF7B1E13BC8500A54FF1 /* PPAddressBookHandle.m in Sources */,
 				A488A6FA1E07F37F0087D92A /* BaseTabBarController.m in Sources */,
 				A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */,
+				A4970E8E1E6D390100F54BD7 /* AYYFPSIndicator.m in Sources */,
 				A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */,
 				A45EBCF71E233F3000154216 /* XXEngine.m in Sources */,
 				A41A04891E1B872400187C9B /* UITabBar+badge.m in Sources */,
@@ -1807,7 +1833,6 @@
 				A4DAAF4E1E46D57A002BACA7 /* UIViewController+Utils.m in Sources */,
 				A47135691E08CEF900D1E83D /* GCDVC.m in Sources */,
 				A4DAAF361E46C51F002BACA7 /* XWCircleSpreadPresentedController.m in Sources */,
-				A43B8BD31E654F35000E29EA /* AYYFPSIndicator.m in Sources */,
 				A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */,
 				A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */,
 				A4DAAF291E46C4F8002BACA7 /* XWMagicMoveCell.m in Sources */,
@@ -1815,6 +1840,7 @@
 				A4C059A61E0BBFA300EF5D1B /* JFImageManager.m in Sources */,
 				A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */,
 				A4DAAF2D1E46C4F8002BACA7 /* XWNaviTransition.m in Sources */,
+				A4970E971E6D39CC00F54BD7 /* UIControl+Interval.m in Sources */,
 				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,

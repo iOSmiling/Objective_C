@@ -26,7 +26,6 @@
     
     self.navigationItem.title = @"展示One";
     
-    
     self.imageView = [[UIImageView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:self.imageView];
     self.imageView.backgroundColor = [UIColor lightGrayColor];
