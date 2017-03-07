@@ -34,12 +34,7 @@
 {
     [super viewWillLayoutSubviews];
     
-    //view_1
-    NSDictionary *view_1_metrics = @{@"margin":@20};
-    NSArray *view_1_h = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[_view_1(50)]" options:NSLayoutFormatAlignAllTop metrics:view_1_metrics views:NSDictionaryOfVariableBindings(_view_1)];
-    NSArray *view_1_v = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-margin-[_view_1(100)]" options:NSLayoutFormatAlignAllLeft metrics:view_1_metrics views:NSDictionaryOfVariableBindings(_view_1)];
-    [self.view addConstraints:view_1_h];
-    [self.view addConstraints:view_1_v];
+  
     
     //bottom_1
     NSArray *bottom_1_h = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[_bottom_1]-20-[_bottom_2(==_bottom_1)]-20-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_bottom_1,_bottom_2)];
@@ -72,6 +67,13 @@
     NSString *vVFL =@"V:|-20-[redView(50)]";
     NSArray *vCons =[NSLayoutConstraint constraintsWithVisualFormat:vVFL options:0 metrics:nil views:@{@"redView":redView}];
     [self.view addConstraints:vCons];
+    
+    //view_1
+    NSDictionary *view_1_metrics = @{@"margin":@20};
+    NSArray *view_1_h = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-margin-[_view_1(50)]" options:0 metrics:view_1_metrics views:NSDictionaryOfVariableBindings(_view_1)];
+    NSArray *view_1_v = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[redView]-[_view_1(100)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_view_1,redView)];
+    [self.view addConstraints:view_1_h];
+    [self.view addConstraints:view_1_v];
     
     
 }

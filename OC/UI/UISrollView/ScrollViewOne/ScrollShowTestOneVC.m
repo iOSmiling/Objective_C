@@ -31,7 +31,7 @@
     self.imageView.backgroundColor = [UIColor lightGrayColor];
     
     self.itmeArray = [NSMutableArray array];
-    for (NSInteger i = 0; i < 8; i++)
+    for (NSInteger i = 1; i < 5; i++)
     {
         
         [self.itmeArray addObject:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",(long)i]]];

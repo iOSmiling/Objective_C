@@ -36,6 +36,8 @@
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
+		A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */; };
+		A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E81E6E80EF00873FCB /* LayoutModel.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
 		A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9D71E31BF3600E501C3 /* PersonModel.m */; };
 		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
@@ -280,6 +282,10 @@
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
+		A43673E31E6E7E8400873FCB /* LayoutTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutTestTableViewCell.h; sourceTree = "<group>"; };
+		A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutTestTableViewCell.m; sourceTree = "<group>"; };
+		A43673E71E6E80EF00873FCB /* LayoutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutModel.h; sourceTree = "<group>"; };
+		A43673E81E6E80EF00873FCB /* LayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutModel.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
 		A456A9D61E31BF3600E501C3 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
@@ -716,6 +722,24 @@
 			path = GestureVC;
 			sourceTree = "<group>";
 		};
+		A43673E21E6E7E6600873FCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A43673E31E6E7E8400873FCB /* LayoutTestTableViewCell.h */,
+				A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A43673E61E6E80E100873FCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A43673E71E6E80EF00873FCB /* LayoutModel.h */,
+				A43673E81E6E80EF00873FCB /* LayoutModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A456A9DC1E31D8A100E501C3 /* 第三方的使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,6 +1117,8 @@
 				A4970E861E6D2E6B00F54BD7 /* LayoutVC.m */,
 				A4970E881E6D2E8A00F54BD7 /* Layout_1VC.h */,
 				A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */,
+				A43673E61E6E80E100873FCB /* Model */,
+				A43673E21E6E7E6600873FCB /* View */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1675,6 +1701,7 @@
 			files = (
 				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
 				A479362D1E4D9B5A00FB5B45 /* WaterFlowLayout.m in Sources */,
+				A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */,
 				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
 				A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
@@ -1822,6 +1849,7 @@
 				A45EB7BE1E4ADECC00F47C4B /* MasonryCellModel.m in Sources */,
 				A45EBD091E2369DA00154216 /* StorageMainVC.m in Sources */,
 				A4BFBF641E13867200A54FF1 /* AddressOneVC.m in Sources */,
+				A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */,
 				A471357E1E08DC1300D1E83D /* PhotoCell.m in Sources */,
 				A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */,
 				A479362B1E4D9B5A00FB5B45 /* ShopModel.m in Sources */,
