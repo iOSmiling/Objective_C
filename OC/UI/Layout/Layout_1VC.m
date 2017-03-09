@@ -138,7 +138,6 @@
         
         _height.constant = 100;
         _view_1.alpha = 0.5;
-        
         [self.view layoutIfNeeded];
         
     } completion:^(BOOL finished) {
