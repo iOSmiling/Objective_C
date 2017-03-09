@@ -50,9 +50,9 @@
 {
     [super updateConstraints];
 
-    NSDictionary *me = @{@"Image_h":@(_dataModel.cellH)};
+    NSDictionary *dimage_me = @{@"Image_h":@(_dataModel.cellH)};
     NSArray *Dimage_h = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[_DimageView(50)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_DimageView)];
-    NSArray *Dimage_v = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_DimageView(Image_h)]-|" options:0 metrics:me views:NSDictionaryOfVariableBindings(_DimageView)];
+    NSArray *Dimage_v = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_DimageView(Image_h)]-|" options:0 metrics:dimage_me views:NSDictionaryOfVariableBindings(_DimageView)];
     [self.contentView addConstraints:Dimage_h];
     [self.contentView addConstraints:Dimage_v];
     
@@ -61,7 +61,6 @@
     [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_Dlabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
     [self.contentView addConstraints:Dlabel_h];
     [self.contentView addConstraints:Dlabel_v];
-    
     
 }
 
@@ -95,7 +94,6 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
 }
 
 @end

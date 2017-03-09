@@ -168,6 +168,7 @@
 		A4D57A5C1E0A5B2B0057C297 /* JKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4B1E0A5B2B0057C297 /* JKUtil.m */; };
 		A4D57A5D1E0A5B2B0057C297 /* PhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4D1E0A5B2B0057C297 /* PhotoAlbumManager.m */; };
 		A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */; };
+		A4D5CCEE1E6FB5A000CDE510 /* ScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D5CCED1E6FB5A000CDE510 /* ScrollVC.m */; };
 		A4D64BF91E0CBC5A003D9F23 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */; };
 		A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D64BFF1E0CBD37003D9F23 /* UserModel.m */; };
 		A4DAAEA81E46BE2D002BACA7 /* InteractiveMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DAAEA71E46BE2D002BACA7 /* InteractiveMainVC.m */; };
@@ -539,6 +540,8 @@
 		A4D57A4D1E0A5B2B0057C297 /* PhotoAlbumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumManager.m; sourceTree = "<group>"; };
 		A4D57A4E1E0A5B2B0057C297 /* UIView+JKPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKPicker.h"; sourceTree = "<group>"; };
 		A4D57A4F1E0A5B2B0057C297 /* UIView+JKPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKPicker.m"; sourceTree = "<group>"; };
+		A4D5CCEC1E6FB5A000CDE510 /* ScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollVC.h; sourceTree = "<group>"; };
+		A4D5CCED1E6FB5A000CDE510 /* ScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollVC.m; sourceTree = "<group>"; };
 		A4D64BF71E0CBC5A003D9F23 /* KVOVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOVC.h; sourceTree = "<group>"; };
 		A4D64BF81E0CBC5A003D9F23 /* KVOVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
 		A4D64BFE1E0CBD37003D9F23 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
@@ -1117,6 +1120,8 @@
 				A4970E861E6D2E6B00F54BD7 /* LayoutVC.m */,
 				A4970E881E6D2E8A00F54BD7 /* Layout_1VC.h */,
 				A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */,
+				A4D5CCEC1E6FB5A000CDE510 /* ScrollVC.h */,
+				A4D5CCED1E6FB5A000CDE510 /* ScrollVC.m */,
 				A43673E61E6E80E100873FCB /* Model */,
 				A43673E21E6E7E6600873FCB /* View */,
 			);
@@ -1704,6 +1709,7 @@
 				A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */,
 				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
 				A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */,
+				A4D5CCEE1E6FB5A000CDE510 /* ScrollVC.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,

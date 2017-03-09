@@ -10,6 +10,7 @@
 #import "Layout_1VC.h"
 #import "LayoutTestTableViewCell.h"
 #import "LayoutModel.h"
+#import "ScrollVC.h"
 
 static NSString * const DCell = @"Cell";
 
@@ -30,7 +31,7 @@ static NSString * const DCell = @"Cell";
     [super viewDidLoad];
     self.navigationItem.title = @"layout";
     _viewControllers = @[[Layout_1VC class],
-                         [Layout_1VC class]];
+                         [ScrollVC class]];
     
     [self initSubViewUI];
     
