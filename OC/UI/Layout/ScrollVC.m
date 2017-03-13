@@ -8,7 +8,7 @@
 
 #import "ScrollVC.h"
 
-#define SCREEN_WIDTH     [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
@@ -17,11 +17,9 @@
 @property (nonatomic,strong) UIView *contentView;
 @property (nonatomic,strong) UIScrollView *scrollView_1;
 @property (nonatomic,strong) UIPageControl *pageControl;
-@property (nonatomic,strong) NSMutableArray *imageArray; //图片数组
-
-
+@property (nonatomic,strong) NSMutableArray *imageArray; //scroll图片数组
 @property (nonatomic,strong) UITableView *tableView;
-@property (nonatomic,strong) NSMutableArray *tableviewArray;
+@property (nonatomic,strong) NSMutableArray *tableviewArray;//tableView数据数组
 
 @end
 
@@ -209,12 +207,10 @@
         _scrollView_1.backgroundColor = [UIColor purpleColor];
         _scrollView_1.translatesAutoresizingMaskIntoConstraints = NO;
         _scrollView_1.delegate = self;
-        
         _scrollView_1.bounces = NO;//是否反弹
         _scrollView_1.pagingEnabled = YES; //是否分页
         _scrollView_1.scrollEnabled = YES;//是否滚动
         _scrollView_1.scrollsToTop = YES;//是否支持滑动到顶端
-        
         _scrollView_1.showsVerticalScrollIndicator = NO;
         _scrollView_1.showsHorizontalScrollIndicator = NO;
         

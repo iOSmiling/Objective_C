@@ -10,12 +10,22 @@
 #import <Masonry.h>
 #import "IntoSystemLimitsVC.h"
 #import "AddressMainVC.h"
+#import "LocationVC.h"
+
+#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVCaptureDevice.h>
+#import <AVFoundation/AVMediaFormat.h>
+
+#import <AssetsLibrary/AssetsLibrary.h> //相册
+#import <CoreLocation/CoreLocation.h> //定位
+
+#import "FattributesVC.h"
+#import "MapTestVC.h"
 
 @interface SettingVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong,nonnull) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *array;
-
 
 @end
 
@@ -31,11 +41,14 @@
     
     [_array addObject:@"权限设置跳转"];
     [_array addObject:@"通讯录"];
+    [_array addObject:@"系统定位"];
+    [_array addObject:@"Fattributes"];
+    [_array addObject:@"地图"];
   
     
     [self.view addSubview:self.tableView];
     _tableView.frame = self.view.frame;
-  
+    
 }
 
 - (void)viewWillLayoutSubviews
@@ -99,16 +112,25 @@
         }
         case 2:
         {
+            LocationVC *vc = [[LocationVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
  
             break;
         }
         case 3:
         {
+            FattributesVC *vc = [[FattributesVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
      
             break;
         }
         case 4:
         {
+            MapTestVC *vc = [[MapTestVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
     
             break;
         }
@@ -132,6 +154,47 @@
             break;
             
     }
+    
+}
+
+//相册
+- (void)rules
+{
+
+    ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
+    if (author == ALAuthorizationStatusRestricted || author ==ALAuthorizationStatusDenied){
+        //无权限 做一个友好的提示
+        UIAlertView * alart = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"请您设置允许APP访问您的相册\n设置>隐私>照片" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alart show];
+        return ;
+    } else
+    {
+        //打开相机
+    }
+    
+}
+
+//相机
+- (void)rules1
+{
+
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    if (authStatus == AVAuthorizationStatusRestricted || authStatus ==AVAuthorizationStatusDenied)
+    {
+        //无权限 做一个友好的提示
+        UIAlertView * alart = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"请您设置允许APP访问您的相机\n设置>隐私>相机" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alart show];
+        return ;
+    } else
+    {
+        //调用相机
+    }
+    
+}
+
+- (void)rules2
+{
+    
     
 }
 
