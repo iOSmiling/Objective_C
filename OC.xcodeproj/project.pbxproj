@@ -40,6 +40,11 @@
 		A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */; };
 		A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E81E6E80EF00873FCB /* LayoutModel.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
+		A45141661E820BF400A411AB /* LayoutAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141651E820BF400A411AB /* LayoutAnimationVC.m */; };
+		A451416A1E820F1F00A411AB /* MediaMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141691E820F1F00A411AB /* MediaMainVC.m */; };
+		A451416D1E82103000A411AB /* VoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A451416C1E82103000A411AB /* VoiceVC.m */; };
+		A45141701E821AAD00A411AB /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A451416F1E821AAD00A411AB /* success.mp3 */; };
+		A45141721E8224A400A411AB /* 伤不起.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A45141711E8224A400A411AB /* 伤不起.mp3 */; };
 		A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9D71E31BF3600E501C3 /* PersonModel.m */; };
 		A456A9DB1E31C41100E501C3 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DA1E31C41100E501C3 /* PersonBuilder.m */; };
 		A456A9DF1E31D8CF00E501C3 /* ThirdPartyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A456A9DE1E31D8CF00E501C3 /* ThirdPartyVC.m */; };
@@ -396,6 +401,14 @@
 		A43673E81E6E80EF00873FCB /* LayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutModel.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
+		A45141641E820BF400A411AB /* LayoutAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAnimationVC.h; sourceTree = "<group>"; };
+		A45141651E820BF400A411AB /* LayoutAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAnimationVC.m; sourceTree = "<group>"; };
+		A45141681E820F1F00A411AB /* MediaMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaMainVC.h; sourceTree = "<group>"; };
+		A45141691E820F1F00A411AB /* MediaMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaMainVC.m; sourceTree = "<group>"; };
+		A451416B1E82103000A411AB /* VoiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceVC.h; sourceTree = "<group>"; };
+		A451416C1E82103000A411AB /* VoiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceVC.m; sourceTree = "<group>"; };
+		A451416F1E821AAD00A411AB /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		A45141711E8224A400A411AB /* 伤不起.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "伤不起.mp3"; sourceTree = "<group>"; };
 		A456A9D61E31BF3600E501C3 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		A456A9D71E31BF3600E501C3 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 		A456A9D91E31C41100E501C3 /* PersonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBuilder.h; sourceTree = "<group>"; };
@@ -995,6 +1008,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A45141671E820F0300A411AB /* Multimedia */ = {
+			isa = PBXGroup;
+			children = (
+				A45141681E820F1F00A411AB /* MediaMainVC.h */,
+				A45141691E820F1F00A411AB /* MediaMainVC.m */,
+				A451416B1E82103000A411AB /* VoiceVC.h */,
+				A451416C1E82103000A411AB /* VoiceVC.m */,
+			);
+			path = Multimedia;
+			sourceTree = "<group>";
+		};
+		A451416E1E821A8B00A411AB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A45141711E8224A400A411AB /* 伤不起.mp3 */,
+				A451416F1E821AAD00A411AB /* success.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A456A9DC1E31D8A100E501C3 /* 第三方的使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1279,10 +1312,12 @@
 				A488A7031E07F6BB0087D92A /* Animation */,
 				A430C7161E08BDB100681AFD /* GestureVC */,
 				A471354C1E08C5F200D1E83D /* ThreadVC */,
+				A45141671E820F0300A411AB /* Multimedia */,
 				A456A9DC1E31D8A100E501C3 /* 第三方的使用 */,
 				A4DAAEA51E46BDAB002BACA7 /* 自定义转场 */,
 				A4CD4C821E48132A00F85801 /* 导航栏控制 */,
 				A4E5D0101E5189A00080E41D /* Mdiator */,
+				A451416E1E821A8B00A411AB /* Resource */,
 				A45EBCFB1E2369DA00154216 /* Storage */,
 				A4FA78681E4AE7DD00824CA3 /* UI */,
 				A471356A1E08D0DA00D1E83D /* Photo */,
@@ -1386,6 +1421,8 @@
 				A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */,
 				A4D5CCEC1E6FB5A000CDE510 /* ScrollVC.h */,
 				A4D5CCED1E6FB5A000CDE510 /* ScrollVC.m */,
+				A45141641E820BF400A411AB /* LayoutAnimationVC.h */,
+				A45141651E820BF400A411AB /* LayoutAnimationVC.m */,
 				A43673E61E6E80E100873FCB /* Model */,
 				A43673E21E6E7E6600873FCB /* View */,
 			);
@@ -2010,6 +2047,7 @@
 				A4D98B3E1E72414C00F7C482 /* camera_overturn@2x.png in Resources */,
 				A4D98B561E72414C00F7C482 /* compose_photo_preview_disable@2x.png in Resources */,
 				A4D98B3F1E72414C00F7C482 /* camera_overturn_highlighted@2x.png in Resources */,
+				A45141701E821AAD00A411AB /* success.mp3 in Resources */,
 				A4D98B661E72414C00F7C482 /* video_delete_button_highlighted@2x.png in Resources */,
 				A4D98B451E72414C00F7C482 /* compose_gifbutton_background_highlighted@2x.png in Resources */,
 				A4D98B6D1E72414C00F7C482 /* 椭圆-1@2x.png in Resources */,
@@ -2067,6 +2105,7 @@
 				A4D98B481E72414C00F7C482 /* compose_guide_check_box_right@2x.png in Resources */,
 				A4D98B471E72414C00F7C482 /* compose_guide_check_box_default@2x副本.png in Resources */,
 				A4D98B371E72414C00F7C482 /* camera_flashlight@2x.png in Resources */,
+				A45141721E8224A400A411AB /* 伤不起.mp3 in Resources */,
 				A4D98B4D1E72414C00F7C482 /* compose_live_photo_open_icon@2x.png in Resources */,
 				A4D98B5A1E72414C00F7C482 /* compose_photo_video@2x.png in Resources */,
 				A4D98B621E72414C00F7C482 /* multimedia_videocard_play@2x.png in Resources */,
@@ -2274,6 +2313,7 @@
 				A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */,
 				A41C4BBA1E15FA1100F6AA64 /* NSString+CLObjcSugar.m in Sources */,
 				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
+				A45141661E820BF400A411AB /* LayoutAnimationVC.m in Sources */,
 				A45EBD061E2369DA00154216 /* FMDBVC.m in Sources */,
 				A41C4BB41E15FA1100F6AA64 /* NSDate+MacFormatter.m in Sources */,
 				A479362A1E4D9B5A00FB5B45 /* CollectionWaterFallVC.m in Sources */,
@@ -2299,6 +2339,7 @@
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */,
+				A451416A1E820F1F00A411AB /* MediaMainVC.m in Sources */,
 				A41C4BBC1E15FA1100F6AA64 /* UIColor+CLObjcSugar.m in Sources */,
 				A4BFBF4D1E13675900A54FF1 /* FCBigImageViewController.m in Sources */,
 				A4CD4C591E48085D00F85801 /* InheritVC.m in Sources */,
@@ -2363,6 +2404,7 @@
 				A4D98B1E1E72414C00F7C482 /* HXAlbumModel.m in Sources */,
 				A4CDC0FC1E76973D00A90381 /* HelpCenterViewController.m in Sources */,
 				A4D98B1F1E72414C00F7C482 /* HXAlbumTitleButton.m in Sources */,
+				A451416D1E82103000A411AB /* VoiceVC.m in Sources */,
 				A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */,
 				A479362C1E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,

@@ -11,6 +11,7 @@
 #import "LayoutTestTableViewCell.h"
 #import "LayoutModel.h"
 #import "ScrollVC.h"
+#import "LayoutAnimationVC.h"
 
 static NSString * const DCell = @"Cell";
 
@@ -31,7 +32,8 @@ static NSString * const DCell = @"Cell";
     [super viewDidLoad];
     self.navigationItem.title = @"layout";
     _viewControllers = @[[Layout_1VC class],
-                         [ScrollVC class]];
+                         [ScrollVC class],
+                         [LayoutAnimationVC class]];
     
     [self initSubViewUI];
     
@@ -46,6 +48,8 @@ static NSString * const DCell = @"Cell";
     self.dataArray = [NSMutableArray new];
     [_dataArray addObject:model1];
     [_dataArray addObject:model2];
+    
+    [_dataArray addObject:model1];
     
 }
 
