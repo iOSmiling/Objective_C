@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
+		A400AED01E81111400220AFB /* XMURLSessionWrapperOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
 		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
@@ -330,6 +331,8 @@
 		0DBEA0A80AA2C323BF167113 /* Pods-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-OC/Pods-OC.release.xcconfig"; sourceTree = "<group>"; };
 		25FC48CF59387486D4A8B031 /* Pods-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OC/Pods-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A400AECE1E81111400220AFB /* XMURLSessionWrapperOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMURLSessionWrapperOperation.h; sourceTree = "<group>"; };
+		A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMURLSessionWrapperOperation.m; sourceTree = "<group>"; };
 		A402DFA81E09105D0058E6B7 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
@@ -1045,6 +1048,8 @@
 				A47135511E08C63600D1E83D /* ThreadMainVC.m */,
 				A471354D1E08C61600D1E83D /* OperationVC.h */,
 				A471354E1E08C61600D1E83D /* OperationVC.m */,
+				A400AECE1E81111400220AFB /* XMURLSessionWrapperOperation.h */,
+				A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */,
 				A47135671E08CEF900D1E83D /* GCDVC.h */,
 				A47135681E08CEF900D1E83D /* GCDVC.m */,
 			);
@@ -1189,11 +1194,11 @@
 		A479360B1E4D9B5A00FB5B45 /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				A479360F1E4D9B5A00FB5B45 /* CollectionWaterFallVC.h */,
+				A47936101E4D9B5A00FB5B45 /* CollectionWaterFallVC.m */,
 				A479360C1E4D9B5A00FB5B45 /* 1.plist */,
 				A479360D1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.h */,
 				A479360E1E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m */,
-				A479360F1E4D9B5A00FB5B45 /* CollectionWaterFallVC.h */,
-				A47936101E4D9B5A00FB5B45 /* CollectionWaterFallVC.m */,
 				A47936111E4D9B5A00FB5B45 /* ShopModel.h */,
 				A47936121E4D9B5A00FB5B45 /* ShopModel.m */,
 				A47936131E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.h */,
@@ -2394,6 +2399,7 @@
 				A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */,
 				A4DAAF2D1E46C4F8002BACA7 /* XWNaviTransition.m in Sources */,
 				A4D98B7E1E7241E600F7C482 /* Demo3ViewController.m in Sources */,
+				A400AED01E81111400220AFB /* XMURLSessionWrapperOperation.m in Sources */,
 				A4970E971E6D39CC00F54BD7 /* UIControl+Interval.m in Sources */,
 				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,

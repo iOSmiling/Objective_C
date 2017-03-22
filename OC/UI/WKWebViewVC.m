@@ -64,7 +64,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler
 {
     // 如果响应的地址是百度，则允许跳转
-    if ([navigationResponse.response.URL.host.lowercaseString isEqual:@"www.baidu.com"]) {
+    if ([navigationResponse.response.URL.host.lowercaseString isEqual:@"http://m.xiangmei123.com/examineo/"]) {
         
         // 允许跳转
         decisionHandler(WKNavigationResponsePolicyAllow);
@@ -79,7 +79,7 @@
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
     // 如果请求的是百度地址，则延迟5s以后跳转
-    if ([navigationAction.request.URL.host.lowercaseString isEqual:@"www.baidu.com"]) {
+    if ([navigationAction.request.URL.host.lowercaseString isEqual:@"http://m.xiangmei123.com/examineo/"]) {
         
             // 延迟5s之后跳转
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

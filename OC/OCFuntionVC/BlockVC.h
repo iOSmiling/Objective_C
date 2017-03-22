@@ -25,3 +25,11 @@
 
 
 */
+
+/*  强引用  --弱引用
+    强引用持有对象，而弱引用不持有对象
+    使用strong 和weak的区别，因为strong的对象会使retainCount+1，而weak的并不会
+ 
+    只有该对象持有block，而block里的代码块又持有该对象时才需要用到weak。
+ 
+ */

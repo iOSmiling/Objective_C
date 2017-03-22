@@ -32,7 +32,7 @@ typedef void(^FAILEDBLOCK)(BOOL isFailure);
     NSLog(@"block :%d",MyBlock(3));
     
     
-    [self testGlobalBlock:@"11" sucess:^(BOOL isSucess) {
+    [self testGlobalBlock:@"11" sucess:^(BOOL isSucess){
         NSLog(@"成功");
     } failure:^(BOOL isFaie) {
         
@@ -61,6 +61,10 @@ typedef void(^FAILEDBLOCK)(BOOL isFailure);
         NSLog(@"2秒结束");
     }];
 
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+    });
+    
 }
 
 - (void)testGlobalBlock:(NSString *)url sucess:(void (^)(BOOL isSucess))sucess failure:(void (^)(BOOL isFaie))failue

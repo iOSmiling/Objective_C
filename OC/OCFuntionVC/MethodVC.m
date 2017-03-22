@@ -22,6 +22,10 @@
     //随机数的使用
     int random = [self getRandomNumber:1 to:3];
     NSLog(@"1-3 随机：%d",random);
+    
+    //copy
+    
+    
 }
 
 //获取一个随机整数，范围在[from,to]，包括from，包括to
