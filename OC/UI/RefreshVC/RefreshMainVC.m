@@ -1,25 +1,18 @@
 //
-//  UIMainVC.m
+//  RefreshMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2017/2/8.
+//  Created by 薛坤龙 on 2017/3/28.
 //  Copyright © 2017年 sigboat. All rights reserved.
 //
 
-#import "UIMainVC.h"
-#import <Masonry.h>
-#import "UILabelVC.h"
-#import "ScrollShowMainVC.h"
-#import "CollectionMainVC.h"
-#import "WKWebViewVC.h"
-#import "LayoutVC.h"
-#import "ActivityViewVC.h"
-#import "TableMainVC.h"
 #import "RefreshMainVC.h"
+#import <Masonry.h>
+#import "DownRefreshVC.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
-@interface UIMainVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface RefreshMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *array;
@@ -27,31 +20,16 @@ static const CGFloat tableViewCellHight = 60.0;
 
 @end
 
-@implementation UIMainVC
+@implementation RefreshMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"Refresh";
     
-    self.navigationItem.title = @"UI";
-    
-    _array = @[@"UILabel",
-               @"ScrollView",
-               @"Collection",
-               @"WKWebView",
-               @"LayoutVC",
-               @"ActivityViewVC",
-               @"TableMainVC",
-               @"Refresh"];
-    _viewControllers = @[[UILabelVC class],
-                         [ScrollShowMainVC class],
-                         [CollectionMainVC class],
-                         [WKWebViewVC class],
-                         [LayoutVC class],
-                         [ActivityViewVC class],
-                         [TableMainVC class],
-                         [RefreshMainVC class]];
-    
+    _array = @[@"DownRefreshVC"];
+    _viewControllers = @[[DownRefreshVC class]];
     
     [self.view addSubview:self.tableView];
     
@@ -128,6 +106,7 @@ static const CGFloat tableViewCellHight = 60.0;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 @end

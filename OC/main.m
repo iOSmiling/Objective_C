@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
+int main(int argc, char * argv[])
+{
+    
+    int a = 1;
+    int *p = &a;
+    NSLog(@"地址 p：%p",p);
+    NSLog(@"地址值 p :%d",*p);
+
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

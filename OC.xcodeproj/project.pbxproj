@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A400AED01E81111400220AFB /* XMURLSessionWrapperOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */; };
+		A401BDC51E8A03E20029070E /* UIView+XMFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
 		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
 		A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */; };
+		A4139A481E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */; };
+		A4139A511E8A0D5C00855F40 /* RefreshMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */; };
+		A4139A541E8A0E1B00855F40 /* DownRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A531E8A0E1B00855F40 /* DownRefreshVC.m */; };
 		A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A047F1E1B414D00187C9B /* NetworkToos.m */; };
 		A41A04861E1B871800187C9B /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A04851E1B871800187C9B /* UIBarButtonItem+Extension.m */; };
 		A41A04891E1B872400187C9B /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A04881E1B872400187C9B /* UITabBar+badge.m */; };
@@ -36,10 +40,14 @@
 		A41C4BC11E15FA1100F6AA64 /* UITextField+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAD1E15FA1100F6AA64 /* UITextField+CLObjcSugar.m */; };
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
+		A42AD5BC1E8A5FA600512B5B /* XMGifHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */; };
 		A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E81E6E80EF00873FCB /* LayoutModel.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
+		A45064231E88F4F8001C6A1E /* XMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064221E88F4F8001C6A1E /* XMRefresh.m */; };
+		A45064261E88F5BC001C6A1E /* XMHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */; };
+		A45064291E88F5D7001C6A1E /* XMFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */; };
 		A45141661E820BF400A411AB /* LayoutAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141651E820BF400A411AB /* LayoutAnimationVC.m */; };
 		A451416A1E820F1F00A411AB /* MediaMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141691E820F1F00A411AB /* MediaMainVC.m */; };
 		A451416D1E82103000A411AB /* VoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A451416C1E82103000A411AB /* VoiceVC.m */; };
@@ -338,6 +346,8 @@
 		81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A400AECE1E81111400220AFB /* XMURLSessionWrapperOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMURLSessionWrapperOperation.h; sourceTree = "<group>"; };
 		A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMURLSessionWrapperOperation.m; sourceTree = "<group>"; };
+		A401BDC31E8A03E20029070E /* UIView+XMFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMFrameExtension.h"; sourceTree = "<group>"; };
+		A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMFrameExtension.m"; sourceTree = "<group>"; };
 		A402DFA81E09105D0058E6B7 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
@@ -346,6 +356,12 @@
 		A4062CC61E0A4F920083810B /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
 		A40B2FB61E49BEF800C05EA8 /* MasonryMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainTableViewCell.h; sourceTree = "<group>"; };
 		A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainTableViewCell.m; sourceTree = "<group>"; };
+		A4139A461E8A099B00855F40 /* UIScrollView+XMRefreshExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XMRefreshExtension.h"; sourceTree = "<group>"; };
+		A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XMRefreshExtension.m"; sourceTree = "<group>"; };
+		A4139A4F1E8A0D5C00855F40 /* RefreshMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshMainVC.h; sourceTree = "<group>"; };
+		A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshMainVC.m; sourceTree = "<group>"; };
+		A4139A521E8A0E1B00855F40 /* DownRefreshVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownRefreshVC.h; sourceTree = "<group>"; };
+		A4139A531E8A0E1B00855F40 /* DownRefreshVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownRefreshVC.m; sourceTree = "<group>"; };
 		A41A047E1E1B414D00187C9B /* NetworkToos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkToos.h; sourceTree = "<group>"; };
 		A41A047F1E1B414D00187C9B /* NetworkToos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkToos.m; sourceTree = "<group>"; };
 		A41A04841E1B871800187C9B /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -393,6 +409,9 @@
 		A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		A41F58DF1E2F1B3200AA1BE2 /* ValidateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateVC.h; sourceTree = "<group>"; };
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
+		A42AD5B91E8A567A00512B5B /* XMRefreshExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMRefreshExtension.h; sourceTree = "<group>"; };
+		A42AD5BA1E8A5FA600512B5B /* XMGifHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGifHeaderRefresh.h; sourceTree = "<group>"; };
+		A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGifHeaderRefresh.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
 		A43673E31E6E7E8400873FCB /* LayoutTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutTestTableViewCell.h; sourceTree = "<group>"; };
@@ -401,6 +420,12 @@
 		A43673E81E6E80EF00873FCB /* LayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutModel.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
+		A45064211E88F4F8001C6A1E /* XMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRefresh.h; sourceTree = "<group>"; };
+		A45064221E88F4F8001C6A1E /* XMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRefresh.m; sourceTree = "<group>"; };
+		A45064241E88F5BC001C6A1E /* XMHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHeaderRefresh.h; sourceTree = "<group>"; };
+		A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHeaderRefresh.m; sourceTree = "<group>"; };
+		A45064271E88F5D7001C6A1E /* XMFooterRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFooterRefresh.h; sourceTree = "<group>"; };
+		A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFooterRefresh.m; sourceTree = "<group>"; };
 		A45141641E820BF400A411AB /* LayoutAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAnimationVC.h; sourceTree = "<group>"; };
 		A45141651E820BF400A411AB /* LayoutAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAnimationVC.m; sourceTree = "<group>"; };
 		A45141681E820F1F00A411AB /* MediaMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaMainVC.h; sourceTree = "<group>"; };
@@ -937,6 +962,17 @@
 			path = MasonryObject;
 			sourceTree = "<group>";
 		};
+		A4139A4E1E8A0D4B00855F40 /* RefreshVC */ = {
+			isa = PBXGroup;
+			children = (
+				A4139A4F1E8A0D5C00855F40 /* RefreshMainVC.h */,
+				A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */,
+				A4139A521E8A0E1B00855F40 /* DownRefreshVC.h */,
+				A4139A531E8A0E1B00855F40 /* DownRefreshVC.m */,
+			);
+			path = RefreshVC;
+			sourceTree = "<group>";
+		};
 		A41C4B8C1E15FA0000F6AA64 /* ObjcSugar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1006,6 +1042,26 @@
 				A43673E81E6E80EF00873FCB /* LayoutModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A45064201E88EC24001C6A1E /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				A42AD5B91E8A567A00512B5B /* XMRefreshExtension.h */,
+				A45064211E88F4F8001C6A1E /* XMRefresh.h */,
+				A45064221E88F4F8001C6A1E /* XMRefresh.m */,
+				A45064241E88F5BC001C6A1E /* XMHeaderRefresh.h */,
+				A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */,
+				A42AD5BA1E8A5FA600512B5B /* XMGifHeaderRefresh.h */,
+				A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */,
+				A45064271E88F5D7001C6A1E /* XMFooterRefresh.h */,
+				A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */,
+				A401BDC31E8A03E20029070E /* UIView+XMFrameExtension.h */,
+				A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */,
+				A4139A461E8A099B00855F40 /* UIScrollView+XMRefreshExtension.h */,
+				A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		A45141671E820F0300A411AB /* Multimedia */ = {
@@ -1907,6 +1963,8 @@
 				A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */,
 				A4D98B871E72703700F7C482 /* ActivityViewVC.h */,
 				A4D98B881E72703700F7C482 /* ActivityViewVC.m */,
+				A4139A4E1E8A0D4B00855F40 /* RefreshVC */,
+				A45064201E88EC24001C6A1E /* Refresh */,
 				A4CDC0ED1E7695D000A90381 /* TableView */,
 				A4970E841E6D2E5700F54BD7 /* Layout */,
 				A47936081E4D9B5A00FB5B45 /* UICollectionView */,
@@ -2240,6 +2298,7 @@
 				A4E5D00C1E51641A0080E41D /* SandBoxVC.m in Sources */,
 				A4D5CCEE1E6FB5A000CDE510 /* ScrollVC.m in Sources */,
 				A4D57A551E0A5B2B0057C297 /* JKAssetsGroupsView.m in Sources */,
+				A4139A511E8A0D5C00855F40 /* RefreshMainVC.m in Sources */,
 				A4D98B251E72414C00F7C482 /* HXPhotoPreviewViewCell.m in Sources */,
 				A488A7241E07F7960087D92A /* CAPropertyAnimationVC.m in Sources */,
 				A4D57A5E1E0A5B2B0057C297 /* UIView+JKPicker.m in Sources */,
@@ -2257,6 +2316,7 @@
 				A4E5D00F1E51816F0080E41D /* InitializeTestVC.m in Sources */,
 				A41A048F1E1B87B100187C9B /* UIView+CLObjcSugar.m in Sources */,
 				A4D98B271E72414C00F7C482 /* HXPhotoSubViewCell.m in Sources */,
+				A4139A541E8A0E1B00855F40 /* DownRefreshVC.m in Sources */,
 				A4BFBF521E13850000A54FF1 /* OCBaseViewController+getContactInfor.m in Sources */,
 				A4DAAEE11E46C067002BACA7 /* UIView+anchorPoint.m in Sources */,
 				A47936271E4D9B5A00FB5B45 /* CollectionMainVC.m in Sources */,
@@ -2329,12 +2389,14 @@
 				A45EBD0A1E2369DA00154216 /* XMDBManager.m in Sources */,
 				A47936051E4D89CD00FB5B45 /* HeadImageView.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
+				A45064231E88F4F8001C6A1E /* XMRefresh.m in Sources */,
 				A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A41C4BB91E15FA1100F6AA64 /* NSObject+JKRuntime.m in Sources */,
 				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
+				A42AD5BC1E8A5FA600512B5B /* XMGifHeaderRefresh.m in Sources */,
 				A4D98B861E726EB900F7C482 /* FattributesVC.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
@@ -2348,6 +2410,7 @@
 				A4DAAF401E46C5EC002BACA7 /* XWPageCoverPushController.m in Sources */,
 				A4FA786E1E4AE8C500824CA3 /* UILabelVC.m in Sources */,
 				A4DAAF3F1E46C5EC002BACA7 /* XWPageCoverController.m in Sources */,
+				A45064261E88F5BC001C6A1E /* XMHeaderRefresh.m in Sources */,
 				A41A048C1E1B875500187C9B /* UIView+Extension.m in Sources */,
 				A4D98B221E72414C00F7C482 /* HXCollectionView.m in Sources */,
 				A4D98B241E72414C00F7C482 /* HXPhotoModel.m in Sources */,
@@ -2405,10 +2468,13 @@
 				A4CDC0FC1E76973D00A90381 /* HelpCenterViewController.m in Sources */,
 				A4D98B1F1E72414C00F7C482 /* HXAlbumTitleButton.m in Sources */,
 				A451416D1E82103000A411AB /* VoiceVC.m in Sources */,
+				A401BDC51E8A03E20029070E /* UIView+XMFrameExtension.m in Sources */,
 				A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */,
+				A45064291E88F5D7001C6A1E /* XMFooterRefresh.m in Sources */,
 				A479362C1E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4D98B291E72414C00F7C482 /* HXPhotoView.m in Sources */,
+				A4139A481E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */,
 				A4DAAF2C1E46C4F8002BACA7 /* XWMagicMovePushController.m in Sources */,

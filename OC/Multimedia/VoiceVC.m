@@ -30,15 +30,21 @@
 
     [self initSubViewUI];
     
-    NSURL *musicUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"伤不起" ofType:@"mp3"]];
-    self.musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicUrl error:nil];
-    self.musicPlayer.delegate = self;
-    _musicPlayer.volume = 1;
+    NSString *musicFilePath = [[NSBundle mainBundle] pathForResource:@"伤不起" ofType:@"mp3"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:musicFilePath])
+    {
+        NSURL *musicUrl = [NSURL fileURLWithPath:musicFilePath];
+        self.musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicUrl error:nil];
+        self.musicPlayer.delegate = self;
+        _musicPlayer.volume = 1;
+        // 准备（缓冲）播放
+        [self.musicPlayer prepareToPlay];
     
-    // 准备（缓冲）播放
-    [self.musicPlayer prepareToPlay];
+    }
 
-    
+    //后台播放设置 info.plist 增加 Required background modes  - item -> App plays audio or streams audio/video using AirPlay
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
