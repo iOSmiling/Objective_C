@@ -6,9 +6,12 @@
 //  Copyright © 2017年 sigboat. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XMRefresh.h"
 
-@interface XMGifHeaderRefresh : UIView
+@interface XMGifHeaderRefresh : XMRefresh
+
+@property (nonatomic,strong) UIImageView *headerImageView;
+@property (nonatomic,strong) UILabel *headerLabel;
 
 + (void)show;
 

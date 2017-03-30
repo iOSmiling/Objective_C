@@ -75,7 +75,7 @@ const CGFloat kCircleViewSize = 90.0f;
     
     if(tap.numberOfTapsRequired == 1)
     {
-        transform = CGAffineTransformScale(self.circleView.transform, 1.3, 1.3);
+        transform = CGAffineTransformScale(self.circleView.transform, 1.3, 1.3); //缩放
     }
     
     self.animationHappening = YES;
@@ -92,8 +92,11 @@ const CGFloat kCircleViewSize = 90.0f;
 
     NSLog(@"btn");
     
-    _btn.transform = CGAffineTransformMakeScale(1.5, 1.5);
+//    _btn.transform = CGAffineTransformMakeScale(1.5, 1.5);
+    _btn.transform = CGAffineTransformRotate(_btn.transform, M_PI_4); //旋转
     //    _btn.transform = CGAffineTransformScale(_btn.transform, 1.5, 1.5);
+    
+//    _btn.transform = CGAffineTransformMakeRotation(M_PI_4); //make 继续默认的
     
 }
 

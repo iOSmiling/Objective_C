@@ -40,6 +40,7 @@
 		A41C4BC11E15FA1100F6AA64 /* UITextField+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAD1E15FA1100F6AA64 /* UITextField+CLObjcSugar.m */; };
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
+		A42AB8AD1E8D00410005F0D2 /* CAAnimation.png in Resources */ = {isa = PBXBuildFile; fileRef = A42AB8AC1E8D00410005F0D2 /* CAAnimation.png */; };
 		A42AD5BC1E8A5FA600512B5B /* XMGifHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */; };
@@ -409,6 +410,7 @@
 		A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		A41F58DF1E2F1B3200AA1BE2 /* ValidateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateVC.h; sourceTree = "<group>"; };
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
+		A42AB8AC1E8D00410005F0D2 /* CAAnimation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAAnimation.png; sourceTree = "<group>"; };
 		A42AD5B91E8A567A00512B5B /* XMRefreshExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMRefreshExtension.h; sourceTree = "<group>"; };
 		A42AD5BA1E8A5FA600512B5B /* XMGifHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGifHeaderRefresh.h; sourceTree = "<group>"; };
 		A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGifHeaderRefresh.m; sourceTree = "<group>"; };
@@ -1440,6 +1442,7 @@
 		A488A7031E07F6BB0087D92A /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				A42AB8AC1E8D00410005F0D2 /* CAAnimation.png */,
 				A488A7041E07F6E10087D92A /* AnimationViewController.h */,
 				A488A7051E07F6E10087D92A /* AnimationViewController.m */,
 				A488A7071E07F70D0087D92A /* AnimationFrameVC.h */,
@@ -2137,6 +2140,7 @@
 				A4D98B6C1E72414C00F7C482 /* 椭圆-1-拷贝@2x.png in Resources */,
 				A4D98B531E72414C00F7C482 /* compose_photo_original_highlighted@2x.png in Resources */,
 				A4D98B381E72414C00F7C482 /* camera_flashlight_auto@2x.png in Resources */,
+				A42AB8AD1E8D00410005F0D2 /* CAAnimation.png in Resources */,
 				A4D98B361E72414C00F7C482 /* camera_drop_highlighted@2x.png in Resources */,
 				A4D98B5D1E72414C00F7C482 /* feed_more_arrow@2x.png in Resources */,
 				A4D98B601E72414C00F7C482 /* icon_jixu@2x.png in Resources */,

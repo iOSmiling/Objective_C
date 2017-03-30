@@ -60,7 +60,7 @@ const CGFloat magnificateMultiple = 3.;
     {
         self.animationImageView.image = animationImage;
         self.animationImageView.frame = targetFrame_start;
-        [self.view.window addSubview:self.animationImageView];
+        [self.view addSubview:self.animationImageView];
     }
     
     if (self.isOpenOverView)

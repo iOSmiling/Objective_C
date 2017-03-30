@@ -165,17 +165,22 @@
 - (void)ddGCD
 {
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
     dispatch_async(globalQueue, ^{
+        
         //子线程异步执行下载任务，防止主线程卡顿
         NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
         NSError *error;
         NSString *htmlData = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
+        
         if (htmlData != nil) {
+            
             dispatch_queue_t mainQueue = dispatch_get_main_queue();
             //异步返回主线程，根据获取的数据，更新UI
             dispatch_async(mainQueue, ^{
                 NSLog(@"根据更新UI界面");
             });
+            
         } else {
             NSLog(@"error when download:%@",error);
         }

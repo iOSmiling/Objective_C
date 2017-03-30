@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+//刷新类型
 typedef NS_ENUM(NSUInteger,XMRefreshType)
 {
     XMRefreshTypeFooter = 0,
     XMRefreshTypeHeader,
 };
 
+//刷新状态
 typedef NS_ENUM(NSUInteger,XMRefreshState)
 {
     XMRefreshStateNormal = 0,

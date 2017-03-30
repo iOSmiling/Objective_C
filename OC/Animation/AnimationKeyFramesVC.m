@@ -13,6 +13,10 @@
 @property (nonatomic,strong) UIImageView *anImageView;
 @property (nonatomic,strong) UIButton *anButton;
 
+
+@property (nonatomic,strong) UIView *greenView;//path
+@property (nonatomic,strong) CALayer *redLayer; //抖动
+
 @end
 
 @implementation AnimationKeyFramesVC
@@ -23,12 +27,87 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Animation_keyFrames";
     
+    /*
     [self.view addSubview:self.anImageView];
     self.anImageView.frame = CGRectMake(self.view.frame.size.width/2-100, 200, 200, 100);
-    
+     
     [self.view addSubview:self.anButton];
     self.anButton.frame = CGRectMake(self.view.frame.size.width/2-50, self.view.frame.size.height-146, 100, 46);
+     
+     */
+    
+    CALayer *layer= [CALayer layer];
+    _redLayer = layer;
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    layer.frame = CGRectMake(100, 150, 200, 200);
+    [self.view.layer addSublayer:_redLayer];
+    
+    
+    UIView *view = [[UIView alloc] init];
+    _greenView = view;
+    _greenView.backgroundColor = [UIColor greenColor];
+    _greenView.frame = CGRectMake(0, 0, 50, 50);
+    _greenView.layer.cornerRadius = 25;
+    [self.view addSubview:_greenView];
+    
 }
+
+- (void)touchesBegan:(nonnull NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    
+    /** 2. 绿色的view，椭圆路径位移  */
+    [self positionChange];
+    
+    /** _redLayer 抖动 动画 */
+    
+    [self anim];
+}
+
+- (void)positionChange
+{
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animation];
+    
+    anim.keyPath = @"position";
+    
+    anim.duration = 1;
+    
+    // 取消反弹
+    // 告诉在动画结束的时候不要移除
+    anim.removedOnCompletion = NO;
+    // 始终保持最新的效果
+    anim.fillMode = kCAFillModeForwards;
+    
+    anim.calculationMode = kCAAnimationPaced;
+    
+    // Oval 椭圆  路径轨迹
+    anim.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(10, 100, 300, 300)].CGPath;
+    
+    anim.repeatCount = MAXFLOAT ;
+    
+    // 将动画对象添加到 绿色视图的layer上去
+    [_greenView.layer addAnimation:anim forKey:nil];
+}
+
+
+/**
+ * _redLayer 抖动动画
+ */
+- (void)anim
+{
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animation];
+    
+    anim.duration = 0.3;
+    anim.keyPath = @"transform";
+    NSValue *value =  [NSValue valueWithCATransform3D:CATransform3DMakeRotation((-15) / 180.0 * M_PI, 0, 0, 1)];
+    NSValue *value1 =  [NSValue valueWithCATransform3D:CATransform3DMakeRotation((15) / 180.0 * M_PI, 0, 0, 1)];
+    NSValue *value2 =  [NSValue valueWithCATransform3D:CATransform3DMakeRotation((-15) / 180.0 * M_PI, 0, 0, 1)];
+    anim.values = @[value,value1,value2];
+    
+    anim.repeatCount = MAXFLOAT;
+    
+    [_redLayer addAnimation:anim forKey:nil];
+}
+
+
 
 -(void)changeKeyFrames
 {
@@ -90,6 +169,8 @@
     return _anImageView;
 }
 
+
+
 -(UIButton *)anButton
 {
     if (!_anButton)
@@ -99,7 +180,12 @@
         _anButton.layer.borderColor = [UIColor blackColor].CGColor;
         [_anButton setTitle:@"动画" forState:UIControlStateNormal];
         [_anButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_anButton addTarget:self action:@selector(changeKeyFrames) forControlEvents:UIControlEventTouchUpInside];
+        
+        //背景色渐变的帧动画
+//        [_anButton addTarget:self action:@selector(changeKeyFrames) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+        
     }
     return _anButton;
 }
