@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		6568FD63D4ABF556BE18D9A1 /* libPods-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */; };
 		A400AED01E81111400220AFB /* XMURLSessionWrapperOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */; };
-		A401BDC51E8A03E20029070E /* UIView+XMFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */; };
 		A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */; };
 		A4062CBD1E0A47BB0083810B /* SelectPhotoAndEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CBC1E0A47BB0083810B /* SelectPhotoAndEditVC.m */; };
 		A4062CC71E0A4F920083810B /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4062CC51E0A4F920083810B /* UIImageEffects.m */; };
 		A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */; };
-		A4139A481E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */; };
 		A4139A511E8A0D5C00855F40 /* RefreshMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */; };
 		A4139A541E8A0E1B00855F40 /* DownRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4139A531E8A0E1B00855F40 /* DownRefreshVC.m */; };
 		A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */ = {isa = PBXBuildFile; fileRef = A41A047F1E1B414D00187C9B /* NetworkToos.m */; };
@@ -41,14 +39,10 @@
 		A41C4BC21E15FA1100F6AA64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = A41C4BAF1E15FA1100F6AA64 /* UITextView+Placeholder.m */; };
 		A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */; };
 		A42AB8AD1E8D00410005F0D2 /* CAAnimation.png in Resources */ = {isa = PBXBuildFile; fileRef = A42AB8AC1E8D00410005F0D2 /* CAAnimation.png */; };
-		A42AD5BC1E8A5FA600512B5B /* XMGifHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */; };
 		A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A430C7181E08BDCC00681AFD /* GestureVC.m */; };
 		A43673E51E6E7E8400873FCB /* LayoutTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E41E6E7E8400873FCB /* LayoutTestTableViewCell.m */; };
 		A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A43673E81E6E80EF00873FCB /* LayoutModel.m */; };
 		A43E546F1E1501DD00BB9080 /* StringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A43E546E1E1501DD00BB9080 /* StringVC.m */; };
-		A45064231E88F4F8001C6A1E /* XMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064221E88F4F8001C6A1E /* XMRefresh.m */; };
-		A45064261E88F5BC001C6A1E /* XMHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */; };
-		A45064291E88F5D7001C6A1E /* XMFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */; };
 		A45141661E820BF400A411AB /* LayoutAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141651E820BF400A411AB /* LayoutAnimationVC.m */; };
 		A451416A1E820F1F00A411AB /* MediaMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A45141691E820F1F00A411AB /* MediaMainVC.m */; };
 		A451416D1E82103000A411AB /* VoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A451416C1E82103000A411AB /* VoiceVC.m */; };
@@ -124,6 +118,23 @@
 		A4970E8A1E6D2E8A00F54BD7 /* Layout_1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E891E6D2E8A00F54BD7 /* Layout_1VC.m */; };
 		A4970E8E1E6D390100F54BD7 /* AYYFPSIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E8D1E6D390100F54BD7 /* AYYFPSIndicator.m */; };
 		A4970E971E6D39CC00F54BD7 /* UIControl+Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */; };
+		A4AE3E691E8DE6AC005BF49F /* ActionSheetMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E681E8DE6AC005BF49F /* ActionSheetMainVC.m */; };
+		A4AE3E791E8E260B005BF49F /* XLRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E6E1E8E260B005BF49F /* XLRefreshHeader.m */; };
+		A4AE3E7A1E8E260B005BF49F /* XLRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E701E8E260B005BF49F /* XLRefreshFooter.m */; };
+		A4AE3E7B1E8E260B005BF49F /* XLRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E721E8E260B005BF49F /* XLRefreshBase.m */; };
+		A4AE3E7C1E8E260B005BF49F /* XLRefreshAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E741E8E260B005BF49F /* XLRefreshAnimation.m */; };
+		A4AE3E7D1E8E260B005BF49F /* XLRefreshAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E761E8E260B005BF49F /* XLRefreshAnimationLayer.m */; };
+		A4AE3E7E1E8E260B005BF49F /* UIScrollView+XLRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E781E8E260B005BF49F /* UIScrollView+XLRefresh.m */; };
+		A4AE3E811E8E2671005BF49F /* XLRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E801E8E2671005BF49F /* XLRefreshVC.m */; };
+		A4AE3E841E8E26CA005BF49F /* XLCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E831E8E26CA005BF49F /* XLCollectionVC.m */; };
+		A4AE3E871E8E26DE005BF49F /* XLTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E861E8E26DE005BF49F /* XLTableVC.m */; };
+		A4AE3E8A1E8E26EF005BF49F /* XLWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E891E8E26EF005BF49F /* XLWebVC.m */; };
+		A4AE3E991E8E286D005BF49F /* UIScrollView+XMRefreshExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E8D1E8E286D005BF49F /* UIScrollView+XMRefreshExtension.m */; };
+		A4AE3E9A1E8E286D005BF49F /* UIView+XMFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E8F1E8E286D005BF49F /* UIView+XMFrameExtension.m */; };
+		A4AE3E9B1E8E286D005BF49F /* XMFooterRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E911E8E286D005BF49F /* XMFooterRefresh.m */; };
+		A4AE3E9C1E8E286D005BF49F /* XMGifHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E931E8E286D005BF49F /* XMGifHeaderRefresh.m */; };
+		A4AE3E9D1E8E286D005BF49F /* XMHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E951E8E286D005BF49F /* XMHeaderRefresh.m */; };
+		A4AE3E9E1E8E286D005BF49F /* XMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AE3E971E8E286D005BF49F /* XMRefresh.m */; };
 		A4BFBF191E13513C00A54FF1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF181E13513C00A54FF1 /* Person.m */; };
 		A4BFBF1C1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF1B1E1363A500A54FF1 /* XMSelectPhotoTwoVC.m */; };
 		A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BFBF391E13675900A54FF1 /* FCPhotoManager.m */; };
@@ -347,8 +358,6 @@
 		81EA2B31DF3C7F0A49F74A5F /* libPods-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A400AECE1E81111400220AFB /* XMURLSessionWrapperOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMURLSessionWrapperOperation.h; sourceTree = "<group>"; };
 		A400AECF1E81111400220AFB /* XMURLSessionWrapperOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMURLSessionWrapperOperation.m; sourceTree = "<group>"; };
-		A401BDC31E8A03E20029070E /* UIView+XMFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMFrameExtension.h"; sourceTree = "<group>"; };
-		A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMFrameExtension.m"; sourceTree = "<group>"; };
 		A402DFA81E09105D0058E6B7 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		A402DFA91E09105D0058E6B7 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 		A4062CBB1E0A47BB0083810B /* SelectPhotoAndEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoAndEditVC.h; sourceTree = "<group>"; };
@@ -357,8 +366,6 @@
 		A4062CC61E0A4F920083810B /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
 		A40B2FB61E49BEF800C05EA8 /* MasonryMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryMainTableViewCell.h; sourceTree = "<group>"; };
 		A40B2FB71E49BEF800C05EA8 /* MasonryMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryMainTableViewCell.m; sourceTree = "<group>"; };
-		A4139A461E8A099B00855F40 /* UIScrollView+XMRefreshExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XMRefreshExtension.h"; sourceTree = "<group>"; };
-		A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XMRefreshExtension.m"; sourceTree = "<group>"; };
 		A4139A4F1E8A0D5C00855F40 /* RefreshMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshMainVC.h; sourceTree = "<group>"; };
 		A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshMainVC.m; sourceTree = "<group>"; };
 		A4139A521E8A0E1B00855F40 /* DownRefreshVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownRefreshVC.h; sourceTree = "<group>"; };
@@ -411,9 +418,6 @@
 		A41F58DF1E2F1B3200AA1BE2 /* ValidateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidateVC.h; sourceTree = "<group>"; };
 		A41F58E01E2F1B3200AA1BE2 /* ValidateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidateVC.m; sourceTree = "<group>"; };
 		A42AB8AC1E8D00410005F0D2 /* CAAnimation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAAnimation.png; sourceTree = "<group>"; };
-		A42AD5B91E8A567A00512B5B /* XMRefreshExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMRefreshExtension.h; sourceTree = "<group>"; };
-		A42AD5BA1E8A5FA600512B5B /* XMGifHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGifHeaderRefresh.h; sourceTree = "<group>"; };
-		A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGifHeaderRefresh.m; sourceTree = "<group>"; };
 		A430C7171E08BDCC00681AFD /* GestureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureVC.h; sourceTree = "<group>"; };
 		A430C7181E08BDCC00681AFD /* GestureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureVC.m; sourceTree = "<group>"; };
 		A43673E31E6E7E8400873FCB /* LayoutTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutTestTableViewCell.h; sourceTree = "<group>"; };
@@ -422,12 +426,6 @@
 		A43673E81E6E80EF00873FCB /* LayoutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutModel.m; sourceTree = "<group>"; };
 		A43E546D1E1501DD00BB9080 /* StringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringVC.h; sourceTree = "<group>"; };
 		A43E546E1E1501DD00BB9080 /* StringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringVC.m; sourceTree = "<group>"; };
-		A45064211E88F4F8001C6A1E /* XMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRefresh.h; sourceTree = "<group>"; };
-		A45064221E88F4F8001C6A1E /* XMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRefresh.m; sourceTree = "<group>"; };
-		A45064241E88F5BC001C6A1E /* XMHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHeaderRefresh.h; sourceTree = "<group>"; };
-		A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHeaderRefresh.m; sourceTree = "<group>"; };
-		A45064271E88F5D7001C6A1E /* XMFooterRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFooterRefresh.h; sourceTree = "<group>"; };
-		A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFooterRefresh.m; sourceTree = "<group>"; };
 		A45141641E820BF400A411AB /* LayoutAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutAnimationVC.h; sourceTree = "<group>"; };
 		A45141651E820BF400A411AB /* LayoutAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutAnimationVC.m; sourceTree = "<group>"; };
 		A45141681E820F1F00A411AB /* MediaMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaMainVC.h; sourceTree = "<group>"; };
@@ -575,6 +573,42 @@
 		A4970E8D1E6D390100F54BD7 /* AYYFPSIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYYFPSIndicator.m; sourceTree = "<group>"; };
 		A4970E951E6D39CC00F54BD7 /* UIControl+Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Interval.h"; sourceTree = "<group>"; };
 		A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Interval.m"; sourceTree = "<group>"; };
+		A4AE3E671E8DE6AC005BF49F /* ActionSheetMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetMainVC.h; sourceTree = "<group>"; };
+		A4AE3E681E8DE6AC005BF49F /* ActionSheetMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetMainVC.m; sourceTree = "<group>"; };
+		A4AE3E6C1E8E260B005BF49F /* XLRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefresh.h; sourceTree = "<group>"; };
+		A4AE3E6D1E8E260B005BF49F /* XLRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshHeader.h; sourceTree = "<group>"; };
+		A4AE3E6E1E8E260B005BF49F /* XLRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshHeader.m; sourceTree = "<group>"; };
+		A4AE3E6F1E8E260B005BF49F /* XLRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshFooter.h; sourceTree = "<group>"; };
+		A4AE3E701E8E260B005BF49F /* XLRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshFooter.m; sourceTree = "<group>"; };
+		A4AE3E711E8E260B005BF49F /* XLRefreshBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshBase.h; sourceTree = "<group>"; };
+		A4AE3E721E8E260B005BF49F /* XLRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshBase.m; sourceTree = "<group>"; };
+		A4AE3E731E8E260B005BF49F /* XLRefreshAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshAnimation.h; sourceTree = "<group>"; };
+		A4AE3E741E8E260B005BF49F /* XLRefreshAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshAnimation.m; sourceTree = "<group>"; };
+		A4AE3E751E8E260B005BF49F /* XLRefreshAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshAnimationLayer.h; sourceTree = "<group>"; };
+		A4AE3E761E8E260B005BF49F /* XLRefreshAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshAnimationLayer.m; sourceTree = "<group>"; };
+		A4AE3E771E8E260B005BF49F /* UIScrollView+XLRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XLRefresh.h"; sourceTree = "<group>"; };
+		A4AE3E781E8E260B005BF49F /* UIScrollView+XLRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XLRefresh.m"; sourceTree = "<group>"; };
+		A4AE3E7F1E8E2671005BF49F /* XLRefreshVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshVC.h; sourceTree = "<group>"; };
+		A4AE3E801E8E2671005BF49F /* XLRefreshVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshVC.m; sourceTree = "<group>"; };
+		A4AE3E821E8E26CA005BF49F /* XLCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCollectionVC.h; sourceTree = "<group>"; };
+		A4AE3E831E8E26CA005BF49F /* XLCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionVC.m; sourceTree = "<group>"; };
+		A4AE3E851E8E26DE005BF49F /* XLTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTableVC.h; sourceTree = "<group>"; };
+		A4AE3E861E8E26DE005BF49F /* XLTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTableVC.m; sourceTree = "<group>"; };
+		A4AE3E881E8E26EF005BF49F /* XLWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLWebVC.h; sourceTree = "<group>"; };
+		A4AE3E891E8E26EF005BF49F /* XLWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWebVC.m; sourceTree = "<group>"; };
+		A4AE3E8C1E8E286D005BF49F /* UIScrollView+XMRefreshExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XMRefreshExtension.h"; sourceTree = "<group>"; };
+		A4AE3E8D1E8E286D005BF49F /* UIScrollView+XMRefreshExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XMRefreshExtension.m"; sourceTree = "<group>"; };
+		A4AE3E8E1E8E286D005BF49F /* UIView+XMFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMFrameExtension.h"; sourceTree = "<group>"; };
+		A4AE3E8F1E8E286D005BF49F /* UIView+XMFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMFrameExtension.m"; sourceTree = "<group>"; };
+		A4AE3E901E8E286D005BF49F /* XMFooterRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFooterRefresh.h; sourceTree = "<group>"; };
+		A4AE3E911E8E286D005BF49F /* XMFooterRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFooterRefresh.m; sourceTree = "<group>"; };
+		A4AE3E921E8E286D005BF49F /* XMGifHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGifHeaderRefresh.h; sourceTree = "<group>"; };
+		A4AE3E931E8E286D005BF49F /* XMGifHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGifHeaderRefresh.m; sourceTree = "<group>"; };
+		A4AE3E941E8E286D005BF49F /* XMHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHeaderRefresh.h; sourceTree = "<group>"; };
+		A4AE3E951E8E286D005BF49F /* XMHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMHeaderRefresh.m; sourceTree = "<group>"; };
+		A4AE3E961E8E286D005BF49F /* XMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRefresh.h; sourceTree = "<group>"; };
+		A4AE3E971E8E286D005BF49F /* XMRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMRefresh.m; sourceTree = "<group>"; };
+		A4AE3E981E8E286D005BF49F /* XMRefreshExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMRefreshExtension.h; sourceTree = "<group>"; };
 		A4BFBF171E13513C00A54FF1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A4BFBF181E13513C00A54FF1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A4BFBF1A1E1363A500A54FF1 /* XMSelectPhotoTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSelectPhotoTwoVC.h; sourceTree = "<group>"; };
@@ -971,6 +1005,14 @@
 				A4139A501E8A0D5C00855F40 /* RefreshMainVC.m */,
 				A4139A521E8A0E1B00855F40 /* DownRefreshVC.h */,
 				A4139A531E8A0E1B00855F40 /* DownRefreshVC.m */,
+				A4AE3E7F1E8E2671005BF49F /* XLRefreshVC.h */,
+				A4AE3E801E8E2671005BF49F /* XLRefreshVC.m */,
+				A4AE3E821E8E26CA005BF49F /* XLCollectionVC.h */,
+				A4AE3E831E8E26CA005BF49F /* XLCollectionVC.m */,
+				A4AE3E851E8E26DE005BF49F /* XLTableVC.h */,
+				A4AE3E861E8E26DE005BF49F /* XLTableVC.m */,
+				A4AE3E881E8E26EF005BF49F /* XLWebVC.h */,
+				A4AE3E891E8E26EF005BF49F /* XLWebVC.m */,
 			);
 			path = RefreshVC;
 			sourceTree = "<group>";
@@ -1049,19 +1091,8 @@
 		A45064201E88EC24001C6A1E /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
-				A42AD5B91E8A567A00512B5B /* XMRefreshExtension.h */,
-				A45064211E88F4F8001C6A1E /* XMRefresh.h */,
-				A45064221E88F4F8001C6A1E /* XMRefresh.m */,
-				A45064241E88F5BC001C6A1E /* XMHeaderRefresh.h */,
-				A45064251E88F5BC001C6A1E /* XMHeaderRefresh.m */,
-				A42AD5BA1E8A5FA600512B5B /* XMGifHeaderRefresh.h */,
-				A42AD5BB1E8A5FA600512B5B /* XMGifHeaderRefresh.m */,
-				A45064271E88F5D7001C6A1E /* XMFooterRefresh.h */,
-				A45064281E88F5D7001C6A1E /* XMFooterRefresh.m */,
-				A401BDC31E8A03E20029070E /* UIView+XMFrameExtension.h */,
-				A401BDC41E8A03E20029070E /* UIView+XMFrameExtension.m */,
-				A4139A461E8A099B00855F40 /* UIScrollView+XMRefreshExtension.h */,
-				A4139A471E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m */,
+				A4AE3E8B1E8E2854005BF49F /* XMRefresh */,
+				A4AE3E6B1E8E2603005BF49F /* XLRefresh */,
 			);
 			path = Refresh;
 			sourceTree = "<group>";
@@ -1497,6 +1528,63 @@
 				A4970E961E6D39CC00F54BD7 /* UIControl+Interval.m */,
 			);
 			path = UnitView;
+			sourceTree = "<group>";
+		};
+		A4AE3E661E8DE691005BF49F /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE3E671E8DE6AC005BF49F /* ActionSheetMainVC.h */,
+				A4AE3E681E8DE6AC005BF49F /* ActionSheetMainVC.m */,
+				A4AE3E6A1E8DE701005BF49F /* ActionView */,
+			);
+			path = ActionSheet;
+			sourceTree = "<group>";
+		};
+		A4AE3E6A1E8DE701005BF49F /* ActionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActionView;
+			sourceTree = "<group>";
+		};
+		A4AE3E6B1E8E2603005BF49F /* XLRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE3E6C1E8E260B005BF49F /* XLRefresh.h */,
+				A4AE3E6D1E8E260B005BF49F /* XLRefreshHeader.h */,
+				A4AE3E6E1E8E260B005BF49F /* XLRefreshHeader.m */,
+				A4AE3E6F1E8E260B005BF49F /* XLRefreshFooter.h */,
+				A4AE3E701E8E260B005BF49F /* XLRefreshFooter.m */,
+				A4AE3E711E8E260B005BF49F /* XLRefreshBase.h */,
+				A4AE3E721E8E260B005BF49F /* XLRefreshBase.m */,
+				A4AE3E731E8E260B005BF49F /* XLRefreshAnimation.h */,
+				A4AE3E741E8E260B005BF49F /* XLRefreshAnimation.m */,
+				A4AE3E751E8E260B005BF49F /* XLRefreshAnimationLayer.h */,
+				A4AE3E761E8E260B005BF49F /* XLRefreshAnimationLayer.m */,
+				A4AE3E771E8E260B005BF49F /* UIScrollView+XLRefresh.h */,
+				A4AE3E781E8E260B005BF49F /* UIScrollView+XLRefresh.m */,
+			);
+			path = XLRefresh;
+			sourceTree = "<group>";
+		};
+		A4AE3E8B1E8E2854005BF49F /* XMRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE3E8C1E8E286D005BF49F /* UIScrollView+XMRefreshExtension.h */,
+				A4AE3E8D1E8E286D005BF49F /* UIScrollView+XMRefreshExtension.m */,
+				A4AE3E8E1E8E286D005BF49F /* UIView+XMFrameExtension.h */,
+				A4AE3E8F1E8E286D005BF49F /* UIView+XMFrameExtension.m */,
+				A4AE3E901E8E286D005BF49F /* XMFooterRefresh.h */,
+				A4AE3E911E8E286D005BF49F /* XMFooterRefresh.m */,
+				A4AE3E921E8E286D005BF49F /* XMGifHeaderRefresh.h */,
+				A4AE3E931E8E286D005BF49F /* XMGifHeaderRefresh.m */,
+				A4AE3E941E8E286D005BF49F /* XMHeaderRefresh.h */,
+				A4AE3E951E8E286D005BF49F /* XMHeaderRefresh.m */,
+				A4AE3E961E8E286D005BF49F /* XMRefresh.h */,
+				A4AE3E971E8E286D005BF49F /* XMRefresh.m */,
+				A4AE3E981E8E286D005BF49F /* XMRefreshExtension.h */,
+			);
+			path = XMRefresh;
 			sourceTree = "<group>";
 		};
 		A4BFBF361E13675900A54FF1 /* FCPhotoManager */ = {
@@ -1966,6 +2054,7 @@
 				A4830D571E56CE50003EDDE7 /* WKWebViewVC.m */,
 				A4D98B871E72703700F7C482 /* ActivityViewVC.h */,
 				A4D98B881E72703700F7C482 /* ActivityViewVC.m */,
+				A4AE3E661E8DE691005BF49F /* ActionSheet */,
 				A4139A4E1E8A0D4B00855F40 /* RefreshVC */,
 				A45064201E88EC24001C6A1E /* Refresh */,
 				A4CDC0ED1E7695D000A90381 /* TableView */,
@@ -2296,6 +2385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41C4BC01E15FA1100F6AA64 /* UIScreen+CLObjcSugar.m in Sources */,
+				A4AE3E791E8E260B005BF49F /* XLRefreshHeader.m in Sources */,
 				A479362D1E4D9B5A00FB5B45 /* WaterFlowLayout.m in Sources */,
 				A43673E91E6E80EF00873FCB /* LayoutModel.m in Sources */,
 				A4CD4C801E48129400F85801 /* XWPresentOneController.m in Sources */,
@@ -2312,6 +2402,7 @@
 				A4D98B7B1E7241E600F7C482 /* Demo1ViewController.m in Sources */,
 				A4D98B6F1E72414C00F7C482 /* UIImage+HXExtension.m in Sources */,
 				A488A70C1E07F71B0087D92A /* AnimationBoundsVC.m in Sources */,
+				A4AE3E841E8E26CA005BF49F /* XLCollectionVC.m in Sources */,
 				A41A04801E1B414D00187C9B /* NetworkToos.m in Sources */,
 				A41C4BBE1E15FA1100F6AA64 /* UILabel+CLObjcSugar.m in Sources */,
 				A4CD4C5F1E4808D100F85801 /* InheritB.m in Sources */,
@@ -2335,6 +2426,7 @@
 				A4D98B891E72703700F7C482 /* ActivityViewVC.m in Sources */,
 				A488A7021E07F4930087D92A /* ViewController.m in Sources */,
 				A4D57A5B1E0A5B2B0057C297 /* JKPromptView.m in Sources */,
+				A4AE3E9E1E8E286D005BF49F /* XMRefresh.m in Sources */,
 				A471355A1E08CA4800D1E83D /* BaseModel.m in Sources */,
 				A4D98B1D1E72414C00F7C482 /* HXAlbumListView.m in Sources */,
 				A4D98B911E72757900F7C482 /* KCAnnotation.m in Sources */,
@@ -2350,6 +2442,7 @@
 				A4D57A591E0A5B2B0057C297 /* JKPhotoBrowser.m in Sources */,
 				A488A72A1E07F8350087D92A /* SettingVC.m in Sources */,
 				A4D57A521E0A5B2B0057C297 /* JKAssets.m in Sources */,
+				A4AE3E991E8E286D005BF49F /* UIScrollView+XMRefreshExtension.m in Sources */,
 				A488A7061E07F6E10087D92A /* AnimationViewController.m in Sources */,
 				A4CDC1031E76974500A90381 /* AnswerModel.m in Sources */,
 				A4DAAF5C1E47013F002BACA7 /* BouncePresentAnimation.m in Sources */,
@@ -2364,17 +2457,21 @@
 				A488A71E1E07F7760087D92A /* AnimationTransitionVC.m in Sources */,
 				A41C4BB71E15FA1100F6AA64 /* NSObject+GCD.m in Sources */,
 				A41A04861E1B871800187C9B /* UIBarButtonItem+Extension.m in Sources */,
+				A4AE3E7D1E8E260B005BF49F /* XLRefreshAnimationLayer.m in Sources */,
 				A4CDC1021E76974500A90381 /* ProblemTitleModel.m in Sources */,
 				A4CDC0F01E76961A00A90381 /* TableMainVC.m in Sources */,
+				A4AE3E811E8E2671005BF49F /* XLRefreshVC.m in Sources */,
 				A4CD4C931E48138600F85801 /* MutationTableViewController.m in Sources */,
 				A488A7121E07F7370087D92A /* AnimationTransformVC.m in Sources */,
 				A4D57A541E0A5B2B0057C297 /* JKAssetsGroupCell.m in Sources */,
 				A471354F1E08C61600D1E83D /* OperationVC.m in Sources */,
+				A4AE3E8A1E8E26EF005BF49F /* XLWebVC.m in Sources */,
 				A4830D581E56CE50003EDDE7 /* WKWebViewVC.m in Sources */,
 				A41C4BB61E15FA1100F6AA64 /* NSDictionary+MAC.m in Sources */,
 				A47936331E4D9B5A00FB5B45 /* ZXMovie.m in Sources */,
 				A4D57A531E0A5B2B0057C297 /* JKAssetsCollectionFooterView.m in Sources */,
 				A4BFBF5E1E13863A00A54FF1 /* AddressMainVC.m in Sources */,
+				A4AE3E9C1E8E286D005BF49F /* XMGifHeaderRefresh.m in Sources */,
 				A41C4BBA1E15FA1100F6AA64 /* NSString+CLObjcSugar.m in Sources */,
 				A4F86BFC1E12407D00FA932B /* Foundation+Log.m in Sources */,
 				A45141661E820BF400A411AB /* LayoutAnimationVC.m in Sources */,
@@ -2393,15 +2490,14 @@
 				A45EBD0A1E2369DA00154216 /* XMDBManager.m in Sources */,
 				A47936051E4D89CD00FB5B45 /* HeadImageView.m in Sources */,
 				A4C0598A1E0B7F9900EF5D1B /* MethodMainVC.m in Sources */,
-				A45064231E88F4F8001C6A1E /* XMRefresh.m in Sources */,
 				A4DAAF611E47158E002BACA7 /* MasonryMainVC.m in Sources */,
 				A488A7151E07F74E0087D92A /* AnimationAlphaVC.m in Sources */,
 				A41C4BB91E15FA1100F6AA64 /* NSObject+JKRuntime.m in Sources */,
 				A4BFBF491E13675900A54FF1 /* BigPhotoImageCell.m in Sources */,
 				A471357B1E08DAC600D1E83D /* SelectMorePhotoVC.m in Sources */,
 				A4C059AA1E0BBFA300EF5D1B /* JFPhotoView.m in Sources */,
-				A42AD5BC1E8A5FA600512B5B /* XMGifHeaderRefresh.m in Sources */,
 				A4D98B861E726EB900F7C482 /* FattributesVC.m in Sources */,
+				A4AE3E7E1E8E260B005BF49F /* UIScrollView+XLRefresh.m in Sources */,
 				A488A7211E07F7870087D92A /* CAAnimationDescriptionVC.m in Sources */,
 				A488A7271E07F7A50087D92A /* CATransitionVC.m in Sources */,
 				A4BFBF4B1E13675900A54FF1 /* PhotoImageCell.m in Sources */,
@@ -2414,7 +2510,7 @@
 				A4DAAF401E46C5EC002BACA7 /* XWPageCoverPushController.m in Sources */,
 				A4FA786E1E4AE8C500824CA3 /* UILabelVC.m in Sources */,
 				A4DAAF3F1E46C5EC002BACA7 /* XWPageCoverController.m in Sources */,
-				A45064261E88F5BC001C6A1E /* XMHeaderRefresh.m in Sources */,
+				A4AE3E691E8DE6AC005BF49F /* ActionSheetMainVC.m in Sources */,
 				A41A048C1E1B875500187C9B /* UIView+Extension.m in Sources */,
 				A4D98B221E72414C00F7C482 /* HXCollectionView.m in Sources */,
 				A4D98B241E72414C00F7C482 /* HXPhotoModel.m in Sources */,
@@ -2423,6 +2519,7 @@
 				A456A9D81E31BF3600E501C3 /* PersonModel.m in Sources */,
 				A4BFBF4E1E13675900A54FF1 /* FCSmallImageViewController.m in Sources */,
 				A4D57A561E0A5B2B0057C297 /* JKAssetsThumbnailView.m in Sources */,
+				A4AE3E9A1E8E286D005BF49F /* UIView+XMFrameExtension.m in Sources */,
 				A4DAAF351E46C51F002BACA7 /* XWCircleSpreadController.m in Sources */,
 				A47135711E08D21E00D1E83D /* MethodVC.m in Sources */,
 				A488A6F41E07F2FC0087D92A /* BaseViewController.m in Sources */,
@@ -2439,10 +2536,12 @@
 				A4C059A31E0BBFA300EF5D1B /* JFAssetHelper.m in Sources */,
 				A47935FE1E4D89BF00FB5B45 /* NaviTestShowOneVC.m in Sources */,
 				A47936291E4D9B5A00FB5B45 /* CollectionHeaderReusableView.m in Sources */,
+				A4AE3E7C1E8E260B005BF49F /* XLRefreshAnimation.m in Sources */,
 				A4DAAF5E1E47013F002BACA7 /* SwipeUpInteractiveTransition.m in Sources */,
 				A4DAAEAB1E46BF70002BACA7 /* XWInteractiveTransition.m in Sources */,
 				A488A6C01E07C2780087D92A /* main.m in Sources */,
 				A41C4BB21E15FA1100F6AA64 /* NSBundle+CLObjcSugar.m in Sources */,
+				A4AE3E871E8E26DE005BF49F /* XLTableVC.m in Sources */,
 				A4CDC0F81E76973400A90381 /* AnswerCell.m in Sources */,
 				A402DFAA1E09105D0058E6B7 /* MainTabBarViewController.m in Sources */,
 				A4CDC0F71E76973400A90381 /* HeadView.m in Sources */,
@@ -2459,11 +2558,13 @@
 				A41C4BBD1E15FA1100F6AA64 /* UIImage+CLObjcSugar.m in Sources */,
 				A488A71B1E07F7680087D92A /* AnimationSpringVC.m in Sources */,
 				A4BFBF471E13675900A54FF1 /* FCPhotoManager.m in Sources */,
+				A4AE3E7A1E8E260B005BF49F /* XLRefreshFooter.m in Sources */,
 				A4C0A2C61E4DAF1C00B22F09 /* NSString+Size.m in Sources */,
 				A430C7191E08BDCC00681AFD /* GestureVC.m in Sources */,
 				A4E5D0131E5189B80080E41D /* MediatorVC.m in Sources */,
 				A4DAAF521E470131002BACA7 /* SimpleTransitionVC.m in Sources */,
 				A45EBCF01E2322EF00154216 /* BlockVC.m in Sources */,
+				A4AE3E9D1E8E286D005BF49F /* XMHeaderRefresh.m in Sources */,
 				A41F58E11E2F1B3200AA1BE2 /* ValidateVC.m in Sources */,
 				A4D98B731E72419600F7C482 /* SelectPhotoDemoMVC.m in Sources */,
 				A4D57A5A1E0A5B2B0057C297 /* JKPhotoBrowserCell.m in Sources */,
@@ -2472,13 +2573,10 @@
 				A4CDC0FC1E76973D00A90381 /* HelpCenterViewController.m in Sources */,
 				A4D98B1F1E72414C00F7C482 /* HXAlbumTitleButton.m in Sources */,
 				A451416D1E82103000A411AB /* VoiceVC.m in Sources */,
-				A401BDC51E8A03E20029070E /* UIView+XMFrameExtension.m in Sources */,
 				A40B2FB81E49BEF800C05EA8 /* MasonryMainTableViewCell.m in Sources */,
-				A45064291E88F5D7001C6A1E /* XMFooterRefresh.m in Sources */,
 				A479362C1E4D9B5A00FB5B45 /* WaterFlowCollectionViewCell.m in Sources */,
 				A488A7181E07F75B0087D92A /* AnimationKeyFramesVC.m in Sources */,
 				A4D98B291E72414C00F7C482 /* HXPhotoView.m in Sources */,
-				A4139A481E8A099B00855F40 /* UIScrollView+XMRefreshExtension.m in Sources */,
 				A4C0598D1E0B816700EF5D1B /* DictionaryVC.m in Sources */,
 				A4D64C001E0CBD37003D9F23 /* UserModel.m in Sources */,
 				A4DAAF2C1E46C4F8002BACA7 /* XWMagicMovePushController.m in Sources */,
@@ -2513,10 +2611,12 @@
 				A4D98B7E1E7241E600F7C482 /* Demo3ViewController.m in Sources */,
 				A400AED01E81111400220AFB /* XMURLSessionWrapperOperation.m in Sources */,
 				A4970E971E6D39CC00F54BD7 /* UIControl+Interval.m in Sources */,
+				A4AE3E7B1E8E260B005BF49F /* XLRefreshBase.m in Sources */,
 				A41C4BB31E15FA1100F6AA64 /* NSDate+CLObjcSugar.m in Sources */,
 				A4C059A71E0BBFA300EF5D1B /* JFImagePickerController.m in Sources */,
 				A47135561E08C7DA00D1E83D /* UIImage+Extend.m in Sources */,
 				A4D98B701E72414C00F7C482 /* UIView+HXExtension.m in Sources */,
+				A4AE3E9B1E8E286D005BF49F /* XMFooterRefresh.m in Sources */,
 				A4D98B211E72414C00F7C482 /* HXCameraViewController.m in Sources */,
 				A4E5D0161E518A600080E41D /* MediatorTestOneVC.m in Sources */,
 				A4CD4C941E48138600F85801 /* ReversalTableViewController.m in Sources */,

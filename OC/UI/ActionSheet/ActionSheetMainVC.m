@@ -1,19 +1,16 @@
 //
-//  RefreshMainVC.m
+//  ActionSheetMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2017/3/28.
+//  Created by 薛坤龙 on 2017/3/31.
 //  Copyright © 2017年 sigboat. All rights reserved.
 //
 
-#import "RefreshMainVC.h"
-#import <Masonry.h>
-#import "DownRefreshVC.h"
-#import "XLRefreshVC.h"
+#import "ActionSheetMainVC.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
-@interface RefreshMainVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface ActionSheetMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSArray *array;
@@ -21,36 +18,17 @@ static const CGFloat tableViewCellHight = 60.0;
 
 @end
 
-@implementation RefreshMainVC
+@implementation ActionSheetMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"Refresh";
     
-    _array = @[@"DownRefreshVC",@"XLRefreshVC"];
-    _viewControllers = @[[DownRefreshVC class],
-                         [XLRefreshVC class]];
+    self.navigationItem.title = @"ActionSheet";
     
-    [self.view addSubview:self.tableView];
     
-}
-
-- (void)viewWillLayoutSubviews
-{
-    [super viewWillLayoutSubviews];
     
-    __weak typeof(self) weakSelf = self;
-    
-    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.equalTo(weakSelf.view.mas_top).offset(0);
-        make.left.equalTo(weakSelf.view.mas_left).offset(0);
-        make.right.equalTo(weakSelf.view.mas_right).offset(0);
-        make.bottom.equalTo(weakSelf.view.mas_bottom).offset(-64);
-        
-    }];
     
 }
 
@@ -98,17 +76,21 @@ static const CGFloat tableViewCellHight = 60.0;
     return _tableView;
 }
 
-#pragma mark - dealloc
-- (void)dealloc
-{
-    _tableView.delegate = nil;
-    _tableView.dataSource = nil;
-}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
