@@ -9,7 +9,7 @@
 #import "XMRefresh.h"
 #import "UIView+XMFrameExtension.h"
 
-#define kXMRefreshFooterHeight 44
+#define kXMRefreshFooterHeight 80
 #define XMRefreshKeyPathContentOffset  @"contentOffset"
 #define XMRefreshKeyPathContentInset   @"contentInset"
 #define XMRefreshKeyPathContentSize    @"contentSize"

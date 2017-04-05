@@ -29,7 +29,17 @@ static NSString * XLStateRefreshingKey = @"XLStateRefreshingKey";
 #define XLRefreshMsgSend(...) ((void (*)(void *, SEL, UIView *))objc_msgSend)(__VA_ARGS__)
 #define XLRefreshMsgTarget(target) (__bridge void *)(target)
 
-typedef NS_ENUM(NSInteger,XLRefreshState){
+//刷新类型
+typedef NS_ENUM(NSUInteger,XLRefreshType)
+{
+    XLRefreshTypeNormalFooter = 0, //上拉
+    XLMRefreshTypeNormalHeader,//正常下拉显示
+    XLRefreshTypeGifHeader //gif下拉显示
+};
+
+//刷新状态
+typedef NS_ENUM(NSInteger,XLRefreshState)
+{
     //初始状态
     XLRefreshStatePulling = 0,
     //即将刷新
@@ -38,10 +48,13 @@ typedef NS_ENUM(NSInteger,XLRefreshState){
     XLRefreshStateRefreshIng,
 };
 
-@interface XLRefreshBase : UIView{
-    
+@interface XLRefreshBase : UIView
+{
     __weak UIScrollView *_scrollView;
 }
+
+//刷新类型
+@property (nonatomic, assign) XLRefreshType type;
 //刷新状态
 @property (nonatomic, assign) XLRefreshState state;
 //刷新回调
@@ -56,6 +69,10 @@ typedef NS_ENUM(NSInteger,XLRefreshState){
 @property (nonatomic, assign) BOOL isRefreshing;
 //状态提示文字
 @property (nonatomic, strong) NSDictionary *stateTitle;
+
+
+- (instancetype)initWithRefreshType:(XLRefreshType)type;
+
 //更新frame
 -(void)updateRect NS_REQUIRES_SUPER;
 //开始刷新

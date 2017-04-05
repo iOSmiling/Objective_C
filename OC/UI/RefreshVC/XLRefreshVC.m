@@ -10,6 +10,7 @@
 #import "XLWebVC.h"
 #import "XLTableVC.h"
 #import "XLCollectionVC.h"
+#import "XLGifTableVC.h"
 
 @interface XLRefreshVC ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -30,9 +31,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:[UIView new]];
     self.title = @"XLRefresh";
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     //创建TableView
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height ) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
@@ -42,11 +44,11 @@
 #pragma mark TableViewDelegate&DataSource
 
 -(NSArray*)titles{
-    return @[@"XLTableVC",@"XLCollectionVC",@"XLWebVC"];
+    return @[@"XLTableVC",@"XLCollectionVC",@"XLWebVC",@"XLGifTableVC"];
 }
 
 -(NSArray*)classes{
-    return @[[XLTableVC class],[XLCollectionVC class],[XLWebVC class]];
+    return @[[XLTableVC class],[XLCollectionVC class],[XLWebVC class],[XLGifTableVC class]];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

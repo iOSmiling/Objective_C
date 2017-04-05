@@ -39,8 +39,8 @@
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     [self.view addSubview:_collectionView];
     
-    _collectionView.xl_header = [XLRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMethod)];
-    _collectionView.xl_footer = [XLRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreMethod)];
+    _collectionView.xl_normalHeader = [XLRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMethod)];
+    _collectionView.xl_normalFooter = [XLRefreshNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreMethod)];
     
     
     //手动实现下拉/上拉
@@ -57,7 +57,7 @@
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [_collectionView.xl_header endRefreshing];
+        [_collectionView.xl_normalHeader endRefreshing];
         _segment.selectedSegmentIndex = -1;
     });
 }
@@ -67,7 +67,7 @@
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [_collectionView.xl_footer endRefreshing];
+        [_collectionView.xl_normalFooter endRefreshing];
         _segment.selectedSegmentIndex = -1;
     });
 }
@@ -75,10 +75,10 @@
 -(void)segmentMethod:(UISegmentedControl*)seg{
     switch (seg.selectedSegmentIndex) {
         case 0:
-            [_collectionView.xl_header startRefreshing];
+            [_collectionView.xl_normalHeader startRefreshing];
             break;
         case 1:
-            [_collectionView.xl_footer startRefreshing];
+            [_collectionView.xl_normalFooter startRefreshing];
             break;
         default:
             break;

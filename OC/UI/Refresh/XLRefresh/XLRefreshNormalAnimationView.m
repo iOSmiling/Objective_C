@@ -6,21 +6,25 @@
 //  Copyright © 2017年 MengXianLiang. All rights reserved.
 //
 
-#import "XLRefreshAnimation.h"
-#import "XLRefreshAnimationLayer.h"
+#import "XLRefreshNormalAnimationView.h"
+//#import "XLRefreshAnimationLayer.h"
+#import "XLRefreshNormalAnimationLayer.h"
 
-@interface XLRefreshAnimation ()
+@interface XLRefreshNormalAnimationView ()
 {
-    XLRefreshAnimationLayer *_layer;
+    XLRefreshNormalAnimationLayer *_layer;
     BOOL _animating;
 }
+
 @end
 
-@implementation XLRefreshAnimation
+@implementation XLRefreshNormalAnimationView
 
--(instancetype)init{
-    if (self = [super init]) {
-        _layer = [XLRefreshAnimationLayer layer];
+-(instancetype)init
+{
+    if (self = [super init])
+    {
+        _layer = [XLRefreshNormalAnimationLayer layer];
         _layer.contentsScale = [UIScreen mainScreen].scale;
         [self.layer addSublayer:_layer];
         _layer.progress = 0;
@@ -28,12 +32,14 @@
     return self;
 }
 
--(void)setFrame:(CGRect)frame{
+-(void)setFrame:(CGRect)frame
+{
     [super setFrame:frame];
     _layer.frame = self.bounds;
 }
 
--(void)setProgress:(CGFloat)progress{
+-(void)setProgress:(CGFloat)progress
+{
     if (_animating == true) {return;}
     //画圆
     progress = progress > 1 ? 1 : progress;
@@ -49,7 +55,8 @@
 }
 
 //旋转动画
--(void)startAnimation{
+-(void)startAnimation
+{
     _animating = true;
 //    self.progress = 1.0f;
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -61,7 +68,8 @@
     [_layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
 
--(void)endAnimation{
+-(void)endAnimation
+{
     [_layer removeAllAnimations];
     _animating = false;
 }

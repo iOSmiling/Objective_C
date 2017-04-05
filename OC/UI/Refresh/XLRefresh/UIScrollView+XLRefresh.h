@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XLRefreshHeader.h"
-#import "XLRefreshFooter.h"
+#import "XLRefreshGifHeader.h"
+#import "XLRefreshNormalHeader.h"
+#import "XLRefreshNormalFooter.h"
 
 @interface UIScrollView (XLRefresh)
 
-@property (nonatomic, strong) XLRefreshHeader *xl_header;
+@property (nonatomic, strong) XLRefreshGifHeader *xl_gifHeader;
 
-@property (nonatomic, strong) XLRefreshFooter *xl_footer;
+@property (nonatomic, strong) XLRefreshNormalHeader *xl_normalHeader;
+
+@property (nonatomic, strong) XLRefreshNormalFooter *xl_normalFooter;
 
 @end

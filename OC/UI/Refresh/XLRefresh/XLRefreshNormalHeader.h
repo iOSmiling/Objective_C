@@ -8,12 +8,12 @@
 
 #import "XLRefreshBase.h"
 
-@interface XLRefreshHeader : XLRefreshBase
+@interface XLRefreshNormalHeader : XLRefreshBase
 
 //通过block设置回调
-+(XLRefreshHeader*)headerWithRefreshingBlock:(XLRefreshingBlock)block;
++(XLRefreshNormalHeader*)headerWithRefreshingBlock:(XLRefreshingBlock)block;
 
 //通过代理设置回调
-+(XLRefreshHeader*)headerWithRefreshingTarget:(id)target refreshingAction:(SEL)action;
++(XLRefreshNormalHeader*)headerWithRefreshingTarget:(id)target refreshingAction:(SEL)action;
 
 @end

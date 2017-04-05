@@ -6,12 +6,13 @@
 //  Copyright © 2017年 MengXianLiang. All rights reserved.
 //
 
-#import "XLRefreshAnimationLayer.h"
+#import "XLRefreshNormalAnimationLayer.h"
 #import <UIKit/UIKit.h>
 
-@implementation XLRefreshAnimationLayer
+@implementation XLRefreshNormalAnimationLayer
 
--(void)drawInContext:(CGContextRef)ctx{
+-(void)drawInContext:(CGContextRef)ctx
+{
     [super drawInContext:ctx];
     
     UIGraphicsPushContext(ctx);

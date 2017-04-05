@@ -7,24 +7,43 @@
 //
 
 #import "XLRefreshBase.h"
-#import "XLRefreshAnimation.h"
+//#import "XLRefreshAnimation.h"
+#import "XLRefreshNormalAnimationView.h"
+
+#import "XLRefreshGifAnimationView.h"
+
 
 @implementation XLRefreshBase
 {
     UILabel *_textLabel;
-    XLRefreshAnimation *_animationView;
+    XLRefreshNormalAnimationView *_animationView;
+    XLRefreshGifAnimationView *_gifAnimationView;
+    
 }
--(instancetype)init{
-    if (self = [super init]) {
+
+- (instancetype)initWithRefreshType:(XLRefreshType)type
+{
+    if (self = [super init])
+    {
+        _type = type;
         [self initUI];
     }
     return self;
 }
 
 //1.创建UI
--(void)initUI{
-    _animationView = [[XLRefreshAnimation alloc] init];
-    [self addSubview:_animationView];
+-(void)initUI
+{
+    if (_type == XLMRefreshTypeNormalHeader)
+    {
+        _animationView = [[XLRefreshNormalAnimationView alloc] init];
+        [self addSubview:_animationView];
+        
+    }else if (_type == XLRefreshTypeGifHeader)
+    {
+        _gifAnimationView = [[XLRefreshGifAnimationView alloc] init];
+        [self addSubview:_gifAnimationView];
+    }
     
     _textLabel = [[UILabel alloc] init];
     _textLabel.textAlignment = NSTextAlignmentCenter;
@@ -34,13 +53,15 @@
 }
 
 //2.添加功能
--(void)willMoveToSuperview:(UIView *)newSuperview{
+-(void)willMoveToSuperview:(UIView *)newSuperview
+{
     
     [super willMoveToSuperview:newSuperview];
     
     if (![newSuperview isKindOfClass:[UIScrollView class]] && newSuperview) {return;}
     [self removeObservers];
-    if (newSuperview) {
+    if (newSuperview)
+    {
         _scrollView = (UIScrollView*)newSuperview;
         //允许垂直
         _scrollView.alwaysBounceVertical = YES;
@@ -50,25 +71,38 @@
 }
 
 //3.放置SubView
--(void)layoutSubviews{
+-(void)layoutSubviews
+{
     [super layoutSubviews];
     
     CGFloat labelWidth = self.bounds.size.width/3;
     CGFloat height = XLRefreshHeight;
     CGFloat animationWidth = height*0.6;
     
-    
     _textLabel.bounds = CGRectMake(0, 0, labelWidth, height);
     _textLabel.center = CGPointMake(self.bounds.size.width/2+animationWidth/2, self.bounds.size.height/2.0f);
     
-    _animationView.frame = CGRectMake(CGRectGetMinX(_textLabel.frame) - animationWidth, 0, animationWidth, height);
-    _animationView.center = CGPointMake(_animationView.center.x, self.bounds.size.height/2.0f);
+    if (_type == XLMRefreshTypeNormalHeader)
+    {
+        _animationView.frame = CGRectMake(CGRectGetMinX(_textLabel.frame) - animationWidth, 0, animationWidth, height);
+        _animationView.center = CGPointMake(_animationView.center.x, self.bounds.size.height/2.0f);
+        
+    }else if (_type == XLRefreshTypeGifHeader)
+    {
+        _gifAnimationView.frame = CGRectMake(CGRectGetMinX(_textLabel.frame) - animationWidth, 0, animationWidth, height);
+        _gifAnimationView.center = CGPointMake(_animationView.center.x, self.bounds.size.height/2.0f);
+    }
+
 }
 
--(void)updateRect{}
+-(void)updateRect
+{
+
+}
 
 //设置回调对象和方法
--(void)setRefreshingTarget:(id)target refreshingAction:(SEL)action{
+-(void)setRefreshingTarget:(id)target refreshingAction:(SEL)action
+{
     self.refreshingTarget = target;
     self.refreshingAction = action;
 }
@@ -76,13 +110,15 @@
 #pragma mark -
 #pragma mark KVO
 
--(void)addObservers{
+-(void)addObservers
+{
     NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
     [_scrollView addObserver:self forKeyPath:XLRefreshKeyPathContentOffset options:options context:nil];
     [_scrollView addObserver:self forKeyPath:XLRefreshKeyPathContentSize options:options context:nil];
 }
 
--(void)removeObservers{
+-(void)removeObservers
+{
     [self.superview removeObserver:self forKeyPath:XLRefreshKeyPathContentOffset];
     [self.superview removeObserver:self forKeyPath:XLRefreshKeyPathContentSize];
 }
@@ -104,10 +140,12 @@
 #pragma mark -
 #pragma mark Setter
 
--(void)setState:(XLRefreshState)state{
+-(void)setState:(XLRefreshState)state
+{
     _state = state;
     
-    switch (state) {
+    switch (state)
+    {
         case XLRefreshStatePulling:
             _textLabel.text = _stateTitle[XLStatePullingKey];
             break;
@@ -123,30 +161,51 @@
     }
 }
 
--(void)startRefreshing{
+-(void)startRefreshing
+{
     self.state = XLRefreshStateRefreshIng;
-    self.refreshProgress = 1;
-    [self sendRefresingCallBack];
-    [_animationView startAnimation];
+     [self sendRefresingCallBack];
+    
+    if (_type == XLMRefreshTypeNormalHeader)
+    {
+        self.refreshProgress = 1;
+        [_animationView startAnimation];
+        
+    }else if (_type == XLRefreshTypeGifHeader)
+    {
+        [_gifAnimationView startAnimation];
+    }
 }
 
--(void)endRefreshing{
-    
+-(void)endRefreshing
+{
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, XLRefreshAnimationDuration * NSEC_PER_SEC);
     dispatch_after(time, dispatch_get_main_queue(), ^(void){
-        [_animationView endAnimation];
-        self.state = XLRefreshStatePulling;
-        self.refreshProgress = 0;
+        
+        if (_type == XLMRefreshTypeNormalHeader)
+        {
+             [_animationView endAnimation];
+            self.state = XLRefreshStatePulling;
+            self.refreshProgress = 0;
+            
+        }else if (_type == XLRefreshTypeGifHeader)
+        {
+            [_gifAnimationView endAnimation];
+        }
+        
     });
 }
 
 //发送回调
--(void)sendRefresingCallBack{
-    
-    if ([self.refreshingTarget respondsToSelector:self.refreshingAction]) {
+-(void)sendRefresingCallBack
+{
+    if ([self.refreshingTarget respondsToSelector:self.refreshingAction])
+    {
         XLRefreshMsgSend(XLRefreshMsgTarget(self.refreshingTarget), self.refreshingAction, self);
     }
-    if (_refreshingBlock) {
+    
+    if (_refreshingBlock)
+    {
         _refreshingBlock();
     }
 }
@@ -154,7 +213,8 @@
 #pragma mark -
 #pragma mark Setter/Getter
 
--(void)setRefreshProgress:(CGFloat)refreshProgress{
+-(void)setRefreshProgress:(CGFloat)refreshProgress
+{
     _refreshProgress = refreshProgress;
     
     _animationView.progress = refreshProgress;
@@ -164,7 +224,8 @@
     self.bounds = CGRectMake(0, 0, self.bounds.size.width, refreshProgress * XLRefreshHeight);
 }
 
--(BOOL)isRefreshing{
+-(BOOL)isRefreshing
+{
     return _state == XLRefreshStateRefreshIng;
 }
 

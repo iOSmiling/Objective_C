@@ -8,7 +8,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface XLRefreshAnimationLayer : CALayer
+@interface XLRefreshNormalAnimationLayer : CALayer
 
 @property (nonatomic, assign) CGFloat progress;
 

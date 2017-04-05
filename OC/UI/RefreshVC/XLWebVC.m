@@ -38,7 +38,7 @@
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
     _webView.delegate = self;
     [self.view addSubview:_webView];
-    _webView.scrollView.xl_header = [XLRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMethod)];
+    _webView.scrollView.xl_normalHeader = [XLRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMethod)];
 }
 
 -(void)refreshMethod{
@@ -46,7 +46,7 @@
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
-    [webView.scrollView.xl_header endRefreshing];
+    [webView.scrollView.xl_normalHeader endRefreshing];
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 

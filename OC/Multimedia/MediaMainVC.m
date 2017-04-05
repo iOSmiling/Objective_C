@@ -9,6 +9,7 @@
 #import "MediaMainVC.h"
 #import <Masonry.h>
 #import "VoiceVC.h"
+#import "MovieVC.h"
 
 @interface MediaMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,9 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"多媒体";
-    _array = @[@"音频"];
+    _array = @[@"音频",@"视频"];
     
-    _viewControllers = @[[VoiceVC class]];
+    _viewControllers = @[[VoiceVC class],[MovieVC class]];
     
     [self.view addSubview:self.tableView];
     

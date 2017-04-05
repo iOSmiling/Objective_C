@@ -12,47 +12,77 @@
 @implementation UIScrollView (XLRefresh)
 
 #pragma mark -
-#pragma mark Header
-static const char XLRefreshHeaderKey = '\0';
--(void)setXl_header:(XLRefreshHeader *)xl_header{
-    if (xl_header != self.xl_header) {
+#pragma mark gifHeader
+static const char XLRefreshGifHeaderKey = '\0';
+-(void)setXl_gifHeader:(XLRefreshGifHeader *)xl_gifHeader
+{
+    if (xl_gifHeader != self.xl_gifHeader)
+    {
         // 删除旧的，添加新的
-        [self.xl_header removeFromSuperview];
-        [self insertSubview:xl_header atIndex:0];
+        [self.xl_gifHeader removeFromSuperview];
+        [self insertSubview:xl_gifHeader atIndex:0];
         
         // 存储新的
-        [self willChangeValueForKey:@"xl_header"]; // KVO
-        objc_setAssociatedObject(self, &XLRefreshHeaderKey,
-                                 xl_header, OBJC_ASSOCIATION_ASSIGN);
-        [self didChangeValueForKey:@"xl_header"]; // KVO
+        [self willChangeValueForKey:@"xl_gifHeader"]; // KVO
+        objc_setAssociatedObject(self, &XLRefreshGifHeaderKey,
+                                 xl_gifHeader, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"xl_gifHeader"]; // KVO
     }
 }
 
--(XLRefreshHeader *)xl_header{
-    return objc_getAssociatedObject(self, &XLRefreshHeaderKey);
+- (XLRefreshGifHeader *)xl_gifHeader
+{
+    return objc_getAssociatedObject(self, &XLRefreshGifHeaderKey);
 }
 
+#pragma mark -
+#pragma mark normalHeader
+static const char XLRefreshNormalHeaderKey = '\0';
+
+-(void)setXl_normalHeader:(XLRefreshNormalHeader *)xl_normalHeader
+{
+    if (xl_normalHeader != self.xl_normalHeader)
+    {
+        // 删除旧的，添加新的
+        [self.xl_normalHeader removeFromSuperview];
+        [self insertSubview:xl_normalHeader atIndex:0];
+        
+        // 存储新的
+        [self willChangeValueForKey:@"xl_normalHeader"]; // KVO
+        objc_setAssociatedObject(self, &XLRefreshNormalHeaderKey,
+                                 xl_normalHeader, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"xl_normalHeader"]; // KVO
+    }
+}
+
+-(XLRefreshNormalHeader *)xl_normalHeader
+{
+    return objc_getAssociatedObject(self, &XLRefreshNormalHeaderKey);
+}
 
 #pragma mark -
 #pragma mark Footer
-static const char XLRefreshFooterKey = '\0';
--(void)setXl_footer:(XLRefreshFooter *)xl_footer{
-    if (xl_footer != self.xl_footer) {
+static const char XLRefreshNormalFooterKey = '\0';
+-(void)setXl_normalFooter:(XLRefreshNormalFooter *)xl_normalFooter
+{
+    if (xl_normalFooter != self.xl_normalFooter)
+    {
         // 删除旧的，添加新的
-        [self.xl_footer removeFromSuperview];
-        [self insertSubview:xl_footer atIndex:0];
+        [self.xl_normalFooter removeFromSuperview];
+        [self insertSubview:xl_normalFooter atIndex:0];
         
         // 存储新的
-        [self willChangeValueForKey:@"xl_footer"]; // KVO
-        objc_setAssociatedObject(self, &XLRefreshFooterKey,
-                                 xl_footer, OBJC_ASSOCIATION_ASSIGN);
-        [self didChangeValueForKey:@"xl_footer"]; // KVO
+        [self willChangeValueForKey:@"xl_normalFooter"]; // KVO
+        objc_setAssociatedObject(self, &XLRefreshNormalFooterKey,
+                                 xl_normalFooter, OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"xl_normalFooter"]; // KVO
     }
 }
 
 
--(XLRefreshFooter *)xl_footer{
-    return objc_getAssociatedObject(self, &XLRefreshFooterKey);
+-(XLRefreshNormalFooter *)xl_normalFooter
+{
+    return objc_getAssociatedObject(self, &XLRefreshNormalFooterKey);
 }
 
 @end

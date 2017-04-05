@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XLRefreshAnimation : UIView
+@interface XLRefreshNormalAnimationView : UIView
 
 @property (nonatomic, assign) CGFloat progress;
 
