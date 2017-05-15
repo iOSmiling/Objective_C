@@ -13,7 +13,7 @@
 -(void)initAPNSServse:(UIApplication *)application withOptions:(NSDictionary *)launchOptions
 {
     
-    
+    NSLog(@"launchOptions APNS");
 }
 
 

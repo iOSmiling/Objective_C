@@ -11,6 +11,7 @@
 #import "IntoSystemLimitsVC.h"
 #import "AddressMainVC.h"
 #import "LocationVC.h"
+#import "QRCode_MainVC.h"
 
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVCaptureDevice.h>
@@ -44,6 +45,7 @@
     [_array addObject:@"系统定位"];
     [_array addObject:@"Fattributes"];
     [_array addObject:@"地图"];
+    [_array addObject:@"二维码"];
   
     
     [self.view addSubview:self.tableView];
@@ -136,7 +138,9 @@
         }
         case 5:
         {
-     
+            QRCode_MainVC *vc = [[QRCode_MainVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 6:

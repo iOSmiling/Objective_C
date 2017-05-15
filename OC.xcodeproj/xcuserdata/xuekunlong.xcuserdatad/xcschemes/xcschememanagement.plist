@@ -7,11 +7,45 @@
 		<key>OC.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>9</integer>
+		</dict>
+		<key>OC_Dev.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>OC_Dis.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A4416C0E1E9B3582008AEA04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A45B90851E9CAEB20050FCE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A46AA4FB1E9CAF4300E8524E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A488A6BA1E07C2780087D92A</key>
 		<dict>
 			<key>primary</key>
@@ -23,6 +57,36 @@
 			<true/>
 		</dict>
 		<key>A488A6DE1E07C2780087D92A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A49BCB731E9CAFE600B25892</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4A2C25E1EA46CD50063FF5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4A2C3ED1EA46CE00063FF5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4A2C5651EA46CEE0063FF5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4B6D2C71E9CAB5300932814</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4B6D2DD1E9CAE2B00932814</key>
 		<dict>
 			<key>primary</key>
 			<true/>

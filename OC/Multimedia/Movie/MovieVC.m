@@ -12,6 +12,8 @@
 #import "LZBMPMoviePlayerViewControllerVC.h"
 #import "LZBPlayerMoreVideoVC.h"
 
+#import "CL_PlayerViewController.h"
+
 @interface MovieVC ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -30,6 +32,8 @@
     
     self.title = @"选择播放器播放视频";
     [self.view addSubview:self.tableView];
+    
+    
     //测试视频
     /*
      @"http://120.25.226.186:32812/resources/videos/minion_01.mp4",
@@ -73,11 +77,15 @@
         vc.videoPath = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
         [self presentViewController:vc animated:YES completion:nil];
     }
-    else
+    else if(indexPath.row ==0 || indexPath.row == 1)
     {
         MovieBaseVC *baseVC = (MovieBaseVC *)self.playVCarray[indexPath.row];
         baseVC.videoPath = @"http://120.25.226.186:32812/resources/videos/minion_01.mp4";
         [self.navigationController pushViewController:baseVC animated:YES];
+    }else if(indexPath.row == 4)
+    {
+        CL_PlayerViewController *vc = [[CL_PlayerViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }
@@ -97,7 +105,7 @@
 
 - (NSArray<NSString *> *)playStyleArray
 {
-    return @[@"MPMoviePlayerController播放视频",@"MPMoviePlayerViewController播放视频",@"AVPlayer播放视频当个视频",@"AVPlayer播放视频多个视频"];
+    return @[@"MPMoviePlayerController播放视频",@"MPMoviePlayerViewController播放视频",@"AVPlayer播放视频当个视频",@"AVPlayer播放视频多个视频",@"自定义AVPlayer"];
 }
 
 - (NSArray<UIViewController *> *)playVCarray

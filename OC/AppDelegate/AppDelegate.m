@@ -11,6 +11,7 @@
 #import "AppDelegate+APNS.h"
 #import "AppDelegate+InitLocalData.h"
 #import "AYYFPSIndicator.h"
+#import "AppDelegate+Widget.h"
 
 #import "NetworkToos.h"
 
@@ -70,13 +71,23 @@
         
     }] ;
     
-
     
+    NSLog(@"launchOptions appdegate ");
     [self initAPNSServse:application withOptions:launchOptions]; //apns
+    [self initWidgetServse:application withOptions:launchOptions];//widget
+    
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     [self.window setRootViewController:[MainTabBarViewController shareMainTabBarInstance]];
     [self.window makeKeyAndVisible];
+    
+    if (TARGET_VERSION == 1)
+    {
+        NSLog(@" 1 :Dev");
+    }else if (TARGET_VERSION ==2)
+    {
+        NSLog(@"2：Dis");
+    }
     
 #ifdef DEBUG
     // 1. 默认位置开启 FPS 监听,可拖动
@@ -90,6 +101,18 @@
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [self Widget_application:application openURL:url sourceApplication:sourceApplication annotation:annotation];//widget
+
+    return YES;
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
