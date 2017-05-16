@@ -9,6 +9,7 @@
 #import "TableMainVC.h"
 #import <Masonry.h>
 #import "HelpCenterViewController.h"
+#import "MianViewController.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
@@ -29,8 +30,8 @@ static const CGFloat tableViewCellHight = 60.0;
     
     self.navigationItem.title = @"tableview";
     
-    _array = @[@"HelpCenterViewController"];
-    _viewControllers = @[[HelpCenterViewController class]];
+    _array = @[@"HelpCenterViewController",@"索引"];
+    _viewControllers = @[[HelpCenterViewController class],[MianViewController class]];
     
     
     [self.view addSubview:self.tableView];
