@@ -1,29 +1,30 @@
 //
-//  MediatorTestTwoVC.m
+//  ProgressMainVC.m
 //  OC
 //
-//  Created by 薛坤龙 on 2017/2/13.
+//  Created by 薛坤龙 on 2017/5/16.
 //  Copyright © 2017年 sigboat. All rights reserved.
 //
 
-#import "MediatorTestTwoVC.h"
+#import "ProgressMainVC.h"
 
-@interface MediatorTestTwoVC ()
+@interface ProgressMainVC ()
 
 @end
 
-@implementation MediatorTestTwoVC
+@implementation ProgressMainVC
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = @"test 2";
-
+    
+    self.navigationItem.title = @"进度条";
+  
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
 }
+
 @end

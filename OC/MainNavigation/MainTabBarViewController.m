@@ -119,8 +119,17 @@ const CGFloat tabbarHeight = 49.0;
     
     viewController.tabBarController.tabBar.hidden = YES;
     
-    
-    if (viewController.hidesBottomBarWhenPushed)
+    NSArray *viewcontrollers=navController.viewControllers;
+    NSInteger index = [viewcontrollers indexOfObject:viewController];
+    UIViewController *supVc;
+    if (index !=0)
+    {
+        supVc = [viewcontrollers objectAtIndex:index - 1];
+    }else
+    {
+        supVc = nil;
+    }
+    if (viewController.hidesBottomBarWhenPushed ||supVc.hidesBottomBarWhenPushed)
     {
         [self hideTabBar];
     }
@@ -147,6 +156,7 @@ const CGFloat tabbarHeight = 49.0;
 /// 屏幕高
 #define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
 
+//tabbar 隐藏/显示动画
 - (void)hideTabBar
 {
     if (!tabBarIsShow)

@@ -16,6 +16,7 @@
 #import "ActivityViewVC.h"
 #import "TableMainVC.h"
 #import "RefreshMainVC.h"
+#import "ProgressMainVC.h"
 
 static const CGFloat tableViewCellHight = 60.0;
 
@@ -42,7 +43,8 @@ static const CGFloat tableViewCellHight = 60.0;
                @"LayoutVC",
                @"ActivityViewVC",
                @"TableMainVC",
-               @"Refresh"];
+               @"Refresh",
+               @"进度条"];
     _viewControllers = @[[UILabelVC class],
                          [ScrollShowMainVC class],
                          [CollectionMainVC class],
@@ -50,7 +52,8 @@ static const CGFloat tableViewCellHight = 60.0;
                          [LayoutVC class],
                          [ActivityViewVC class],
                          [TableMainVC class],
-                         [RefreshMainVC class]];
+                         [RefreshMainVC class],
+                         [ProgressMainVC class]];
     
     
     [self.view addSubview:self.tableView];
